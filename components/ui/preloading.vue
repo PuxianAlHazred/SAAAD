@@ -24,18 +24,19 @@
     @apply w-[550px] h-[550px] mx-auto;
   }
   @keyframes animate-stroke {
-      0% {
-          stroke-dasharray: 200, 200;
-          stroke-dashoffset: 0;
-          stroke-width: 1px;
-          stroke: black;
-      }
-      100% {
+       0% {
           stroke-dasharray: 200, 200;
           stroke-dashoffset: -200;
           stroke-width: 1px;
           stroke: white;
       }
+      100% {
+          stroke-dasharray: 200, 200;
+          stroke-dashoffset: 0;
+          stroke-width: 1px;
+          stroke: black;
+      }
+
   }
 
 </style>
