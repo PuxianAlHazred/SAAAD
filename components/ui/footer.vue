@@ -3,7 +3,6 @@
     <span class="font-english text-3xl">Social media presence will remain sporadic.</span>
     <span class="mb-5 font-english text-3xl">If you want to be kept informed about Saåad's activities, please subscribe to the newsletter.</span>
     <p class="font-garamond text-lg uppercase">© 2022 - <a alt="Website Saåad" href="https://saaadrone.com">Saåad</a></p>
-    <audio id="sound1" volume="0" :src="require(`~/assets/sounds/intro.ogg`).default" /> 
     <svg class="svg-filter">
       <defs>
         <!-- Pixelisations (animated) -->

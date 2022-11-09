@@ -9,6 +9,7 @@
   main { @apply bg-black; }
   .frame {
     margin: 0 50px 0 150px;
+    overflow-x: hidden;
   }
 </style>
 <script>

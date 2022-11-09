@@ -21,6 +21,7 @@
           </g>
         </svg>
       </div>
+      <audio class="invisible hidden" id="sound1" volume="0" :src="require(`~/assets/sounds/intro.ogg`).default" /> 
     </div>
 </template>
 <style lang="postcss">
@@ -169,7 +170,7 @@ export default {
           GSAP.to('.preloader', { opacity: 0 , duration: 1 });
           animation.kill();
           audio.play();
-          this.$gsap.to(audio, 1, {volume:0.5, onComplete:pauseSound} );
+          GSAP.to(audio, 4, {volume:0.5, onComplete:pauseSound} );
         }, "1000")
 
       }
