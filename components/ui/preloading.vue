@@ -167,7 +167,7 @@ export default {
         hold.removeEventListener("mouseup", reverseAnimation);
         animation.to('#progress', {filter: 'url(#pixelateMin)', stroke:"white"});
         setTimeout(() => { 
-          GSAP.to('.preloader', { opacity: 0 , duration: 1 });
+          GSAP.to('.preloader', { opacity: 0, display: "none", duration: 1 });
           animation.kill();
           audio.play();
           GSAP.to(audio, 4, {volume:0.5, onComplete:pauseSound} );
