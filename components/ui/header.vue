@@ -22,7 +22,7 @@
     </header>
 </template>
 <style lang="postcss" scooped>
-.main-header { @apply flex justify-between flex-col fixed items-center h-screen w-[150px] top-0 left-0 z-50}
+.main-header { @apply  pb-20 flex justify-between flex-col fixed items-center h-screen w-[150px] top-0 left-0 z-50}
 a { @apply text-white ;}
 #wave {
   height: 25px;
