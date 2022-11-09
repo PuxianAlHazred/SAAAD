@@ -1,0 +1,202 @@
+<template>
+  <section id="events" >
+    <header class="events-head">
+			<h2>Events</h2>
+			<div class="events-nav">
+        <span class="all">VIEW ALL<br>EVENTS</span> 
+        <span class="liveset">LIVE<br> SET</span> 
+        <span class="exhibition">INSTALLATION<br>/ EXHIBITION  </span>
+        <span class="collaboration">COLLABORATION<br>/ OTHER</span>
+        <span class="booking">BOOKING</span>
+			</div>
+		</header>
+    <div class="full-events">
+      <article data-debut="2022-11-26" data-fin="2022-11-26" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2022 NOV. 26</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">SAINT-JULIA <div class="country"> FR </div></div>
+        <div class="venue">Cyclic Law 20th Anniversary<br>@ Château H</div>
+        <div class="info">+ Common Eider, King Eider + Ascending Divers + Den Sorte Død + Curse All Kings</div>
+      </article>
+      <article data-debut="2022-10-29" data-fin="2022-10-29" data-collaboration="false" data-exhibition="true" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2022 OCT. 29</span>
+          <div class="assets">
+            <div class="liveset hidden"></div>
+            <div class="exhibition hidden"></div>
+            <div class="collaboration hidden"></div>
+          </div>
+        </div>
+        <div class="city">SARE <div class="country"> FR </div></div>
+        <div class="venue">☽ MAPA GALDUAK Festival ☾<br>@ Usopop</div>
+        <div class="info"></div>
+      </article>
+      <article data-debut="2021-12-04" data-fin="2021-12-04" data-collaboration="false" data-exhibition="true" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2021 DEC. 04</span>
+          <div class="assets">
+            <div class="liveset hidden"></div>
+            <div class="exhibition hidden"></div>
+            <div class="collaboration hidden"></div>
+          </div>
+        </div>
+        <div class="city">BESANÇON <div class="country"> FR </div></div>
+        <div class="venue">Hands In The Dark Festival<br>@ Bains Douches Battant</div>
+        <div class="info"></div>
+      </article>
+      <article data-debut="2021-10-22" data-fin="2021-10-22" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2021 OCT. 22</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">GRENOBLE <div class="country"> FR </div></div>
+        <div class="venue">@ L'Ampérage</div>
+        <div class="info">+ UBV76</div>
+      </article>
+      <article data-debut="2021-10-14" data-fin="2021-10-14" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2021 OCT. 14</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">Dans le Noir<br>@ DADA</div>
+        <div class="info">+ Ascending Divers</div>
+      </article>
+    </div>
+  </section>
+</template>
+<style lang="postcss">
+
+  #events { @apply text-xs relative text-white; }
+
+  .events-head { @apply sticky top-0 h-[100px] bg-black flex items-center justify-between z-10;}
+  .events-head h2 { @apply text-7xl font-meno  italic font-light mr-8 inline; }
+  .events-nav { @apply flex w-3/4 float-right justify-between text-white; }
+  .events-nav .liveset, .events-nav .exhibition, .events-nav .collaboration { @apply opacity-30 duration-1000;}
+  .events-nav .liveset:hover, .events-nav .exhibition:hover, .events-nav .collaboration:hover { @apply opacity-100 duration-1000 cursor-pointer;}
+  .events-nav .liveset:before, .events-nav .exhibition:before, .events-nav .collaboration:before { @apply text-[10px] flex font-bold p-0 float-left w-7 h-7 mr-2 justify-center items-center rounded-full z-10;}
+  .events-nav .liveset:before { @apply bg-black text-white; content: "–";}
+  .events-nav .exhibition:before {@apply bg-white text-black; content: "Ø";}
+  .events-nav .collaboration:before {@apply bg-white text-black; content: "∫∫∫";}
+  .events-nav .all:hover, .events-nav .booking:hover { @apply opacity-100 duration-1000 cursor-pointer;}
+  .events-nav .booking { @apply p-2 border-[1px] border-white duration-500;} 
+  .events-nav .booking:hover { @apply bg-white text-black duration-1000;}
+
+  .full-events { @apply flex flex-col mb-20; }
+  .full-events .past { @apply text-gray-600 hover:text-white}
+  .full-events .curtain { @apply w-full h-full absolute z-40 bg-black;}
+
+  .full-events article { @apply font-work flex h-auto overflow-hidden content-end py-2 duration-500 hover:border-b-[1px] hover:border-t-[1px] border-dotted border-gray-400 transition-all}
+  .full-events article:hover { @apply py-4 border-white duration-1000  transition-all; }
+  
+  .full-events article .date, .full-events article .country, .full-events article .city, .full-events article .venue, .full-events article .info { @apply p-1 leading-4}
+  .full-events article .date{ @apply w-2/12}
+  .full-events article .city:before{ @apply pr-2; content: " | ";}
+  .full-events article .city{ @apply text-lg w-4/12 flex items-start; }
+  .full-events article .country{ @apply text-xs; }
+  .full-events article .country:before{ @apply pl-2; content: "(";}
+  .full-events article .country:after{ content: ")";}
+  .full-events article .venue{ @apply text-lg w-3/12 flex items-start; }
+  .full-events article .info{ @apply text-lg w-3/12 flex items-start text-right flex-row-reverse; }
+
+  .assets { @apply flex items-center }
+  .assets .liveset:before { @apply text-[13px] mr-2 rounded-full; content: "–";}
+  .assets .exhibition:before {@apply text-[13px] mr-2  rounded-full; content: "Ø";}
+  .assets .collaboration:before {@apply text-[10px] rounded-full; content: "∫∫∫";}
+
+  @keyframes event-curtain {
+    0% {
+      width: 100%;
+      height:100%;
+    }
+    100% {
+      width: 0;
+      height: 0;
+    }
+  }
+</style>
+<script>
+  export default {
+    data() {
+      return {
+        content: false,
+        layout: 'list',
+      }
+    },
+    methods: {
+      afterEnter(el) {
+        this.content = true
+      },
+      beforeLeave(el) {
+        this.content = false
+      },
+      scrollAnimation() {
+        this.$gsap.utils.toArray("article").forEach((e,i) => {
+          var curtain = e.getElementsByClassName('curtain');
+          this.$gsap.to(curtain, {width: '0%' , height: '100%' , duration: 0.2, ease:"power2.inOut", delay: '0.'+i});  
+
+          var assets = e.querySelector('.assets')
+          if(e.getAttribute('data-collaboration') === "false") { assets.querySelector('.collaboration').classList.toggle('hidden') } 
+          if(e.getAttribute('data-exhibition') === "false") { assets.querySelector('.exhibition').classList.toggle('hidden') } 
+          if(e.getAttribute('data-liveset') === "false") { assets.querySelector('.liveset').classList.toggle('hidden') } 
+
+          var date = e.getAttribute('data-fin');
+          var now = new Date();
+          var month = now.getMonth();
+          var day = now.getDate();
+          var year = now.getFullYear();
+          var veryNow = (year+'-'+(month)+'-'+day)
+          if (date > veryNow) { e.classList.add('become') } else if(date < veryNow) {e.classList.add('past')} else if(date === veryNow) {e.classList.add('animate-pulse')} else {  }
+
+          var curtainEvent = this.$gsap.to(curtain, {width: '0%' , height: '100%' , duration: 0.5, ease:"power2.inOut", delay: '0.'+i});   
+          this.$gsap.timeline({
+            scrollTrigger: {
+                trigger: e,
+                start: "center bottom",
+					    	end: "center top",
+                invalidateOnRefresh: true,
+                anticipatePin: 1,
+                scrub: true,
+                toggleActions: "play reverse play reverse",
+                onEnterBack: e => {
+                  curtainEvent.play();
+                },
+                onLeaveBack: e => {
+                  curtainEvent.reverse();
+                },
+                onEnter: e => {
+                  curtainEvent.play();
+                },
+                onLeave: e => {
+                  curtainEvent.reverse();
+                },
+            }
+            }).fromTo(e, {  y: 0, opacity: 1, ease: "power2.inOut"}, {  y: 0, opacity: 1, ease: "power2.inOut"});
+          });
+		  }
+    },
+    mounted() {
+      this.scrollAnimation();
+    }
+  }
+</script>
+  

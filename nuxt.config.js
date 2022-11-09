@@ -1,6 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  ssr: true,
+  ssr: false,
+  target: 'static',
   head: {
     title: 'Saåad',
     htmlAttrs: {
@@ -18,10 +19,13 @@ export default {
     ],
     script: [
       { src: 'https://unpkg.com/three@0.136.0/build/three.min.js'}, 
+      { src: 'https://cdn.jsdelivr.net/npm/three@0.136/examples/js/loaders/RGBELoader.js'}, 
+      { src: 'https://cdn.jsdelivr.net/npm/three@0.136/examples/js/loaders/FontLoader.js'}, 
+      { src: 'https://cdn.jsdelivr.net/npm/three@0.136/examples/jsm/geometries/TextGeometry.js'}, 
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'},
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'},
       { src: 'https://unpkg.com/split-type'},
-
+      
     ]
   },
 
@@ -32,7 +36,7 @@ export default {
   },
 
   // Loading
-  loading: '~/components/ui/preloading.vue',
+  //loading: '~/components/ui/preloading.vue',
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -42,8 +46,15 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/device','nuxt-gsap-module','@nuxtjs/tailwindcss'],
+  buildModules: ['@nuxtjs/device','nuxt-gsap-module','@nuxtjs/tailwindcss','nuxt-font-loader'],
   // Device config: https://github.com/nuxt-community/device-module
+  fontLoader: {
+    url: {
+      local: '/fonts/font.css',
+      google: 'https://fonts.googleapis.com/css?family=Work+Sans:wght@300|Open+Sans:wght@300',
+      custom: 'https://use.typekit.net/jpp6fch.css'
+    }
+  },
   device: {
     refreshOnResize: true
   },

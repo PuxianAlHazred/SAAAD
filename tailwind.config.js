@@ -41,6 +41,7 @@ module.exports = {
     colors: {
       black: colors.black,
       white: colors.white,
+      gray: colors.gray,
       transparent: 'transparent',
       current: 'currentColor',
     },
@@ -75,8 +76,10 @@ module.exports = {
         '5000': '5000ms',
       },
       fontFamily: {
-        'garamond': ['"EB Garamond"'],
-        'english': ['"IM Fell English"'],
+        'work': ['"Work Sans"'],
+        'open': ['"Open Sans"'],
+        'meno': ['"Meno Banner"'],
+        'hoefler': ['"Hoefler"'],
       }
     }
   },

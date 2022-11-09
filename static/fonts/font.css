@@ -1,0 +1,9 @@
+@font-face {
+    font-family:"Hoefler";
+    src: url('/fonts/hoefler_text-webfont.eot');
+    src: url("/fonts/hoefler_text-webfont.eot?#iefix") format("embedded-opentype"),
+         url("/fonts/hoefler_text-webfont.ttf") format("truetype"),
+         url("/fonts/hoefler_text-webfont.woff") format("woff"),
+         url("/fonts/hoefler_text-webfont.woff2") format("woff2"),
+         url("/fonts/hoefler_text-webfont.svg") format("svg");
+}

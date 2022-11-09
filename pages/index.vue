@@ -1,8 +1,11 @@
 <template>
-  <div>
-    <Projects-bumpEffect class="h-screen fixed top-0 left-0 w-screen"/>
-    <Date-listing class="pt-[100vh]" v-if="this.$store.state.preloading === false"/>
-  </div>
+  <main id="saaad-laboratory">
+        <projects-cover class=""/>
+        <main-works class=""/>
+        <main-lists class=""/>
+        <Ui-footer />
+
+  </main>
 </template>
 
 <script>
@@ -10,15 +13,21 @@
   export default {
     data: () => ({
     }),
+    transition: {
+        name: 'page',
+        mode: 'out-in',
+        enter() {
+          console.log( `%c SAAAD %c pages/index.vue %c 📄 Enter 🟢"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#000000 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
+        },
+        beforeLeave() {
+          console.log( `%c SAAAAD %c pages/index.vue %c 📄 beforeLeave 🔴"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#000000 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
+        }
+    },
     computed: {
     },
     methods: {
-      animateOnScroll() {
-
-      }
     },
     mounted() {
-      this.animateOnScroll();
     }
   }
 </script>
