@@ -8,7 +8,6 @@
 <style lang="postcss">
   main { @apply bg-black; }
   .frame {
-    width: calc(100% – 200px)!important;
     margin: 0 50px 0 150px;
   }
 </style>

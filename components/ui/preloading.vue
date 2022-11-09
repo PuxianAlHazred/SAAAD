@@ -144,6 +144,13 @@ export default {
     }
   },
   mounted() {
+
+    const audio = document.querySelector("#sound1");
+        audio.volume = 0;
+        audio.loop = true;
+        function pauseSound(){ audio.pause(); }
+
+
     this.$gsap.to('.onProgressBar', { width: "250", duration: 3 });
     this.$gsap.from('.textEnter', { y: "20", opacity:0 , delay: 3 });
     this.$gsap.to('#hold rect', { height: "0", opacity:0 , delay: 4 });
@@ -161,8 +168,9 @@ export default {
         setTimeout(() => { 
           GSAP.to('.preloader', { opacity: 0 , duration: 1 });
           animation.kill();
+          audio.play();
+          this.$gsap.to(audio, 1, {volume:0.5, onComplete:pauseSound} );
         }, "1000")
-
 
       }
     });
