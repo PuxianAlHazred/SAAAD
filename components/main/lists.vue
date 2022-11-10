@@ -11,7 +11,8 @@
 			</div>
 		</header>
     <div class="full-events">
-      <article data-debut="2022-11-26" data-fin="2022-11-26" data-collaboration="false" data-exhibition="false" data-liveset="true">
+      <!--2022-->
+      <article data-debut="2022-11-26" data-fin="2022-11-26" data-collaboration="false" data-exhibition="false" data-liveset="false">
         <div class="curtain"></div>
         <div class="date">
           <span>2022 NOV. 26</span>
@@ -25,7 +26,7 @@
         <div class="venue">Cyclic Law 20th Anniversary<br>@ Château H</div>
         <div class="info">+ Common Eider, King Eider + Ascending Divers + Den Sorte Død + Curse All Kings</div>
       </article>
-      <article data-debut="2022-10-29" data-fin="2022-10-29" data-collaboration="false" data-exhibition="true" data-liveset="true">
+      <article data-debut="2022-10-29" data-fin="2022-10-29" data-collaboration="false" data-exhibition="false" data-liveset="false">
         <div class="curtain"></div>
         <div class="date">
           <span>2022 OCT. 29</span>
@@ -39,7 +40,8 @@
         <div class="venue">☽ MAPA GALDUAK Festival ☾<br>@ Usopop</div>
         <div class="info"></div>
       </article>
-      <article data-debut="2021-12-04" data-fin="2021-12-04" data-collaboration="false" data-exhibition="true" data-liveset="true">
+      <!--2021-->
+      <article data-debut="2021-12-04" data-fin="2021-12-04" data-collaboration="false" data-exhibition="false" data-liveset="false">
         <div class="curtain"></div>
         <div class="date">
           <span>2021 DEC. 04</span>
@@ -53,7 +55,7 @@
         <div class="venue">Hands In The Dark Festival<br>@ Bains Douches Battant</div>
         <div class="info"></div>
       </article>
-      <article data-debut="2021-10-22" data-fin="2021-10-22" data-collaboration="false" data-exhibition="false" data-liveset="true">
+      <article data-debut="2021-10-22" data-fin="2021-10-22" data-collaboration="false" data-exhibition="false" data-liveset="false">
         <div class="curtain"></div>
         <div class="date">
           <span>2021 OCT. 22</span>
@@ -67,7 +69,7 @@
         <div class="venue">@ L'Ampérage</div>
         <div class="info">+ UBV76</div>
       </article>
-      <article data-debut="2021-10-14" data-fin="2021-10-14" data-collaboration="false" data-exhibition="false" data-liveset="true">
+      <article data-debut="2021-10-14" data-fin="2021-10-14" data-collaboration="false" data-exhibition="false" data-liveset="false">
         <div class="curtain"></div>
         <div class="date">
           <span>2021 OCT. 14</span>
@@ -81,6 +83,63 @@
         <div class="venue">Dans le Noir<br>@ DADA</div>
         <div class="info">+ Ascending Divers</div>
       </article>
+      <article data-debut="2021-08-07" data-fin="2021-08-07" data-collaboration="false" data-exhibition="false" data-liveset="false">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2021 AUG. 07</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">DIJON <div class="country"> FR </div></div>
+        <div class="venue">Festival MV<br>@ Église Saint-Philibert</div>
+        <div class="info">+ Hands In The Dark (Mix)</div>
+      </article>
+      <article data-debut="2021-07-09" data-fin="2021-07-09" data-collaboration="false" data-exhibition="false" data-liveset="false">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2021 JUL. 09</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">GIGORS & LOZERON <div class="country"> FR </div></div>
+        <div class="venue">@ La Sye Electric</div>
+        <div class="info">+ Hands In The Dark (Mix)</div>
+      </article>
+      <article data-debut="2021-04-17" data-fin="2021-04-17" data-collaboration="true" data-exhibition="true" data-liveset="false">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2021 APR. 17</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">LUXEMBOURG <div class="country"> LU </div></div>
+        <div class="venue">« L’Homme Gris » raconte<br>@ Casino Luxembourg</div>
+        <div class="info">« Secret Hell » in situ listening experience, part of « L’Homme Gris » exhibition curated by Benjamin Bianciotto. Collaborative installation with Élodie Lesourd + Stephen O' Malley + Aaron Turner + Saåad + Marnie Weber + Julien Langendorff & Lori Sean Berg + Sindre Foss Skancke + NVK + Cigvë + Neuromancienne + Édouard S. Lamothe</div>
+      </article>
+      <article data-debut="2021-02-15" data-fin="2021-03-26" data-collaboration="true" data-exhibition="true" data-liveset="false">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2021 FEB. 15<br> &gt; MAR. 26</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">ANTANANARIVO <div class="country"> MG </div></div>
+        <div class="venue">Christian Sanna's «Chère Embona» exhibition<br>@ Fondation H</div>
+        <div class="info">Notes For Embona audio & video installation in collaboration with Christian Sanna</div>
+      </article>
+      <!--2020-->
     </div>
   </section>
 </template>
@@ -155,9 +214,9 @@
           this.$gsap.to(curtain, {width: '0%' , height: '100%' , duration: 0.2, ease:"power2.inOut", delay: '0.'+i});  
 
           var assets = e.querySelector('.assets')
-          if(e.getAttribute('data-collaboration') === "false") { assets.querySelector('.collaboration').classList.toggle('hidden') } 
-          if(e.getAttribute('data-exhibition') === "false") { assets.querySelector('.exhibition').classList.toggle('hidden') } 
-          if(e.getAttribute('data-liveset') === "false") { assets.querySelector('.liveset').classList.toggle('hidden') } 
+          if(e.getAttribute('data-collaboration') === "true") { assets.querySelector('.collaboration').classList.toggle('hidden') } 
+          if(e.getAttribute('data-exhibition') === "true") { assets.querySelector('.exhibition').classList.toggle('hidden') } 
+          if(e.getAttribute('data-liveset') === "true") { assets.querySelector('.liveset').classList.toggle('hidden') } 
 
           var date = e.getAttribute('data-fin');
           var now = new Date();

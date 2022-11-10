@@ -1,5 +1,6 @@
 <template>
   <main id="saaad-laboratory">
+
         <projects-cover class=""/>
         <main-works class=""/>
         <main-lists class=""/>

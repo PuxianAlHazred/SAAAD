@@ -13,7 +13,7 @@
         <svg width="500" height="500" viewbox="0 0 500 500">
           <g id="hold">
             <text class="font-hoefler textIntro text-[100px]" x="250" y="275" fill="white" text-anchor="middle">Saaad</text>
-            <text class="font-work textEnter" x="250" y="300" fill="white" text-anchor="middle">Press to entrer</text>
+            <text class="font-work textEnter" x="250" y="300" fill="white" text-anchor="middle">Press 3s to entrer</text>
             <rect width="250" height="2" y="275" x="125" fill="#151515"/>
             <rect class="onProgressBar" width="0" height="2" y="275" x="125" fill="white"/>
             <circle cx="250" cy="250" r="200" stroke-width="2px" stroke="#151515" fill-opacity="0" />

@@ -83,7 +83,7 @@ export default {
             //scene.add( pointLightHelper );
 
             // Textures
-            const texture2 = new THREE.TextureLoader().load('/img/A-Crimson-Shore.jpg')
+            const texture2 = new THREE.TextureLoader().load('/img/мреть.jpg')
             const texture = new THREE.TextureLoader().load('/img/All-Lanes-Of-Lilac-Evening.jpg')
             texture.crossOrigin = 'anonymous';
             // Material
@@ -101,7 +101,7 @@ export default {
             let fov_y = camera.position.z * Math.tan(ang_rad / 2) * 2;
 
             // Plane
-            var mouseGeometry = new THREE.PlaneGeometry(fov_y * camera.aspect, fov_y * camera.aspect, 1000 );
+            var mouseGeometry = new THREE.PlaneGeometry(fov_y * camera.aspect, fov_y * camera.aspect, 2000 );
             var mouseMaterial = new THREE.MeshLambertMaterial({});
             mouseMesh = new THREE.Mesh(mouseGeometry, oldMaterial);
             mouseMesh.position.set(0, 0, 0);

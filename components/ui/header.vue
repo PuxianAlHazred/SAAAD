@@ -7,7 +7,7 @@
           <nuxt-link to="/events">EVENTS</nuxt-link>
         </nav>
         <div>
-          <svg id="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
+          <svg @click="toggleSound" id="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
             <path id="Line_1" data-name="Line 1" d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91Z"/>
             <path id="Line_2" data-name="Line 2" d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91Z"/>
             <path id="Line_3" data-name="Line 3" d="M12.91,0L12.78,0A1,1,0,0,0,12,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H12.91Z"/>
@@ -22,7 +22,7 @@
     </header>
 </template>
 <style lang="postcss" scooped>
-.main-header { @apply  pb-20 flex justify-between flex-col fixed items-center h-screen w-[150px] top-0 left-0 z-50}
+.main-header { @apply  py-20 flex justify-between flex-col fixed items-center h-screen w-[150px] top-0 left-0 z-50}
 a { @apply text-white ;}
 #wave {
   height: 25px;
@@ -131,6 +131,9 @@ a { @apply text-white ;}
       }
     },
     methods: {
+      toggleSound() {
+        this.$store.commit('tglMuted');
+      },
       afterEnter(el) {
         this.content = true
       },
@@ -141,6 +144,11 @@ a { @apply text-white ;}
       },
     },
     mounted() {
+    },
+    computed: {
+      isSoundEnabled() {
+        return this.$store.state.muted;
+      }
     }
   }
 </script>
