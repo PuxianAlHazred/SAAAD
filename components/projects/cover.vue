@@ -83,7 +83,7 @@ export default {
             //scene.add( pointLightHelper );
 
             // Textures
-            const texture2 = new THREE.TextureLoader().load('/img/мреть.jpg')
+            const texture2 = new THREE.TextureLoader().load('/img/pink-sabbath.jpg')
             const texture = new THREE.TextureLoader().load('/img/All-Lanes-Of-Lilac-Evening.jpg')
             texture.crossOrigin = 'anonymous';
             // Material

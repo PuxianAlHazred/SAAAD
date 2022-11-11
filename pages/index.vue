@@ -1,7 +1,7 @@
 <template>
   <main id="saaad-laboratory">
 
-        <projects-cover class=""/>
+        <!--<projects-cover class=""/>-->
         <main-works class=""/>
         <main-lists class=""/>
         <Ui-footer />
