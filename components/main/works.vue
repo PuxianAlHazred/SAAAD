@@ -175,7 +175,47 @@
           </svg>
         </article>        
         <!--2013-->
+        <article data-year="2013">
+          <div class="curtain"></div>
+          <img src="/img/The-Charnel-Ground.jpg"/>
+          <div class="year">2013</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound28">►</p>
+          <div class="title">The Charnel Ground</div>
+          <div class="info">[split album w/ Insiden]</div>
+          <div class="label">In Paradisum / BLWBCK</div>
+          <div class="format">cassette / digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article> 
+        <article data-year="2013">
+          <div class="curtain"></div>
+          <img src="/img/Solid-Clouds.jpg"/>
+          <div class="year">2013</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound28">►</p>
+          <div class="title">Στερεά Σύννεφα</div>
+          <div class="info">[album / remixes]</div>
+          <div class="label">BLWBCK</div>
+          <div class="format">cassette / digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article> 
+         <article data-year="2013">
+          <div class="curtain"></div>
+          <img src="/img/Orbs-Channels.jpg"/>
+          <div class="year">2013</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound28">►</p>
+          <div class="title">Orbs & Channels</div>
+          <div class="info">[album]</div>
+          <div class="label">Hands In The Dark</div>
+          <div class="format">cassette / digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article>  
         <!--2012-->
+        
         <!--2011-->
         <!--2010-->
         <article data-year="2010">
