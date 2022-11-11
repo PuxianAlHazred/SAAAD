@@ -285,7 +285,7 @@
        <article data-debut="2017-07-07" data-fin="2018-07-07" data-collaboration="false" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
         <div class="date">
-          <span>2018 JUL. 07</span>
+          <span>2017 JUL. 07</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
             <div class="exhibition  hidden"></div>
@@ -299,7 +299,7 @@
       <article data-debut="2017-05-19" data-fin="2018-05-19" data-collaboration="true" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
         <div class="date">
-          <span>2018 MAY 19</span>
+          <span>2017 MAY 19</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
             <div class="exhibition  hidden"></div>
@@ -314,7 +314,7 @@
       <article data-debut="2017-02-21" data-fin="2018-02-21" data-collaboration="false" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
         <div class="date">
-          <span>2018 FEB. 21</span>
+          <span>2017 FEB. 21</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
             <div class="exhibition  hidden"></div>
