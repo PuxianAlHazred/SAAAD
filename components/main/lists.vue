@@ -1,15 +1,15 @@
 <template>
   <section id="events" >
     <header class="events-head">
-			<h2>Events</h2>
-			<div class="events-nav">
+      <h2>Events</h2>
+      <div class="events-nav">
         <span class="all">VIEW ALL<br>EVENTS</span> 
         <span class="liveset">LIVE<br> SET</span> 
         <span class="exhibition">INSTALLATION<br>/ EXHIBITION  </span>
         <span class="collaboration">COLLABORATION<br>/ OTHER</span>
         <span class="booking">BOOKING</span>
-			</div>
-		</header>
+      </div>
+    </header>
     <div class="full-events">
       <!--2022-->
       <article data-debut="2022-11-26" data-fin="2022-11-26" data-collaboration="false" data-exhibition="false" data-liveset="true">
@@ -309,7 +309,7 @@
         <div class="city">ROTTERDAM <div class="country"> NL </div></div>
         <div class="venue">Klankvorm<br/>@ V2</div>
         <div class="info">with a visual performance by Klara Ravat<br/>
-	     + Joost Rekveld & Andrey Smirnov + Tijs Ham & Birk Nygaard</div>
+       + Joost Rekveld & Andrey Smirnov + Tijs Ham & Birk Nygaard</div>
       </article>  
       <article data-debut="2017-02-21" data-fin="2017-02-21" data-collaboration="false" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
@@ -567,7 +567,208 @@
         <div class="city">PARIS <div class="country"> FR </div></div>
         <div class="venue">Humanist SK Festival <br>@ Studio Campus</div>
         <div class="info">+ Hakobune + Beachers</div>
-      </article>                    
+      </article> 
+      <article data-debut="2014-06-04" data-fin="2014-06-04" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2014 JUN. 04</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">LONDON <div class="country"> UK </div></div>
+        <div class="venue">@ Servant Jazz Quarters</div>
+        <div class="info">+ Tomaga + Agathe Max</div>
+      </article> 
+      <article data-debut="2014-04-14" data-fin="2014-04-14" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2014 JUN. 14</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">PARIS <div class="country"> FR </div></div>
+        <div class="venue">@ La Flèche d'Or</div>
+        <div class="info">+ Death & Vanilla + Mayerling</div>
+      </article> 
+      <article data-debut="2014-02-08" data-fin="2014-02-08" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2014 FEB. 08</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">BIARRITZ <div class="country"> FR </div></div>
+        <div class="venue">@ Atabal</div>
+        <div class="info">+ Scott Kelly & The Road Home + Radhammers</div>
+      </article>     
+      <!-- 2013 -->
+      <article data-debut="2013-10-23" data-fin="2013-10-23" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2013 OCT. 23</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">@ Saint des Seins</div>
+        <div class="info">+ Robedoor + Holy Strays + Cankun</div>
+      </article> 
+      <article data-debut="2013-08-30" data-fin="2013-08-30" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2013 AUG. 30</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">PARIS <div class="country"> FR </div></div>
+        <div class="venue">@ Glazart Plage</div>
+        <div class="info">+ Somatica + Fl/or</div>
+      </article> 
+      <article data-debut="2013-06-29" data-fin="2013-06-29" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2013 JUN. 29</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">LE SAIX <div class="country"> FR </div></div>
+        <div class="venue">Echos Festival <br>@ Le Faï</div>
+        <div class="info">+ Insiden + Yann Gourdon + Tamagawa + Cascade + Antez</div>
+      </article> 
+      <article data-debut="2013-01-27" data-fin="2013-01-27" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2013 JAN. 27</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">@ Saint des Seins</div>
+        <div class="info">+ Zombi Zombi + Etienne Jaumet</div>
+      </article>   
+      <!-- 2012 -->
+      <article data-debut="2012-10-29" data-fin="2012-10-29" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2012 OCT. 29</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">@ La Dynamo</div>
+        <div class="info">+ Barn Owl + Sunshine Parker</div>
+      </article> 
+      <article data-debut="2012-07-22" data-fin="2012-07-22" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2012 JUL. 22</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">Festival Toulouse d'Été<br>@ Fontaine St-Michel</div>
+        <div class="info">«Confluences» (live)</div>
+      </article>  
+      <article data-debut="2012-06-28" data-fin="2012-06-28" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2012 JUN. 28</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">Festival Les Siestes Électroniques<br>@ Jardin Compans Caffarelli</div>
+        <div class="info">+ James Blackshaw + Morphosis + Matthew Friedberger + Kassem Mosse</div>
+      </article>  
+      <article data-debut="2012-05-31" data-fin="2012-05-31" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2012 MAY 31</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">Les Week-Ends de l'Art Contemporain<br>@ Espace Croix-Baragnon</div>
+        <div class="info"></div>
+      </article>
+      <article data-debut="2012-05-30" data-fin="2012-05-30" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2012 MAY 30</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">@ Saint des Seins</div>
+        <div class="info">+ Wolves In The Throne Room</div>
+      </article>
+      <article data-debut="2012-03-23" data-fin="2012-03-23" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2012 MAR. 23</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">@ Mix Art Myris</div>
+        <div class="info">+  Nadja + Off The Radar + Spleendrinker's Project</div>
+      </article>
+      <!-- 2011 -->
+      <article data-debut="2011-10-05" data-fin="2011-10-05" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2011 OCT. 05</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">@ Auditorium Bellegarde</div>
+        <div class="info">+ Tim Hecker</div>
+      </article>
+
+
 </div>
   </section>
 </template>
@@ -659,7 +860,7 @@
             scrollTrigger: {
                 trigger: e,
                 start: "center bottom",
-					    	end: "center top",
+                end: "center top",
                 invalidateOnRefresh: true,
                 anticipatePin: 1,
                 scrub: true,
@@ -679,7 +880,7 @@
             }
             }).fromTo(e, {  y: 0, opacity: 1, ease: "power2.inOut"}, {  y: 0, opacity: 1, ease: "power2.inOut"});
           });
-		  }
+      }
     },
     mounted() {
       this.scrollAnimation();
