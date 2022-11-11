@@ -380,7 +380,7 @@
         </div>
         <div class="city">ST-MALO <div class="country"> FR </div></div>
         <div class="venue">Festival La Route du Rock Hiver<br>@ Chapelle Saint-Sauveur</div>
-        <div class="info">«Spero Lucem »(a collaborative live performance with Mondkopf & Somaticae)
+        <div class="info">«Spero Lucem» (a collaborative live performance with Mondkopf & Somaticae)
         + Pye Corner Audio</div>
       </article> 
        <article data-debut="2016-02-12" data-fin="2016-02-12" data-collaboration="true" data-exhibition="false" data-liveset="true">
@@ -409,10 +409,67 @@
         </div>
         <div class="city">PARIS <div class="country"> FR </div></div>
         <div class="venue">Biennale Némo<br>@ Église Saint-Merri</div>
-        <div class="info">«Spero Lucem »(a collaborative live performance with Mondkopf & Somaticae)
+        <div class="info">«Spero Lucem» (a collaborative live performance with Mondkopf & Somaticae)
         + thisquietarmy</div>
       </article>  
-      <!-- 2015 -->                 
+      <!-- 2015 -->  
+      <article data-debut="2015-09-20" data-fin="2015-09-20" data-collaboration="true" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2015 SEP. 20</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">@ Connexion Café</div>
+        <div class="info">live collaboration with Oiseaux-Tempête<br/> + Orme</div>
+      </article>   
+      <article data-debut="2015-09-10" data-fin="2015-09-10" data-collaboration="true" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2016 SEP. 10</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">@ Théâtre des Mazades</div>
+        <div class="info">«Tattoo» (live soundtrack)</div>
+      </article>  
+      <article data-debut="2015-06-29" data-fin="2015-06-29" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2016 JUN. 29</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">Festival Les Siestes Électroniques <br>@ Jardin Compans-Caffarelli</div>
+        <div class="info">«Verdaillon» (live)<br/>+ Tasseomancy</div>
+      </article>  
+      <article data-debut="2015-05-14" data-fin="2015-05-14" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2016 MAY 14</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">LYON <div class="country"> FR </div></div>
+        <div class="venue">Festival Les Nuit Sonores <br>@ Le Sonic</div>
+        <div class="info">+ Somaticae + Plein Soleil + Le Chasseur + Helden</div>
+      </article>  
+      <!-- 2014 -->                      
 </div>
   </section>
 </template>
