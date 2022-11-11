@@ -122,8 +122,8 @@
           </div>
         </div>
         <div class="city">LUXEMBOURG <div class="country"> LU </div></div>
-        <div class="venue">« L’Homme Gris » raconte<br>@ Casino Luxembourg</div>
-        <div class="info">« Secret Hell » in situ listening experience, part of « L’Homme Gris » exhibition curated by Benjamin Bianciotto. Collaborative installation with Élodie Lesourd + Stephen O' Malley + Aaron Turner + Saåad + Marnie Weber + Julien Langendorff & Lori Sean Berg + Sindre Foss Skancke + NVK + Cigvë + Neuromancienne + Édouard S. Lamothe</div>
+        <div class="venue">«L’Homme Gris» raconte<br>@ Casino Luxembourg</div>
+        <div class="info">«Secret Hell» in situ listening experience, part of «L’Homme Gris» exhibition curated by Benjamin Bianciotto. Collaborative installation with Élodie Lesourd + Stephen O' Malley + Aaron Turner + Saåad + Marnie Weber + Julien Langendorff & Lori Sean Berg + Sindre Foss Skancke + NVK + Cigvë + Neuromancienne + Édouard S. Lamothe</div>
       </article>
       <article data-debut="2021-02-15" data-fin="2021-03-26" data-collaboration="true" data-exhibition="true" data-liveset="false">
         <div class="curtain"></div>
@@ -237,8 +237,94 @@
         </div>
         <div class="city">TOULOUSE <div class="country"> FR </div></div>
         <div class="venue">Le Printemps de Septembre<br>@ Le Lieu Commun</div>
-        <div class="info">"Diminished Finlucier" a live performance with Élodie Lesourd, Romain Barbot & Benjamin Bianciotto</div>
-      </article>        
+        <div class="info">«Diminished Finlucier» a live performance with Élodie Lesourd, Romain Barbot & Benjamin Bianciotto</div>
+      </article>  
+      <article data-debut="2018-09-13" data-fin="2018-09-13" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2018 SEP. 13</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">Electro Alternativ Festival<br>@ Le Rex</div>
+        <div class="info">+ LAAKE</div>
+      </article> 
+       <article data-debut="2018-08-25" data-fin="2018-08-25" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2018 AUG. 25</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">UZÈS <div class="country"> FR </div></div>
+        <div class="venue">Les Courants Alternatifs Festival<br>@ Le Grand Mas</div>
+        <div class="info">+ Johan Papaconstantino + Saint DX + Miel de Montagne + René Danger + Pardonnez-Nous + Le Camion Bazar</div>
+      </article> 
+       <article data-debut="2018-05-23" data-fin="2018-05-23" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2018 MAY 23</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">VALLESVILLES <div class="country"> FR </div></div>
+        <div class="venue">@ La Mami</div>
+        <div class="info">+ Bitchin Bajas + Hinterheim</div>
+      </article> 
+      <!-- 2017 -->
+       <article data-debut="2017-07-07" data-fin="2018-07-07" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2018 JUL. 07</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">ST-CYPRIEN <div class="country"> FR </div></div>
+        <div class="venue">Festival Hydraphonies II<br/>@ Église de St-Cyprien</div>
+        <div class="info"></div>
+      </article> 
+      <article data-debut="2017-05-19" data-fin="2018-05-19" data-collaboration="true" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2018 MAY 19</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">ROTTERDAM <div class="country"> NL </div></div>
+        <div class="venue">Klankvorm<br/>@ V2</div>
+        <div class="info">with a visual performance by Klara Ravat<br/>
+	+ Joost Rekveld & Andrey Smirnov + Tijs Ham & Birk Nygaard</div>
+      </article>  
+      <article data-debut="2017-02-21" data-fin="2018-02-21" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2018 FEB. 21</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">PARIS <div class="country"> NL </div></div>
+        <div class="venue">@ Petit Bain</div>
+        <div class="info">+ Mondkopf + December</div>
+      </article>   
 </div>
   </section>
 </template>
