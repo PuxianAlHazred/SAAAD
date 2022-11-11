@@ -155,7 +155,7 @@
           <div class="title">Different Streams <em><small>w/</small> EUS & Postdrome</em></div>
           <div class="info">[album]</div>
           <div class="label">Soft Rec. / Grains Of Sand</div>
-          <div class="format">CD/ cassette / digital</div>
+          <div class="format">CD / cassette / digital</div>
           <svg height="50" width="100vw">
             <line x1="0" y1="24" x2="100%" y2="26"/>
           </svg>
@@ -215,8 +215,138 @@
           </svg>
         </article>  
         <!--2012-->
-        
+         
+        <article data-year="2012">
+          <div class="curtain"></div>
+          <img src="/img/Confluences.jpg"/>
+          <div class="year">2012</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound28">►</p>
+          <div class="title">Confluences</div>
+          <div class="info">[album]</div>
+          <div class="label">BLWBCK</div>
+          <div class="format">cassette / digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article>
+        <article data-year="2012">
+          <div class="curtain"></div>
+          <img src="/img/Sustained-Layers.jpg"/>
+          <div class="year">2012</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <div class="title">Sustained Layers <em><small>w/</small> EUS & Postdrome</em></div>
+          <div class="info">[album]</div>
+          <div class="label">BLWBCK</div>
+          <div class="format">cassette / digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article>
+        <article data-year="2012">
+          <div class="curtain"></div>
+          <img src="/img/Heat-Death.jpg"/>
+          <div class="year">2012</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <div class="title">For Small Creatures Such As We...</div>
+          <div class="info">[5-ways split]</div>
+          <div class="label">Heat Death</div>
+          <div class="format">miniCD boxset</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article> 
         <!--2011-->
+        <article data-year="2011">
+          <div class="curtain"></div>
+          <img src="/img/Delayed-Summer.jpg"/>
+          <div class="year">2011</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <div class="title">Delayed Summer</div>
+          <div class="info">[album]</div>
+          <div class="label">BLWBCK</div>
+          <div class="format">cassette digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article>
+        <article data-year="2011">
+          <div class="curtain"></div>
+          <img src="/img/Forget-Our-Debts.jpg"/>
+          <div class="year">2011</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <div class="title">Forget Our Debts</div>
+          <div class="info">[v/a Sequence 2]</div>
+          <div class="label">Future Sequence</div>
+          <div class="format">compilation / digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article>
+        <article data-year="2011">
+          <div class="curtain"></div>
+          <img src="/img/Arty-Empty.jpg"/>
+          <div class="year">2011</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <div class="title">Pink Sabbath / Raincoats</div>
+          <div class="info">[EP x 2]</div>
+          <div class="label">Arty Empty</div>
+          <div class="format">cassette</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article> 
+        <article data-year="2011">
+          <div class="curtain"></div>
+          <img src="/img/Snowbound.jpg"/>
+          <div class="year">2011</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <div class="title">Snowbound / I Miss You</div>
+          <div class="info">[single x 2]</div>
+          <div class="label">BLWBCK / La Moustacherie</div>
+          <div class="format">street USB / digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article> 
+        <article data-year="2011">
+          <div class="curtain"></div>
+          <img src="/img/Recovery-Wish.jpg"/>
+          <div class="year">2011</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <div class="title">A Recovery Wish</div>
+          <div class="info">[single]</div>
+          <div class="label">Feedbackloop</div>
+          <div class="format">digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article> 
+        <article data-year="2011">
+          <div class="curtain"></div>
+          <img src="/img/Raincoats.jpg"/>
+          <div class="year">2011</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <div class="title">Raincoats</div>
+          <div class="info">[EP]</div>
+          <div class="label">BLWBCK</div>
+          <div class="format">digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article>
+        <article data-year="2011">
+          <div class="curtain"></div>
+          <img src="/img/Pink-Sabbath.jpg"/>
+          <div class="year">2011</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <div class="title">Pink Sabbath</div>
+          <div class="info">[EP]</div>
+          <div class="label">BLWBCK</div>
+          <div class="format">digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article>      
         <!--2010-->
         <article data-year="2010">
           <div class="curtain"></div>
@@ -314,6 +444,15 @@
           <div class="year">2014</div>
           <div class="title">We Must Remain The Wildhearted Outsiders<em> <small>by</small> Chase Lisbon</em></div>
           <div class="label">Monolake Media</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26" style="stroke:rgb(255,255,255)!important;" />
+          </svg>
+        </article>
+        <article data-year="2011">
+          <div class="curtain"></div>
+          <div class="year">2011</div>
+          <div class="title">L'Ambianceur<em> <small>by</small> As Human Pattern</em></div>
+          <div class="label">/</div>
           <svg height="50" width="100vw">
             <line x1="0" y1="24" x2="100%" y2="26" style="stroke:rgb(255,255,255)!important;" />
           </svg>
