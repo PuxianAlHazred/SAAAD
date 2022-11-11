@@ -430,7 +430,7 @@
       <article data-debut="2015-09-10" data-fin="2015-09-10" data-collaboration="true" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
         <div class="date">
-          <span>2016 SEP. 10</span>
+          <span>2015 SEP. 10</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
             <div class="exhibition  hidden"></div>
@@ -444,7 +444,7 @@
       <article data-debut="2015-06-29" data-fin="2015-06-29" data-collaboration="false" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
         <div class="date">
-          <span>2016 JUN. 29</span>
+          <span>2015 JUN. 29</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
             <div class="exhibition  hidden"></div>
@@ -458,7 +458,7 @@
       <article data-debut="2015-05-14" data-fin="2015-05-14" data-collaboration="false" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
         <div class="date">
-          <span>2016 MAY 14</span>
+          <span>2015 MAY 14</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
             <div class="exhibition  hidden"></div>
@@ -469,7 +469,105 @@
         <div class="venue">Festival Les Nuit Sonores <br>@ Le Sonic</div>
         <div class="info">+ Somaticae + Plein Soleil + Le Chasseur + Helden</div>
       </article>  
-      <!-- 2014 -->                      
+      <!-- 2014 -->  
+      <article data-debut="2014-11-15" data-fin="2014-11-15" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2014 NOV. 15</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">MOSCOW <div class="country"> RU </div></div>
+        <div class="venue">@ Dewar's Powerhouse</div>
+        <div class="info">+ Creation VI + Renat Da Capo</div>
+      </article> 
+      <article data-debut="2014-11-14" data-fin="2014-11-14" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2014 NOV. 14</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">ST-PETERSBURG <div class="country"> RU </div></div>
+        <div class="venue">@ Dada</div>
+        <div class="info">+ ТРОПѦ</div>
+      </article>  
+      <article data-debut="2014-10-11" data-fin="2014-10-11" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2014 OCT. 11</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">Festival Toulouse les Orgues<br>@ Hôtel Dieu</div>
+        <div class="info">«Verdaillon» (live)</div>
+      </article> 
+      <article data-debut="2014-04-23" data-fin="2014-08-04" data-collaboration="true" data-exhibition="true" data-liveset="false">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2014 APR. 14<br> &gt; AUG. 04</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">ARLINGTON <div class="country"> US (VA) </div></div>
+        <div class="venue">«Fermata» exhibition<br>@ Artisphere</div>
+        <div class="info">collective sound installation + Ryuichi Sakamoto + Don Zientara & Ian MacKaye + Jarboe + Lawrence English + Forest Swords + Jez Riley French + The Books + Lucianne Walkowicz + Alvin Lucier + CFCF + Annea Lockwood + Eddie Ruscha + Toni Dimitrov + The London Sound Survey + Francisco Lopèz + Salomè Voegelin + David Mollin  + Richard Chartier + Peals + Alberto Gaitán + Brian McBride + Kate Carr + Christine Sun Kim + Specta Ciera + Beauty Pill + Scarfolk Council + Markus Guentner + John Henry Blatter + Nathan Tersteeg Wool</div>
+      </article>  
+      <article data-debut="2014-07-29" data-fin="2014-07-29" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2014 JUL. 29</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">@ Le Metronum</div>
+        <div class="info">+ Chelsea Wolfe</div>
+      </article>
+      <article data-debut="2014-07-12" data-fin="2014-07-12" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2014 JUL. 12</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">RIMONT <div class="country"> FR </div></div>
+        <div class="venue">@ Tunnel de Rimont</div>
+        <div class="info"></div>
+      </article>
+      <article data-debut="2014-06-14" data-fin="2014-06-14" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2014 JUN. 14</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">PARIS <div class="country"> FR </div></div>
+        <div class="venue">Humanist SK Festival <br>@ Studio Campus</div>
+        <div class="info">+ Hakobune + Beachers</div>
+      </article>                    
 </div>
   </section>
 </template>
