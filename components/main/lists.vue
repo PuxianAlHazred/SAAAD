@@ -309,7 +309,7 @@
         <div class="city">ROTTERDAM <div class="country"> NL </div></div>
         <div class="venue">Klankvorm<br/>@ V2</div>
         <div class="info">with a visual performance by Klara Ravat<br/>
-	+ Joost Rekveld & Andrey Smirnov + Tijs Ham & Birk Nygaard</div>
+	     + Joost Rekveld & Andrey Smirnov + Tijs Ham & Birk Nygaard</div>
       </article>  
       <article data-debut="2017-02-21" data-fin="2017-02-21" data-collaboration="false" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
@@ -321,10 +321,98 @@
             <div class="collaboration  hidden"></div>
           </div>
         </div>
-        <div class="city">PARIS <div class="country"> NL </div></div>
+        <div class="city">PARIS <div class="country"> FR </div></div>
         <div class="venue">@ Petit Bain</div>
         <div class="info">+ Mondkopf + December</div>
+      </article>  
+      <!-- 2016 -->
+      <article data-debut="2016-05-21" data-fin="2016-05-21" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2016 MAY. 21</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">RODEZ <div class="country"> FR </div></div>
+        <div class="venue">Nuit Européenne des Musées<br>@ Musée Fenaille</div>
+        <div class="info">+ Naïm Armor</div>
+      </article>
+      <article data-debut="2016-03-23" data-fin="2016-03-23" data-collaboration="true" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2016 MAR. 23</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">Festival International de la Danse Contemporaine<br>@ CDC</div>
+        <div class="info">«Tattoo» (live soundtrack)</div>
       </article>   
+      <article data-debut="2016-03-22" data-fin="2016-03-22" data-collaboration="true" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2016 MAR. 22</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">Festival International de la Danse Contemporaine<br>@ CDC</div>
+        <div class="info">«Tattoo» (live soundtrack)</div>
+      </article> 
+      <article data-debut="2016-02-28" data-fin="2016-02-28" data-collaboration="true" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2016 FEB. 28</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">ST-MALO <div class="country"> FR </div></div>
+        <div class="venue">Festival La Route du Rock Hiver<br>@ Chapelle Saint-Sauveur</div>
+        <div class="info">«Spero Lucem »(a collaborative live performance with Mondkopf & Somaticae)
+        + Pye Corner Audio</div>
+      </article> 
+       <article data-debut="2016-02-12" data-fin="2016-02-12" data-collaboration="true" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2016 FEB. 12</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">@ Mix Art Myris</div>
+        <div class="info">«Tattoo» (live soundtrack)</div>
+      </article> 
+      <article data-debut="2016-01-28" data-fin="2016-01-28" data-collaboration="true" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2016 JAN. 28</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">PARIS <div class="country"> FR </div></div>
+        <div class="venue">Biennale Némo<br>@ Église Saint-Merri</div>
+        <div class="info">«Spero Lucem »(a collaborative live performance with Mondkopf & Somaticae)
+        + thisquietarmy</div>
+      </article>  
+      <!-- 2015 -->                 
 </div>
   </section>
 </template>
