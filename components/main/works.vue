@@ -2,28 +2,13 @@
   <section id="works" >
     <div class="disco-works">
       <header class="works-head sticky top-0">
-			  <h2>Discography</h2>
+        <h2>Discography</h2>
         <div class="disco-nav">
           <span class="grid ml-2" v-on:click="layoutDisco = 'grid'"> Grid </span> 
           <span class="list" v-on:click="layoutDisco = 'list'"> List </span> 
         </div>
-		  </header>
+      </header>
       <div :class="['full-disco', { 'layoutList' : layoutDisco === 'list', 'layoutGrid' : layoutDisco === 'grid' }]">
-        <!--2023-->
-        <article data-year="2023" class="pixelateMin">
-          <div class="curtain"></div>
-          <img src="/img/A-Crimson-Shore.jpg"/>
-          <div class="year">2023</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer" @click="playSoundIntro">►</p>
-          <div class="title">A Crimson Shore</div>
-          <div class="info">[album]</div>
-          <div class="label">/</div>
-          <div class="format">vinyl / CD / digital</div>
-          <svg height="50" width="100vw" class="">
-            <line x1="0" y1="24" x2="100%" y2="26"/>
-          </svg>
-        </article>
-        <!--2022-->
         <!--2021-->
         <article data-year="2021">
           <div class="curtain"></div>
@@ -40,7 +25,7 @@
         </article>
         <article data-year="2021">
           <div class="curtain"></div>
-          <img src="/img/Secret-hell.png"/>
+          <img src="/img/Secret-Hell.jpg"/>
           <div class="year">2021</div>
           <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound26">►</p>
 
@@ -99,7 +84,6 @@
           <img src="/img/мреть.jpg"/>
           <div class="year">2019</div>
           <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound22">►</p>
-
           <div class="title">мреть<em> <small>as</small> Saáadon</em></div>
           <div class="info">[EP]</div>
           <div class="label">Grains Of Sand</div>
@@ -113,8 +97,7 @@
           <div class="curtain"></div>
           <img src="/img/Orbs-And-Channels-RE.jpg"/>
           <div class="year">2018</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound21">►</p>
-
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound23">►</p>
           <div class="title">Orbs & Channels</div>
           <div class="info">[remastered album]</div>
           <div class="label">Nahal Recordings</div>
@@ -123,10 +106,74 @@
             <line x1="0" y1="24" x2="100%" y2="26"/>
           </svg>
         </article>
-        <!--2017-->
+        <article data-year="2018">
+          <div class="curtain"></div>
+          <img src="/img/Presence-Absente.jpg"/>
+          <div class="year">2018</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound24">►</p>
+          <div class="title">Présence Absente</div>
+          <div class="info">[album]</div>
+          <div class="label">Hands In The Dark</div>
+          <div class="format">vinyl / digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article>
         <!--2016-->
+        <article data-year="2016">
+          <div class="curtain"></div>
+          <img src="/img/Verdaillon.jpg"/>
+          <div class="year">2016</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound25">►</p>
+          <div class="title">Verdaillon</div>
+          <div class="info">[album]</div>
+          <div class="label">In Paradisum</div>
+          <div class="format">vinyl / digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article>
         <!--2015-->
+        <article data-year="2015">
+          <div class="curtain"></div>
+          <img src="/img/Delayed-Summer.jpg"/>
+          <div class="year">2015</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound26">►</p>
+          <div class="title">Delayed Summer</div>
+          <div class="info">[remastered album]</div>
+          <div class="label">Grains Of Sand / BLWBCK</div>
+          <div class="format">vinyl</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article>
+        <article data-year="2015">
+          <div class="curtain"></div>
+          <img src="/img/Different-Streams.jpg"/>
+          <div class="year">2015</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <div class="title">Different Streams <em><small>w/</small> EUS & Postdrome</em></div>
+          <div class="info">[album]</div>
+          <div class="label">Soft Rec. / Grains Of Sand</div>
+          <div class="format">CD/ cassette / digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article>
         <!--2014-->
+        <article data-year="2014">
+          <div class="curtain"></div>
+          <img src="/img/Deep-Float.jpg"/>
+          <div class="year">2015</div>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound28">►</p>
+          <div class="title">Deep / Float</div>
+          <div class="info">[album]</div>
+          <div class="label">Hands In The Dark</div>
+          <div class="format">vinyl / digital</div>
+          <svg height="50" width="100vw">
+            <line x1="0" y1="24" x2="100%" y2="26"/>
+          </svg>
+        </article>        
         <!--2013-->
         <!--2012-->
         <!--2011-->
@@ -136,7 +183,6 @@
           <img src="/img/it-was.jpg"/>
           <div class="year">2010</div>
           <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound20">►</p>
-
           <div class="title">It Was</div>
           <div class="info">[album]</div>
           <div class="label">Lacrymal Rec. / BLWBCK</div>
@@ -150,8 +196,8 @@
 
     <div class="ost-works">
       <header class="works-head">
-			  <h2>Original Soundtracks</h2>
-		  </header>
+        <h2>Original Soundtracks</h2>
+      </header>
       <div class="full-ost">
         <article data-year="2022">
           <div class="curtain"></div>
@@ -211,8 +257,8 @@
     </div>
     <div class="st-works">
       <header class="works-head">
-			  <h2>Soundtracks</h2>
-		  </header>
+        <h2>Soundtracks</h2>
+      </header>
       <div class="full-ost">
         <article data-year="2021">
           <div class="curtain"></div>
@@ -236,8 +282,8 @@
     </div>
     <div class="appear-works">
       <header class="works-head sticky top-0">
-			  <h2>Appearances & Remixes</h2>
-		  </header>
+        <h2>Appearances & Remixes</h2>
+      </header>
       <div class="full-disco">
         <article data-year="2020">
           <div class="curtain"></div>
@@ -374,7 +420,7 @@
             scrollTrigger: {
                 trigger: e,
                 start: "center bottom",
-					    	end: "center top",
+                end: "center top",
                 invalidateOnRefresh: true,
                 anticipatePin: 1,
                 scrub: true,
@@ -394,7 +440,7 @@
             }
           }).fromTo(e, {  y: 0, opacity: 1, ease: "power2.inOut"}, {  y: 0, opacity: 1, ease: "power2.inOut"});
         });
-		  },
+      },
       playSoundIntro() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
       playSound1() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
       playSound2() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
