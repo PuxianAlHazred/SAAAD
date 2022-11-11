@@ -12,7 +12,7 @@
 		</header>
     <div class="full-events">
       <!--2022-->
-      <article data-debut="2022-11-26" data-fin="2022-11-26" data-collaboration="false" data-exhibition="false" data-liveset="false">
+      <article data-debut="2022-11-26" data-fin="2022-11-26" data-collaboration="false" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
         <div class="date">
           <span>2022 NOV. 26</span>
@@ -26,7 +26,7 @@
         <div class="venue">Cyclic Law 20th Anniversary<br>@ Château H</div>
         <div class="info">+ Common Eider, King Eider + Ascending Divers + Den Sorte Død + Curse All Kings</div>
       </article>
-      <article data-debut="2022-10-29" data-fin="2022-10-29" data-collaboration="false" data-exhibition="false" data-liveset="false">
+      <article data-debut="2022-10-29" data-fin="2022-10-29" data-collaboration="false" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
         <div class="date">
           <span>2022 OCT. 29</span>
@@ -41,7 +41,7 @@
         <div class="info"></div>
       </article>
       <!--2021-->
-      <article data-debut="2021-12-04" data-fin="2021-12-04" data-collaboration="false" data-exhibition="false" data-liveset="false">
+      <article data-debut="2021-12-04" data-fin="2021-12-04" data-collaboration="false" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
         <div class="date">
           <span>2021 DEC. 04</span>
@@ -55,7 +55,7 @@
         <div class="venue">Hands In The Dark Festival<br>@ Bains Douches Battant</div>
         <div class="info"></div>
       </article>
-      <article data-debut="2021-10-22" data-fin="2021-10-22" data-collaboration="false" data-exhibition="false" data-liveset="false">
+      <article data-debut="2021-10-22" data-fin="2021-10-22" data-collaboration="false" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
         <div class="date">
           <span>2021 OCT. 22</span>
@@ -69,7 +69,7 @@
         <div class="venue">@ L'Ampérage</div>
         <div class="info">+ UBV76</div>
       </article>
-      <article data-debut="2021-10-14" data-fin="2021-10-14" data-collaboration="false" data-exhibition="false" data-liveset="false">
+      <article data-debut="2021-10-14" data-fin="2021-10-14" data-collaboration="false" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
         <div class="date">
           <span>2021 OCT. 14</span>
@@ -83,7 +83,7 @@
         <div class="venue">Dans le Noir<br>@ DADA</div>
         <div class="info">+ Ascending Divers</div>
       </article>
-      <article data-debut="2021-08-07" data-fin="2021-08-07" data-collaboration="false" data-exhibition="false" data-liveset="false">
+      <article data-debut="2021-08-07" data-fin="2021-08-07" data-collaboration="false" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
         <div class="date">
           <span>2021 AUG. 07</span>
@@ -97,7 +97,7 @@
         <div class="venue">Festival MV<br>@ Église Saint-Philibert</div>
         <div class="info">+ Hands In The Dark (Mix)</div>
       </article>
-      <article data-debut="2021-07-09" data-fin="2021-07-09" data-collaboration="false" data-exhibition="false" data-liveset="false">
+      <article data-debut="2021-07-09" data-fin="2021-07-09" data-collaboration="false" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
         <div class="date">
           <span>2021 JUL. 09</span>
@@ -140,7 +140,106 @@
         <div class="info">Notes For Embona audio & video installation in collaboration with Christian Sanna</div>
       </article>
       <!--2020-->
-    </div>
+      <article data-debut="2020-12-15" data-fin="2020-12-15" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2020 DEC. 15</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">LA CHAISE-DIEU <div class="country"> FR </div></div>
+        <div class="venue">@ Amphithéâtre Cziffra</div>
+        <div class="info">Sphinx Original Soundtrack (Live) + Stéphane Fuget, Les Épopées & Tito González García</div>
+     </article>
+     <article data-debut="2020-12-02" data-fin="2021-01-23" data-collaboration="true" data-exhibition="true" data-liveset="false">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2020 DEC. 02<br>&gt; 2021 JAN. 23</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">PARIS <div class="country"> FR </div></div>
+        <div class="venue">Christian Sanna's «Lettres à Embona» exhibition @ Fondation H</div>
+        <div class="info">Notes For Embona audio & video installation in collaboration with Christian Sanna</div>
+      </article>
+      <article data-debut="2020-09-11" data-fin="2020-09-12" data-collaboration="false" data-exhibition="true" data-liveset="false">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2020 SEP. 11<br>&gt; SEP. 12</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">Les Journées du Patrimoine <br>@ Le Metronum</div>
+        <div class="info">«Prepared Oasis» Multi channels audio & video installation</div>
+      </article>
+      <!-- 2018 -->
+      <article data-debut="2018-11-15" data-fin="2018-11-15" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2018 NOV. 15</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">BREST <div class="country"> FR </div></div>
+        <div class="venue">Festival Invisible <br>@ Passerelle Centre d'Art Contemporain</div>
+        <div class="info">+ Thomas Poli</div>
+      </article>
+      <article data-debut="2018-11-01" data-fin="2018-11-01" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2018 NOV. 01</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">NANTES <div class="country"> FR </div></div>
+        <div class="venue">Soy Festival<br>@ Muséum d'Histoire Naturelle</div>
+        <div class="info">+ Anne Müller</div>
+      </article>    
+      <article data-debut="2018-10-31" data-fin="2018-10-31" data-collaboration="false" data-exhibition="false" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2018 OCT. 31</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">RENNES <div class="country"> FR </div></div>
+        <div class="venue">@ Le Terminus</div>
+        <div class="info">+ Partout Partout + Descendeur</div>
+      </article>  
+      <article data-debut="2018-09-21" data-fin="2018-09-21" data-collaboration="true" data-exhibition="true" data-liveset="true">
+        <div class="curtain"></div>
+        <div class="date">
+          <span>2018 SEP. 21</span>
+          <div class="assets">
+            <div class="liveset  hidden"></div>
+            <div class="exhibition  hidden"></div>
+            <div class="collaboration  hidden"></div>
+          </div>
+        </div>
+        <div class="city">TOULOUSE <div class="country"> FR </div></div>
+        <div class="venue">Le Printemps de Septembre<br>@ Le Lieu Commun</div>
+        <div class="info">"Diminished Finlucier" a live performance with Élodie Lesourd, Romain Barbot & Benjamin Bianciotto</div>
+      </article>        
+</div>
   </section>
 </template>
 <style lang="postcss">
