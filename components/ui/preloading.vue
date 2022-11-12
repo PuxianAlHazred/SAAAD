@@ -165,6 +165,8 @@ export default {
       paused: true,
       onComplete: function() {
         hold.removeEventListener("mouseup", reverseAnimation);
+        hold.removeEventListener("touchstart", reverseAnimation);
+
         animation.to('#progress', {filter: 'url(#pixelateMin)', stroke:"white"});
         setTimeout(() => { 
           GSAP.to('.preloader', { opacity: 0, display: "none", duration: 1 });
@@ -176,10 +178,10 @@ export default {
       }
     });
     animation.to( '#progress', { strokeDashoffset: "0", duration: 3 });
-    hold.addEventListener("mousedown", function() { 
-      animation.play(); 
-    });
+    hold.addEventListener("mousedown", function() {animation.play();});
     hold.addEventListener("mouseup", reverseAnimation);
+    hold.addEventListener("touchstart", function() {animation.play();});
+    hold.addEventListener("touchend", reverseAnimation);
     function reverseAnimation() { 
       animation.reverse(); 
     } 

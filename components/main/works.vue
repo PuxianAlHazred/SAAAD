@@ -14,7 +14,7 @@
           <div class="curtain"></div>
           <img src="/img/мреть(наутро ночь).jpg"/>
           <div class="year">2021</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">мреть (наутро ночь)<em> <small>as</small> Saáadon</em></div>
           <div class="info">[album]</div>
           <div class="label">Cyclic Law</div>
@@ -27,7 +27,7 @@
           <div class="curtain"></div>
           <img src="/img/Secret-Hell.jpg"/>
           <div class="year">2021</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound26">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
 
           <div class="title">Secret Hell</div>
           <div class="info">[v/a "L'Homme Gris"]</div>
@@ -42,7 +42,7 @@
           <div class="curtain"></div>
           <img src="/img/Prepared-Oasis.jpg"/>
           <div class="year">2020</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer" @click="playSound25">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer" @click="playSoundIntro">►</p>
 
           <div class="title">Prepared Oasis</div>
           <div class="info">[single]</div>
@@ -56,7 +56,7 @@
           <div class="curtain"></div>
           <img src="/img/Elijah.jpg"/>
           <div class="year">2020</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound24">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Elijah O.S.T</div>
           <div class="info">[album / ost]</div>
           <div class="label">/ – Choléra Cosmique</div>
@@ -69,7 +69,7 @@
           <div class="curtain"></div>
           <img src="/img/All-Lanes-Of-Lilac-Evening.jpg"/>
           <div class="year">2020</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound23">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">All Lanes Of Lilac Evening<em> <small>/w</small> Siavash Amini</em></div>
           <div class="info">[album]</div>
           <div class="label">Opal Tapes</div>
@@ -83,7 +83,7 @@
           <div class="curtain"></div>
           <img src="/img/мреть.jpg"/>
           <div class="year">2019</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound22">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">мреть<em> <small>as</small> Saáadon</em></div>
           <div class="info">[EP]</div>
           <div class="label">Grains Of Sand</div>
@@ -97,7 +97,7 @@
           <div class="curtain"></div>
           <img src="/img/Orbs-And-Channels-RE.jpg"/>
           <div class="year">2018</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound23">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Orbs & Channels</div>
           <div class="info">[remastered album]</div>
           <div class="label">Nahal Recordings</div>
@@ -110,7 +110,7 @@
           <div class="curtain"></div>
           <img src="/img/Presence-Absente.jpg"/>
           <div class="year">2018</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound24">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Présence Absente</div>
           <div class="info">[album]</div>
           <div class="label">Hands In The Dark</div>
@@ -124,7 +124,7 @@
           <div class="curtain"></div>
           <img src="/img/Verdaillon.jpg"/>
           <div class="year">2016</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound25">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Verdaillon</div>
           <div class="info">[album]</div>
           <div class="label">In Paradisum</div>
@@ -138,7 +138,7 @@
           <div class="curtain"></div>
           <img src="/img/Delayed-Summer.jpg"/>
           <div class="year">2015</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound26">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Delayed Summer</div>
           <div class="info">[remastered album]</div>
           <div class="label">Grains Of Sand / BLWBCK</div>
@@ -151,7 +151,7 @@
           <div class="curtain"></div>
           <img src="/img/Different-Streams.jpg"/>
           <div class="year">2015</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Different Streams <em><small>w/</small> EUS & Postdrome</em></div>
           <div class="info">[album]</div>
           <div class="label">Soft Rec. / Grains Of Sand</div>
@@ -165,7 +165,7 @@
           <div class="curtain"></div>
           <img src="/img/Deep-Float.jpg"/>
           <div class="year">2015</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound28">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Deep / Float</div>
           <div class="info">[album]</div>
           <div class="label">Hands In The Dark</div>
@@ -179,7 +179,7 @@
           <div class="curtain"></div>
           <img src="/img/The-Charnel-Ground.jpg"/>
           <div class="year">2013</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound28">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">The Charnel Ground</div>
           <div class="info">[split album w/ Insiden]</div>
           <div class="label">In Paradisum / BLWBCK</div>
@@ -192,7 +192,7 @@
           <div class="curtain"></div>
           <img src="/img/Solid-Clouds.jpg"/>
           <div class="year">2013</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound28">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Στερεά Σύννεφα</div>
           <div class="info">[album / remixes]</div>
           <div class="label">BLWBCK</div>
@@ -205,7 +205,7 @@
           <div class="curtain"></div>
           <img src="/img/Orbs-Channels.jpg"/>
           <div class="year">2013</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound28">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Orbs & Channels</div>
           <div class="info">[album]</div>
           <div class="label">Hands In The Dark</div>
@@ -220,7 +220,7 @@
           <div class="curtain"></div>
           <img src="/img/Confluences.jpg"/>
           <div class="year">2012</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound28">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Confluences</div>
           <div class="info">[album]</div>
           <div class="label">BLWBCK</div>
@@ -233,7 +233,7 @@
           <div class="curtain"></div>
           <img src="/img/Sustained-Layers.jpg"/>
           <div class="year">2012</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Sustained Layers <em><small>w/</small> EUS & Postdrome</em></div>
           <div class="info">[album]</div>
           <div class="label">BLWBCK</div>
@@ -246,7 +246,7 @@
           <div class="curtain"></div>
           <img src="/img/Heat-Death.jpg"/>
           <div class="year">2012</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">For Small Creatures Such As We...</div>
           <div class="info">[5-ways split]</div>
           <div class="label">Heat Death</div>
@@ -260,7 +260,7 @@
           <div class="curtain"></div>
           <img src="/img/Delayed-Summer.jpg"/>
           <div class="year">2011</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Delayed Summer</div>
           <div class="info">[album]</div>
           <div class="label">BLWBCK</div>
@@ -273,7 +273,7 @@
           <div class="curtain"></div>
           <img src="/img/Forget-Our-Debts.jpg"/>
           <div class="year">2011</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Forget Our Debts</div>
           <div class="info">[v/a Sequence 2]</div>
           <div class="label">Future Sequence</div>
@@ -286,7 +286,7 @@
           <div class="curtain"></div>
           <img src="/img/Arty-Empty.jpg"/>
           <div class="year">2011</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Pink Sabbath / Raincoats</div>
           <div class="info">[EP x 2]</div>
           <div class="label">Arty Empty</div>
@@ -299,7 +299,7 @@
           <div class="curtain"></div>
           <img src="/img/Snowbound.jpg"/>
           <div class="year">2011</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Snowbound / I Miss You</div>
           <div class="info">[single x 2]</div>
           <div class="label">BLWBCK / La Moustacherie</div>
@@ -312,7 +312,7 @@
           <div class="curtain"></div>
           <img src="/img/Recovery-Wish.jpg"/>
           <div class="year">2011</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">A Recovery Wish</div>
           <div class="info">[single]</div>
           <div class="label">Feedbackloop</div>
@@ -325,7 +325,7 @@
           <div class="curtain"></div>
           <img src="/img/Raincoats.jpg"/>
           <div class="year">2011</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Raincoats</div>
           <div class="info">[EP]</div>
           <div class="label">BLWBCK</div>
@@ -338,7 +338,7 @@
           <div class="curtain"></div>
           <img src="/img/Pink-Sabbath.jpg"/>
           <div class="year">2011</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound27">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">Pink Sabbath</div>
           <div class="info">[EP]</div>
           <div class="label">BLWBCK</div>
@@ -352,7 +352,7 @@
           <div class="curtain"></div>
           <img src="/img/it-was.jpg"/>
           <div class="year">2010</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSound20">►</p>
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
           <div class="title">It Was</div>
           <div class="info">[album]</div>
           <div class="label">Lacrymal Rec. / BLWBCK</div>
@@ -621,33 +621,7 @@
         });
       },
       playSoundIntro() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound1() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound2() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound3() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound4() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound5() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound6() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound7() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound8() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound9() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound10() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound11() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound12() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound13() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound14() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound15() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound16() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound17() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound18() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound19() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound20() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound21() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound22() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound23() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound24() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound25() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound26() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
-      playSound27() { this.audio = new Audio(require('@/assets/sounds/intro.ogg').default); this.audio.play(); },
+
     },
     mounted() {
       this.scrollAnimation();
