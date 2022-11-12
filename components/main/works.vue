@@ -4,8 +4,17 @@
       <header class="works-head sticky top-0">
         <h2>Discography</h2>
         <div class="disco-nav">
-          <span class="grid ml-2" v-on:click="layoutDisco = 'grid'"> Grid </span> 
-          <span class="list" v-on:click="layoutDisco = 'list'"> List </span> 
+          <span class="grid ml-2 items-center" v-on:click="layoutDisco = 'grid'">
+            <svg class="h-6 w-6" x="0px" y="0px" viewBox="0 0 209 209" style="enable-background:new 0 0 209 209;">
+              <path fill="white" d="M201.5,112c4.143,0,7.5-3.357,7.5-7.5s-3.357-7.5-7.5-7.5H184V43.333h17.5c4.143,0,7.5-3.357,7.5-7.5s-3.357-7.5-7.5-7.5  H184V7.5c0-4.143-3.357-7.5-7.5-7.5S169,3.357,169,7.5v20.833h-53.666V7.5c0-4.143-3.357-7.5-7.5-7.5s-7.5,3.357-7.5,7.5v20.833  H46.667V7.5c0-4.143-3.357-7.5-7.5-7.5s-7.5,3.357-7.5,7.5v20.833H7.5c-4.143,0-7.5,3.357-7.5,7.5s3.357,7.5,7.5,7.5h24.167V97H7.5  c-4.143,0-7.5,3.357-7.5,7.5s3.357,7.5,7.5,7.5h24.167v53.666H7.5c-4.143,0-7.5,3.357-7.5,7.5s3.357,7.5,7.5,7.5h24.167V201.5  c0,4.143,3.357,7.5,7.5,7.5s7.5-3.357,7.5-7.5v-20.834h53.667V201.5c0,4.143,3.357,7.5,7.5,7.5s7.5-3.357,7.5-7.5v-20.834H169V201.5  c0,4.143,3.357,7.5,7.5,7.5s7.5-3.357,7.5-7.5v-20.834h17.5c4.143,0,7.5-3.357,7.5-7.5s-3.357-7.5-7.5-7.5H184V112H201.5z   M169,43.333V97h-53.666V43.333H169z M46.667,43.333h53.667V97H46.667V43.333z M46.667,165.666V112h53.667v53.666H46.667z   M169,165.666h-53.666V112H169V165.666z"/>
+            </svg>
+          </span> 
+          <span class="list items-center" v-on:click="layoutDisco = 'list'">
+            <svg class="h-8 w-8" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;">
+              <path fill="white" d="M6 26h4v-4h-4v4zm0 8h4v-4h-4v4zm0-16h4v-4h-4v4zm8 8h28v-4h-28v4zm0 8h28v-4h-28v4zm0-20v4h28v-4h-28z"/>
+              <path  fill="none" d="M0 0h48v48h-48z" />
+            </svg>
+          </span> 
         </div>
       </header>
       <div :class="['full-disco', { 'layoutList' : layoutDisco === 'list', 'layoutGrid' : layoutDisco === 'grid' }]">
@@ -27,8 +36,7 @@
           <div class="curtain"></div>
           <img src="/img/Secret-Hell.jpg"/>
           <div class="year">2021</div>
-          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer"  @click="playSoundIntro">►</p>
-
+          <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer opacity-0"  @click="playSoundIntro">►</p>
           <div class="title">Secret Hell</div>
           <div class="info">[v/a "L'Homme Gris"]</div>
           <div class="label">Casino Luxembourg</div>

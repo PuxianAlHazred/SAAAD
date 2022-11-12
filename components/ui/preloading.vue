@@ -166,7 +166,6 @@ export default {
       onComplete: function() {
         hold.removeEventListener("mouseup", reverseAnimation);
         hold.removeEventListener("touchstart", reverseAnimation);
-
         animation.to('#progress', {filter: 'url(#pixelateMin)', stroke:"white"});
         setTimeout(() => { 
           GSAP.to('.preloader', { opacity: 0, display: "none", duration: 1 });
