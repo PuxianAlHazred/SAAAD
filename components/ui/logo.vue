@@ -4,7 +4,24 @@
   </NLink>
 </template>
 <style lang="postcss">
-  .main-logo { @apply opacity-0 ml-20 text-white font-light mix-blend-difference flex items-center justify-center w-[150px] h-[150px] border-white border-[1px] rounded-full z-50 text-[45px] font-hoefler;}
+  .main-logo { 
+    @apply 
+    opacity-0 
+    ml-10 
+    text-white 
+    font-light 
+    flex 
+    items-center 
+    justify-center 
+    w-[150px] 
+    h-[150px] 
+    border-white 
+    border-[1px] 
+    rounded-full 
+    z-50 
+    text-[35px] 
+    font-hoefler;
+  }
 </style>
 <script>
 export default {

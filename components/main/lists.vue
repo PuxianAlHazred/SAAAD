@@ -3,10 +3,10 @@
     <header class="events-head">
       <h2>Events</h2>
       <div class="events-nav">
-        <span class="all">VIEW ALL<br>EVENTS</span> 
-        <span class="liveset">LIVE<br> SET</span> 
-        <span class="exhibition">INSTALLATION<br>/ EXHIBITION  </span>
-        <span class="collaboration">COLLABORATION<br>/ OTHER</span>
+        <span @click="filtered = 'all'" ref="all" :class="['all', { 'active' : filtered === 'all' }]">VIEW ALL<br>EVENTS</span> 
+        <span @click="filtered = 'liveset'" ref="liveset" :class="['liveset', { 'active' : filtered === 'liveset' }]">LIVE<br> SET</span> 
+        <span @click="filtered = 'exhibition'" ref="exhibition" :class="['exhibition', { 'active' : filtered === 'exhibition' }]">INSTALLATION<br>/ EXHIBITION  </span>
+        <span @click="filtered = 'collaboration'" ref="collaboration" :class="['collaboration', { 'active' : filtered === 'collaboration' }]">COLLABORATION<br>/ OTHER</span>
         <span class="booking">BOOKING</span>
       </div>
     </header>
@@ -767,34 +767,38 @@
         <div class="venue">@ Auditorium Bellegarde</div>
         <div class="info">+ Tim Hecker</div>
       </article>
-
-
-</div>
+    </div>
   </section>
 </template>
 <style lang="postcss">
-
+  .veryHidden{ display:none!important; visibility: hidden;}
   #events { @apply text-xs relative text-white; }
 
   .events-head { @apply sticky top-0 h-[100px] bg-black flex items-center justify-between z-10;}
   .events-head h2 { @apply text-7xl font-meno  italic font-light mr-8 inline; }
   .events-nav { @apply flex w-3/4 float-right justify-between text-white; }
-  .events-nav .liveset, .events-nav .exhibition, .events-nav .collaboration { @apply opacity-30 duration-1000;}
-  .events-nav .liveset:hover, .events-nav .exhibition:hover, .events-nav .collaboration:hover { @apply opacity-100 duration-1000 cursor-pointer;}
+  .events-nav .liveset, .events-nav .exhibition, .events-nav .collaboration { @apply text-gray-600 duration-1000;}
+  .events-nav .active { @apply text-white duration-1000;}
+
+  .events-nav .liveset:hover, .events-nav .exhibition:hover, .events-nav .collaboration:hover { @apply duration-1000 cursor-pointer;}
   .events-nav .liveset:before, .events-nav .exhibition:before, .events-nav .collaboration:before { @apply text-[10px] flex font-bold p-0 float-left w-7 h-7 mr-2 justify-center items-center rounded-full z-10;}
-  .events-nav .liveset:before { @apply bg-black text-white; content: "–";}
-  .events-nav .exhibition:before {@apply bg-white text-black; content: "Ø";}
-  .events-nav .collaboration:before {@apply bg-white text-black; content: "∫∫∫";}
+  .events-nav .liveset:before { @apply bg-black text-gray-600; content: "–";}
+  .events-nav .exhibition:before {@apply bg-gray-600 text-black; content: "Ø";}
+  .events-nav .collaboration:before {@apply bg-gray-600 text-black; content: "∫∫∫";}
   .events-nav .all:hover, .events-nav .booking:hover { @apply opacity-100 duration-1000 cursor-pointer;}
-  .events-nav .booking { @apply p-2 border-[1px] border-white duration-500;} 
+  .events-nav .booking { @apply p-2 border-[1px] border-white duration-1000;} 
   .events-nav .booking:hover { @apply bg-white text-black duration-1000;}
 
-  .full-events { @apply flex flex-col mb-20; }
+  .full-events { @apply flex flex-col mb-20 duration-1000 transition-all; }
   .full-events .past { @apply text-gray-600 hover:text-white}
   .full-events .curtain { @apply w-full h-full absolute z-40 bg-black;}
 
-  .full-events article { @apply font-work flex h-auto overflow-hidden content-end py-2 duration-500 hover:border-b-[1px] hover:border-t-[1px] border-dotted border-gray-400 transition-all}
-  .full-events article:hover { @apply py-4 border-white duration-1000  transition-all; }
+  .full-events .activated{@apply opacity-100 blur-0 duration-1000 transition-all;}
+
+  .full-events .desactivated{@apply opacity-0 blur duration-1000 transition-all skew-y-0 origin-top py-0;}
+
+  .full-events article { @apply  py-4 font-work flex overflow-hidden content-end duration-1000 border-b-[1px] border-t-[1px] border-dotted border-black transition-all}
+  .full-events article:hover { @apply border-white duration-1000 py-8 transition-all; }
   
   .full-events article .date, .full-events article .country, .full-events article .city, .full-events article .venue, .full-events article .info { @apply p-1 leading-4}
   .full-events article .date{ @apply w-2/12}
@@ -811,16 +815,6 @@
   .assets .exhibition:before {@apply text-[13px] mr-2  rounded-full; content: "Ø";}
   .assets .collaboration:before {@apply text-[10px] rounded-full; content: "∫∫∫";}
 
-  @keyframes event-curtain {
-    0% {
-      width: 100%;
-      height:100%;
-    }
-    100% {
-      width: 0;
-      height: 0;
-    }
-  }
 </style>
 <script>
   export default {
@@ -828,6 +822,7 @@
       return {
         content: false,
         layout: 'list',
+        filtered: 'all',
       }
     },
     methods: {
@@ -839,51 +834,76 @@
       },
       scrollAnimation() {
         this.$gsap.utils.toArray("article").forEach((e,i) => {
-          var curtain = e.getElementsByClassName('curtain');
-          this.$gsap.to(curtain, {width: '0%' , height: '100%' , duration: 0.2, ease:"power2.inOut", delay: '0.'+i});  
-
+          //Get cat
           var assets = e.querySelector('.assets')
           if(e.getAttribute('data-collaboration') === "true") { assets.querySelector('.collaboration').classList.toggle('hidden') } 
           if(e.getAttribute('data-exhibition') === "true") { assets.querySelector('.exhibition').classList.toggle('hidden') } 
           if(e.getAttribute('data-liveset') === "true") { assets.querySelector('.liveset').classList.toggle('hidden') } 
-
-          var date = e.getAttribute('data-fin');
-          var now = new Date();
-          var month = now.getMonth();
-          var day = now.getDate();
-          var year = now.getFullYear();
-          var veryNow = (year+'-'+(month)+'-'+day)
+          //Get date
+          var date = e.getAttribute('data-fin'), now = new Date(), month = now.getMonth(), day = now.getDate(), year = now.getFullYear(), veryNow = (year+'-'+(month+1)+'-'+day);
           if (date > veryNow) { e.classList.add('become') } else if(date < veryNow) {e.classList.add('past')} else if(date === veryNow) {e.classList.add('animate-pulse')} else {  }
+          //Curtain effect
+          this.$gsap.to(".curtain", {width: '0%' , height: '100%' , duration: 0.3, ease:"power2.inOut", delay: '0.'+i});   
+        });
+      },
+      filter() {
+        const highlightedItems = document.querySelector(".full-events").querySelectorAll("article");
+        const GSAP = this.$gsap;
 
-          var curtainEvent = this.$gsap.to(curtain, {width: '0%' , height: '100%' , duration: 0.5, ease:"power2.inOut", delay: '0.'+i});   
-          this.$gsap.timeline({
-            scrollTrigger: {
-                trigger: e,
-                start: "center bottom",
-                end: "center top",
-                invalidateOnRefresh: true,
-                anticipatePin: 1,
-                scrub: true,
-                toggleActions: "play reverse play reverse",
-                onEnterBack: e => {
-                  curtainEvent.play();
-                },
-                onLeaveBack: e => {
-                  curtainEvent.reverse();
-                },
-                onEnter: e => {
-                  curtainEvent.play();
-                },
-                onLeave: e => {
-                  curtainEvent.reverse();
-                },
-            }
-            }).fromTo(e, {  y: 0, opacity: 1, ease: "power2.inOut"}, {  y: 0, opacity: 1, ease: "power2.inOut"});
+        this.$refs.all.addEventListener('click', function() {
+          highlightedItems.forEach((e,i) => { 
+            GSAP.to(e, {duration: 0.3, ease:"linear", delay: '0.1'+i,
+            onStart:function(){e.classList.add('activated'); },
+            onComplete:function(){ setTimeout(() => {e.classList.remove('veryHidden');}, '0.'+i); e.classList.remove('desactivated');}}); 
           });
+        }, false);
+
+        this.$refs.liveset.addEventListener('click', function() {
+          highlightedItems.forEach((e,i) => { 
+            if(e.getAttribute('data-liveset') === "true") { 
+              GSAP.to(e, {duration: 0.3, ease:"linear", delay: '0.'+i,
+              onStart:function(){e.classList.remove('veryHidden'); e.classList.add('activated'); },
+              onComplete:function(){e.classList.remove('desactivated');}}); 
+            } else { 
+              GSAP.to(e, {duration: 0.3, ease:"linear", delay: '0.'+i, 
+              onStart:function(){e.classList.add('desactivated'); },
+              onComplete:function(){ setTimeout(() => {e.classList.add('veryHidden');}, '0.'+i); e.classList.remove('activated');}}); 
+            } 
+          });
+        }, false);
+        this.$refs.collaboration.addEventListener('click', function() {
+          highlightedItems.forEach((e,i) => { 
+            if(e.getAttribute('data-collaboration') === "true") { 
+              GSAP.to(e, {duration: 0.3, ease:"linear", delay: '0.'+i, 
+              onStart:function(){e.classList.remove('veryHidden'); e.classList.add('activated'); },
+              onComplete:function(){e.classList.remove('desactivated');}}); 
+            } else { 
+              GSAP.to(e, {duration: 0.3, ease:"linear", delay: '0.'+i, 
+              onStart:function(){e.classList.add('desactivated'); },
+              onComplete:function(){ setTimeout(() => {e.classList.add('veryHidden');}, '0.'+i); e.classList.remove('activated');}}); 
+            } 
+          });
+        }, false);
+        this.$refs.exhibition.addEventListener('click', function() {
+          highlightedItems.forEach((e,i) => { 
+            if(e.getAttribute('data-exhibition') === "true") { 
+              GSAP.to(e, {duration: 0.3, ease:"linear", delay: '0.'+i, 
+              onStart:function(){e.classList.remove('veryHidden'); e.classList.add('activated'); },
+              onComplete:function(){e.classList.remove('desactivated');}}); 
+            } else { 
+              GSAP.to(e, {duration: 0.3, ease:"linear", delay: '0.'+i, 
+              onStart:function(){e.classList.add('desactivated'); },
+              onComplete:function(){ setTimeout(() => {e.classList.add('veryHidden');}, '0.'+i); e.classList.remove('activated');}}); 
+            } 
+          });
+        }, false);
+
+
       }
     },
     mounted() {
       this.scrollAnimation();
+      this.filter();
     }
   }
 </script>

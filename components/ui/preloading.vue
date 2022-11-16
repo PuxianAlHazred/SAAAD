@@ -2,18 +2,20 @@
     <div class="preloader">
       <div class="loading">
         <div class="loading-text text-justify">
-          <span class="loading-text-words">L</span>
-          <span class="loading-text-words">O</span>
+          <span class="loading-text-words">P</span>
           <span class="loading-text-words">A</span>
-          <span class="loading-text-words">D</span>
+          <span class="loading-text-words">C</span>
           <span class="loading-text-words">I</span>
+          <span class="loading-text-words">É</span>
           <span class="loading-text-words">N</span>
-          <span class="loading-text-words">G</span>
+          <span class="loading-text-words">C</span>
+          <span class="loading-text-words">I</span>
+          <span class="loading-text-words">A</span>
         </div>
         <svg width="500" height="500" viewbox="0 0 500 500">
           <g id="hold">
-            <text class="font-hoefler textIntro text-[100px]" x="250" y="275" fill="white" text-anchor="middle">Saaad</text>
-            <text class="font-work textEnter" x="250" y="300" fill="white" text-anchor="middle">Press 3s to entrer</text>
+            <text class="font-hoefler textIntro text-[100px]" x="250" y="275" fill="white" text-anchor="middle">Saåad</text>
+            <text class="font-work textEnter" x="250" y="300" fill="white" text-anchor="middle">Sound activated !</text>
             <rect width="250" height="2" y="275" x="125" fill="#151515"/>
             <rect class="onProgressBar" width="0" height="2" y="275" x="125" fill="white"/>
             <circle cx="250" cy="250" r="200" stroke-width="2px" stroke="#151515" fill-opacity="0" />
@@ -76,7 +78,7 @@
     display: inline-block;
     margin: 0 5px;
     color: #fff;
-    font-family: "Quattrocento Sans", sans-serif;
+    font-family: "Meno", sans-serif;
   }
   .loading-text span:nth-child(1) {
     filter: blur(0px);
@@ -113,7 +115,16 @@
     -webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
             animation: blur-text 1.5s 1.2s infinite linear alternate;
   }
-
+  .loading-text span:nth-child(8) {
+    filter: blur(0px);
+    -webkit-animation: blur-text 1.5s 1.3s infinite linear alternate;
+            animation: blur-text 1.5s 1.3s infinite linear alternate;
+  }
+  .loading-text span:nth-child(9) {
+    filter: blur(0px);
+    -webkit-animation: blur-text 1.5s 1.5s infinite linear alternate;
+            animation: blur-text 1.5s 1.5s infinite linear alternate;
+  }
   @-webkit-keyframes blur-text {
     0% {
       filter: blur(0px);
@@ -133,63 +144,63 @@
   }
 </style>
 <script>
-export default {
-  data() {
-    return {
-      longpress: false,
-    }
-  },
-  methods: {
-    appear() {
-      console.log('appear')
-    }
-  },
-  mounted() {
-
-    const audio = document.querySelector("#sound1");
-        audio.volume = 0;
-        audio.loop = true;
-        function pauseSound(){ audio.pause(); }
-
-
-    this.$gsap.to('.onProgressBar', { width: "250", duration: 3 });
-    this.$gsap.from('.textEnter', { y: "20", opacity:0 , delay: 3 });
-    this.$gsap.to('#hold rect', { height: "0", opacity:0 , delay: 4 });
-    this.$gsap.to('.loading-text', { opacity:0 , delay: 5 });
-    this.$gsap.from('.textIntro', { y: "-50", opacity:0 , delay: 5.5 });
-    this.$gsap.to('.textEnter', { y: "20", opacity:0 , delay: 5 });
-
-    var hold = document.querySelector(".loading");
-    var GSAP = this.$gsap;
-    var animation = this.$gsap.timeline({
-      paused: true,
-      onComplete: function() {
-        hold.removeEventListener("mouseup", reverseAnimation);
-        hold.removeEventListener("touchstart", reverseAnimation);
-        animation.to('#progress', {filter: 'url(#pixelateMin)', stroke:"white"});
-        setTimeout(() => { 
-          GSAP.to('.preloader', { opacity: 0, display: "none", duration: 1 });
-          animation.kill();
-          audio.play();
-          GSAP.to(audio, 4, {volume:0.5, onComplete:pauseSound} );
-        }, "1000")
-
+  export default {
+    data() {
+      return {
+        longpress: false,
       }
-    });
-    animation.to( '#progress', { strokeDashoffset: "0", duration: 3 });
-    hold.addEventListener("mousedown", function() {animation.play();});
-    hold.addEventListener("mouseup", reverseAnimation);
-    hold.addEventListener("touchstart", function() {animation.play();});
-    hold.addEventListener("touchend", reverseAnimation);
-    function reverseAnimation() { 
-      animation.reverse(); 
-    } 
-  },
-  computed: {
-    preloading() {
-      return this.$store.getters['getPreloading']
     },
+    methods: {
+      appear() {
+        console.log('appear')
+      }
+    },
+    mounted() {
 
-  },
-}
+      const audio = document.querySelector("#sound1");
+          audio.volume = 0;
+          audio.loop = true;
+          function pauseSound(){ audio.pause(); }
+
+
+      this.$gsap.to('.onProgressBar', { width: "250", duration: 3 });
+      this.$gsap.from('.textEnter', { y: "20", opacity:0 , delay: 3 });
+      this.$gsap.to('#hold rect', { height: "0", opacity:0 , delay: 4 });
+      this.$gsap.to('.loading-text', { opacity:0 , delay: 5 });
+      this.$gsap.from('.textIntro', { y: "-50", opacity:0 , delay: 5.5 });
+      this.$gsap.to('.textEnter', { y: "20", opacity:0 , delay: 5 });
+
+      var hold = document.querySelector(".loading");
+      var GSAP = this.$gsap;
+      var animation = this.$gsap.timeline({
+        paused: true,
+        onComplete: function() {
+          hold.removeEventListener("mouseup", reverseAnimation);
+          hold.removeEventListener("touchstart", reverseAnimation);
+          animation.to('#progress', {filter: 'url(#pixelateMin)', stroke:"white"});
+          setTimeout(() => { 
+            GSAP.to('.preloader', { opacity: 0, display: "none", duration: 1 });
+            animation.kill();
+            audio.play();
+            GSAP.to(audio, 4, {volume:0.5, onComplete:pauseSound} );
+          }, "1000")
+
+        }
+      });
+      animation.to( '#progress', { strokeDashoffset: "0", duration: 3 });
+      hold.addEventListener("mousedown", function() {animation.play();});
+      hold.addEventListener("mouseup", reverseAnimation);
+      hold.addEventListener("touchstart", function() {animation.play();});
+      hold.addEventListener("touchend", reverseAnimation);
+      function reverseAnimation() { 
+        animation.reverse(); 
+      } 
+    },
+    computed: {
+      preloading() {
+        return this.$store.getters['getPreloading']
+      },
+
+    },
+  }
 </script>

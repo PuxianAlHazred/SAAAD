@@ -3,23 +3,28 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   mode: 'jit',
   purge: [
-    './components/**/*.{vue,js}',
-    './layouts/**/*.vue',
-    './pages/**/*.vue',
-    './plugins/**/*.{js,ts}',
-    './nuxt.config.{js,ts}',
-  ],
-  darkMode: 'class', // or 'media' or 'class'
+    './components/**/*.{vue,js}',    './layouts/**/*.vue',    './pages/**/*.vue',    './plugins/**/*.{js,ts}',    './nuxt.config.{js,ts}' ],
+  darkMode: 'class',
   theme: {
     cursor: {
-      zoom: 'zoom-in',
       auto: 'auto',
       default: 'default',
       pointer: 'pointer',
       wait: 'wait',
       text: 'text',
       move: 'move',
+      notAllowed: 'not-allowed',
+      none: 'none',
+      contextMenu: 'context-menu',
+      progress: 'progress',
+      cell: 'cell',
+      alias: 'alias',
+      grab: 'grab',
+      grabbing: 'grabbing',
+      alias: 'alias',
       crosshair: 'crosshair',
+      zoomIn: 'zoom-in',
+      zoomOut: 'zoom-out',
     },
     screens: {
       'print': {'raw': 'print'},
@@ -47,14 +52,13 @@ module.exports = {
     },
     extend: {
       width: {
-        'wc': 'calc(100% - 100px)',
+        'wSaaad': 'calc(100% - 200px)',
       },
       height: {
-        'nn': 'calc(100vh - 100px)',
-        'cart': 'calc(100% - 50px)',        
+        'hSaaad': 'calc(100vh - 100px)',
       },
       minHeight: {
-        'foot': 'calc(100vh - 50px)',
+        'mhSaaad': 'calc(100vh - 50px)',
       },
       lineHeight: {
       '20': '5.5rem',
@@ -63,10 +67,15 @@ module.exports = {
         horizontalTextScrolling: {
           '0%': { transform: 'translate3d(0, 0, 0)' },
           'to': { transform: 'translate3d(-50%, 0, 0)' },
+        },
+        curtain: {
+          '0%': { width: '100%', height: '100%'},
+          'to': { width: '0%', height: '0%' },
         }
       },
       animation: {
-        horizontalTextScrolling: 'horizontalTextScrolling 60s linear infinite',
+        animate_horizontalTextScrolling: 'horizontalTextScrolling 60s linear infinite',
+        animate_curtain: 'curtain 1s ease',
       },
       transitionDelay: {
         '0': '0ms',
@@ -74,12 +83,12 @@ module.exports = {
       transitionDuration: {
         '0': '0ms',
         '5000': '5000ms',
+        '10000': '10000ms',
       },
       fontFamily: {
-        'work': ['"Work Sans"'],
-        'open': ['"Open Sans"'],
-        'meno': ['"Meno Banner"'],
-        'hoefler': ['"Hoefler"'],
+        'work': ["Work Sans", "Open Sans", "sans-serif"],
+        'meno': ["Meno Banner"],
+        'hoefler': ["Hoefler"],
       }
     }
   },

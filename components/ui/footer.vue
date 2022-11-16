@@ -5,6 +5,7 @@
     <p class="font-garamond text-lg uppercase">© 2022 - <a alt="Website Saåad" href="https://saaadrone.com">Saåad</a></p>
     <svg class="svg-filter">
       <defs>
+
         <!-- Pixelisations (animated) -->
         <filter id="pixelateMax" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox">
           <feTurbulence id="feTurbulenceMax" type="turbulence" baseFrequency="0.0006" numOctaves="1" seed="8" stitchTiles="noStitch" x="0%" y="0%" width="100%" height="100vh"></feTurbulence> 
@@ -180,6 +181,9 @@
      @apply bg-white h-[50vh] w-full text-black flex align-middle items-center justify-center text-center flex-col relative overflow-hidden px-20;
   }
   .svg-filter{@apply invisible w-0 h-0}
+  .stop1 { stop-color: rgb(204, 204, 204); }
+  .stop2 { stop-color: rgb(102, 102, 102); }
+  .stop3 { stop-color: rgb(204, 204, 204); }
 
   .pixelateMax { @apply w-auto;filter:url(#pixelateMax);}
   .pixelateMin { @apply w-auto;filter:url(#pixelateMin);}
