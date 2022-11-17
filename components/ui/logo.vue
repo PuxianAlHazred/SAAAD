@@ -1,39 +1,39 @@
 <template>
-  <NLink to="/" class="main-logo">
-    <h1>Saåad</h1>
-  </NLink>
+    <NLink to="/" class="main-logo">
+      <svg width="155" height="155" viewbox="0 0 155 155">
+        <g id="hold">
+          <circle cx="77.5" cy="77.5" r="75" stroke-width="2px" stroke="#151515" fill-opacity="0" />
+          <circle id="progress" class="circle" cx="77.5" cy="77.5" r="75" stroke-width="2px" stroke="white" fill-opacity="0"/>
+        </g>
+      </svg>
+      <h1>Saåad</h1>
+    </NLink>
 </template>
 <style lang="postcss">
   .main-logo { 
     @apply 
-    opacity-0 
     ml-10 
     text-white 
     font-light 
     flex 
     items-center 
     justify-center 
-    w-[150px] 
-    h-[150px] 
-    border-white 
-    border-[1px] 
-    rounded-full 
+    w-[155px] 
+    h-[155px] 
     z-50 
-    text-[35px] 
+    text-[40px] 
+    tracking-wider
     font-hoefler;
   }
+  .main-logo svg {@apply absolute}
 </style>
 <script>
 export default {
 methods: {
-  scrollLogo() {
-      this.$gsap.to(".main-logo", {duration:0.5, opacity: '1',ease:"power2.easeOut", stagger: 0.1}, "+=0");
-  },
 },
 created() {
 },
 mounted() {
-  this.scrollLogo();
 }
 }
 </script>

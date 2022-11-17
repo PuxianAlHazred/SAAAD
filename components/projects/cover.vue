@@ -3,7 +3,7 @@
 </template>
 <style lang="postcss">
     .bumpEffect {
-        @apply saturate-100 ; width: 100vw!important; margin-left: -150px;
+        @apply saturate-100 ; width: 100vw!important; margin-left: -160px;
     }    
 </style>
 <script>
@@ -83,7 +83,7 @@ export default {
             //scene.add( pointLightHelper );
 
             // Textures
-            const texture2 = new THREE.TextureLoader().load('/img/pink-sabbath.jpg')
+            const texture2 = new THREE.TextureLoader().load('/img/Heat-Death.jpg')
             const texture = new THREE.TextureLoader().load('/img/All-Lanes-Of-Lilac-Evening.jpg')
             texture.crossOrigin = 'anonymous';
             // Material

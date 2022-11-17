@@ -772,25 +772,26 @@
 </template>
 <style lang="postcss">
   .veryHidden{ display:none!important; visibility: hidden;}
+  
   #events { @apply text-xs relative text-white; }
 
   .events-head { @apply sticky top-0 h-[100px] bg-black flex items-center justify-between z-10;}
   .events-head h2 { @apply text-7xl font-meno  italic font-light mr-8 inline; }
-  .events-nav { @apply flex w-3/4 float-right justify-between text-white; }
-  .events-nav .liveset, .events-nav .exhibition, .events-nav .collaboration { @apply text-gray-600 duration-1000;}
+  .events-nav { @apply flex w-3/4 float-right justify-between  text-[10px] leading-none; }
+  .events-nav .liveset, .events-nav .exhibition, .events-nav .collaboration { @apply text-secondary duration-1000;}
   .events-nav .active { @apply text-white duration-1000;}
 
-  .events-nav .liveset:hover, .events-nav .exhibition:hover, .events-nav .collaboration:hover { @apply duration-1000 cursor-pointer;}
+  .events-nav .liveset:hover, .events-nav .exhibition:hover, .events-nav .collaboration:hover { @apply duration-1000 cursor-pointer text-white;}
   .events-nav .liveset:before, .events-nav .exhibition:before, .events-nav .collaboration:before { @apply text-[10px] flex font-bold p-0 float-left w-7 h-7 mr-2 justify-center items-center rounded-full z-10;}
-  .events-nav .liveset:before { @apply bg-black text-gray-600; content: "–";}
-  .events-nav .exhibition:before {@apply bg-gray-600 text-black; content: "Ø";}
-  .events-nav .collaboration:before {@apply bg-gray-600 text-black; content: "∫∫∫";}
+  .events-nav .liveset:before { @apply bg-black text-secondary; content: "–";}
+  .events-nav .exhibition:before {@apply bg-secondary text-black; content: "Ø";}
+  .events-nav .collaboration:before {@apply bg-secondary text-black; content: "∫∫∫";}
   .events-nav .all:hover, .events-nav .booking:hover { @apply opacity-100 duration-1000 cursor-pointer;}
   .events-nav .booking { @apply p-2 border-[1px] border-white duration-1000;} 
   .events-nav .booking:hover { @apply bg-white text-black duration-1000;}
 
   .full-events { @apply flex flex-col mb-20 duration-1000 transition-all; }
-  .full-events .past { @apply text-gray-600 hover:text-white}
+  .full-events .past { @apply text-secondary hover:text-white}
   .full-events .curtain { @apply w-full h-full absolute z-40 bg-black;}
 
   .full-events .activated{@apply opacity-100 blur-0 duration-1000 transition-all;}
@@ -801,14 +802,14 @@
   .full-events article:hover { @apply border-white duration-1000 py-8 transition-all; }
   
   .full-events article .date, .full-events article .country, .full-events article .city, .full-events article .venue, .full-events article .info { @apply p-1 leading-4}
-  .full-events article .date{ @apply w-2/12}
+  .full-events article .date{ @apply w-2/12 text-[1.5em]} 
   .full-events article .city:before{ @apply pr-2; content: " | ";}
   .full-events article .city{ @apply text-lg w-4/12 flex items-start; }
-  .full-events article .country{ @apply text-xs; }
+  .full-events article .country{ @apply text-[9px]; }
   .full-events article .country:before{ @apply pl-2; content: "(";}
   .full-events article .country:after{ content: ")";}
-  .full-events article .venue{ @apply text-lg w-3/12 flex items-start; }
-  .full-events article .info{ @apply text-lg w-3/12 flex items-start text-right flex-row-reverse; }
+  .full-events article .venue{ @apply text-[13px] w-3/12 flex items-start uppercase; }
+  .full-events article .info{ @apply text-[12px] w-3/12 flex items-start text-right flex-row-reverse; }
 
   .assets { @apply flex items-center }
   .assets .liveset:before { @apply text-[13px] mr-2 rounded-full; content: "–";}
@@ -871,6 +872,7 @@
             } 
           });
         }, false);
+        
         this.$refs.collaboration.addEventListener('click', function() {
           highlightedItems.forEach((e,i) => { 
             if(e.getAttribute('data-collaboration') === "true") { 
@@ -884,6 +886,7 @@
             } 
           });
         }, false);
+
         this.$refs.exhibition.addEventListener('click', function() {
           highlightedItems.forEach((e,i) => { 
             if(e.getAttribute('data-exhibition') === "true") { 

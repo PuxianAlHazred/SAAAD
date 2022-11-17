@@ -1,16 +1,13 @@
 <template>
   <main :class="{'isDesktop': this.$device.isDesktop, 'isMobile': this.$device.isMobile, 'isTablet': this.$device.isTablet,}">
-    <Ui-preloading />
+    <Ui-preloading v-if="this.$store.state.preloading"/>
     <Ui-header />
-    <Nuxt class="frame"/>
+    <Nuxt v-if="this.$store.state.content" class="frame"/>
   </main>
 </template>
 <style lang="postcss">
   main { @apply bg-black; }
-  .frame {
-    margin: 0 50px 0 150px;
-    overflow: hidden;
-  }
+  .frame { margin: 0 50px 0 150px; }
 </style>
 <script>
   export default {

@@ -19,23 +19,17 @@
       </header>
       <div :class="['full-disco', { 'layoutList' : layoutDisco === 'list', 'layoutGrid' : layoutDisco === 'grid' }]">
         <!--2021-->
-        <article data-year="2021">
+        <article class="group" data-year="2021">
           <div class="curtain"></div>
           <img src="/img/мреть(наутро ночь).jpg"/>
           <div class="year">2021</div>
           <p class="bg-black p-4 text-lg z-[1] font-mono cursor-pointer hidden"  @click="playSoundIntro">►</p>
-
-          <div class="title">мреть (наутро ночь)<em> <small>as</small> Saáadon</em></div>
+          <div class="title">мреть (наутро ночь)<span> <i>as</i> Saáadon</span></div>
           <div class="info">[album]</div>
           <div class="label">Cyclic Law</div>
           <div class="format">vinyl / CD / digital</div>
-          <svg height="50" width="100vw" class="">
-            <linearGradient id="GradientLine" x1="0" x2="100%" y1="0%" y2="100%">
-              <stop stop-color="#00bc9b" offset="0%" />
-              <stop stop-color="#5eaefd" offset="50%" />
-              <stop stop-color="#00bc9b" offset="100%" />
-            </linearGradient>
-            <line x1="0" y1="25" x2="100%" y2="25" stroke="url(#GradientLine)" stroke-width="6"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <article data-year="2021">
@@ -46,8 +40,8 @@
           <div class="info">[v/a "L'Homme Gris"]</div>
           <div class="label">Casino Luxembourg</div>
           <div class="format">compilation / cassette</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <!--2020-->
@@ -59,8 +53,8 @@
           <div class="info">[single]</div>
           <div class="label">/</div>
           <div class="format">digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <article data-year="2020">
@@ -71,20 +65,20 @@
           <div class="info">[album / ost]</div>
           <div class="label">/ – Choléra Cosmique</div>
           <div class="format">digital / CD</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <article data-year="2020">
           <div class="curtain"></div>
           <img src="/img/All-Lanes-Of-Lilac-Evening.jpg"/>
           <div class="year">2020</div>
-          <div class="title">All Lanes Of Lilac Evening<em> <small>/w</small> Siavash Amini</em></div>
+          <div class="title">All Lanes Of Lilac Evening<span> <i>/w</i> Siavash Amini</span></div>
           <div class="info">[album]</div>
           <div class="label">Opal Tapes</div>
           <div class="format">cassette / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <!--2019-->
@@ -92,12 +86,12 @@
           <div class="curtain"></div>
           <img src="/img/мреть.jpg"/>
           <div class="year">2019</div>
-          <div class="title">мреть<em> <small>as</small> Saáadon</em></div>
+          <div class="title">мреть<span> <i>as</i> Saáadon</span></div>
           <div class="info">[EP]</div>
           <div class="label">Grains Of Sand</div>
           <div class="format">cassette / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <!--2018-->
@@ -109,8 +103,8 @@
           <div class="info">[remastered album]</div>
           <div class="label">Nahal Recordings</div>
           <div class="format">vinyl / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <article data-year="2018">
@@ -121,8 +115,8 @@
           <div class="info">[album]</div>
           <div class="label">Hands In The Dark</div>
           <div class="format">vinyl / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <!--2016-->
@@ -134,8 +128,8 @@
           <div class="info">[album]</div>
           <div class="label">In Paradisum</div>
           <div class="format">vinyl / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <!--2015-->
@@ -147,34 +141,36 @@
           <div class="info">[remastered album]</div>
           <div class="label">Grains Of Sand / BLWBCK</div>
           <div class="format">vinyl</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <article data-year="2015">
           <div class="curtain"></div>
           <img src="/img/Different-Streams.jpg"/>
           <div class="year">2015</div>
-          <div class="title">Different Streams <em><small>w/</small> EUS & Postdrome</em></div>
+          <div class="title">Different Streams <span><i>w/</i> EUS & Postdrome</span></div>
           <div class="info">[album]</div>
           <div class="label">Soft Rec. / Grains Of Sand</div>
           <div class="format">CD / cassette / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <!--2014-->
         <article data-year="2014">
+
           <div class="curtain"></div>
           <img src="/img/Deep-Float.jpg"/>
           <div class="year">2015</div>
-          <div class="title">Deep / Float</div>
+          <nuxt-link to="deep-float" class="title">Deep / Float</nuxt-link>
           <div class="info">[album]</div>
           <div class="label">Hands In The Dark</div>
           <div class="format">vinyl / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
+          
         </article>        
         <!--2013-->
         <article data-year="2013">
@@ -185,8 +181,8 @@
           <div class="info">[split album w/ Insiden]</div>
           <div class="label">In Paradisum / BLWBCK</div>
           <div class="format">cassette / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article> 
         <article data-year="2013">
@@ -197,8 +193,8 @@
           <div class="info">[album / remixes]</div>
           <div class="label">BLWBCK</div>
           <div class="format">cassette / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article> 
          <article data-year="2013">
@@ -209,8 +205,8 @@
           <div class="info">[album]</div>
           <div class="label">Hands In The Dark</div>
           <div class="format">cassette / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>  
         <!--2012-->
@@ -223,20 +219,20 @@
           <div class="info">[album]</div>
           <div class="label">BLWBCK</div>
           <div class="format">cassette / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <article data-year="2012">
           <div class="curtain"></div>
           <img src="/img/Sustained-Layers.jpg"/>
           <div class="year">2012</div>
-          <div class="title">Sustained Layers <em><small>w/</small> EUS & Postdrome</em></div>
+          <div class="title">Sustained Layers <span><i>w/</i> EUS & Postdrome</span></div>
           <div class="info">[album]</div>
           <div class="label">BLWBCK</div>
           <div class="format">cassette / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <article data-year="2012">
@@ -247,8 +243,8 @@
           <div class="info">[5-ways split]</div>
           <div class="label">Heat Death</div>
           <div class="format">miniCD boxset</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article> 
         <!--2011-->
@@ -260,8 +256,8 @@
           <div class="info">[album]</div>
           <div class="label">BLWBCK</div>
           <div class="format">cassette digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <article data-year="2011">
@@ -272,8 +268,8 @@
           <div class="info">[v/a Sequence 2]</div>
           <div class="label">Future Sequence</div>
           <div class="format">compilation / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <article data-year="2011">
@@ -284,8 +280,8 @@
           <div class="info">[EP x 2]</div>
           <div class="label">Arty Empty</div>
           <div class="format">cassette</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article> 
         <article data-year="2011">
@@ -296,8 +292,8 @@
           <div class="info">[single x 2]</div>
           <div class="label">BLWBCK / La Moustacherie</div>
           <div class="format">street USB / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article> 
         <article data-year="2011">
@@ -308,8 +304,8 @@
           <div class="info">[single]</div>
           <div class="label">Feedbackloop</div>
           <div class="format">digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article> 
         <article data-year="2011">
@@ -320,8 +316,8 @@
           <div class="info">[EP]</div>
           <div class="label">BLWBCK</div>
           <div class="format">digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
         <article data-year="2011">
@@ -332,8 +328,8 @@
           <div class="info">[EP]</div>
           <div class="label">BLWBCK</div>
           <div class="format">digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>      
         <!--2010-->
@@ -345,8 +341,8 @@
           <div class="info">[album]</div>
           <div class="label">Lacrymal Rec. / BLWBCK</div>
           <div class="format">CD / digital</div>
-          <svg height="50" width="100vw">
-            <line x1="0" y1="25" x2="100%" y2="25"/>
+          <svg height="50" width="100%">
+            <rect x="0" y="25" width="100%" height="1" fill="url(#GradientLine)" />
           </svg>
         </article>
       </div>
@@ -360,7 +356,7 @@
         <article data-year="2022">
           <div class="curtain"></div>
           <div class="year">2022</div>
-          <div class="title">Topos<em> <small>by</small> Max Bondendorf</em></div>
+          <div class="title">Topos<span> <i>by</i> Max Bondendorf</span></div>
           <div class="label">/</div>
           <svg height="50" width="100vw">
             <line x1="0" y1="24" x2="100%" y2="26" style="stroke:rgb(255,255,255)!important;" />
@@ -369,7 +365,7 @@
         <article data-year="2021">
           <div class="curtain"></div>
           <div class="year">2021</div>
-          <div class="title">A-HORA<em> <small>by</small> Klara Ravat</em></div>
+          <div class="title">A-HORA<span> <i>by</i> Klara Ravat</span></div>
           <div class="label">Klankvorm</div>
           <svg height="50" width="100vw">
             <line x1="0" y1="24" x2="100%" y2="26" style="stroke:rgb(255,255,255)!important;" />
@@ -378,7 +374,7 @@
         <article data-year="2019">
           <div class="curtain"></div>
           <div class="year">2019</div>
-          <div class="title">Sphinx<em> <small>by</small> Tito Gonzalez Garcia</em></div>
+          <div class="title">Sphinx<span> <i>by</i> Tito Gonzalez Garcia</span></div>
           <div class="label">Tamara Films</div>
           <svg height="50" width="100vw">
             <line x1="0" y1="24" x2="100%" y2="26" style="stroke:rgb(255,255,255)!important;" />
@@ -387,7 +383,7 @@
         <article data-year="2019">
           <div class="curtain"></div>
           <div class="year">2019</div>
-          <div class="title">Les Oracles<em> <small>by</small> Tito Gonzalez Garcia</em></div>
+          <div class="title">Les Oracles<span> <i>by</i> Tito Gonzalez Garcia</span></div>
           <div class="label">Tamara Films</div>
           <svg height="50" width="100vw">
             <line x1="0" y1="24" x2="100%" y2="26" style="stroke:rgb(255,255,255)!important;" />
@@ -396,7 +392,7 @@
         <article data-year="2016">
           <div class="curtain"></div>
           <div class="year">2016</div>
-          <div class="title">Elijah<em> <small>by</small> Fanny Béguély</em></div>
+          <div class="title">Elijah<span> <i>by</i> Fanny Béguély</span></div>
           <div class="label">ESAV</div>
           <svg height="50" width="100vw">
             <line x1="0" y1="24" x2="100%" y2="26" style="stroke:rgb(255,255,255)!important;" />
@@ -405,7 +401,7 @@
         <article data-year="2015">
           <div class="curtain"></div>
           <div class="year">2015</div>
-          <div class="title">Tattoo<em> <small>by</small> Frédéric Jolivet</em></div>
+          <div class="title">Tattoo<span> <i>by</i> Frédéric Jolivet</span></div>
           <div class="label">Monsieur Linéa</div>
           <svg height="50" width="100vw">
             <line x1="0" y1="24" x2="100%" y2="26" style="stroke:rgb(255,255,255)!important;" />
@@ -421,7 +417,7 @@
         <article data-year="2021">
           <div class="curtain"></div>
           <div class="year">2021</div>
-          <div class="title">Brigidy Bram: The Kendal Hanna Story<em> <small>by</small> Laura Gamse & Toby Lunn</em></div>
+          <div class="title">Brigidy Bram: The Kendal Hanna Story<span> <i>by</i> Laura Gamse & Toby Lunn</span></div>
           <div class="label">Daydream Reels</div>
           <svg height="50" width="100vw">
             <line x1="0" y1="24" x2="100%" y2="26" style="stroke:rgb(255,255,255)!important;" />
@@ -430,7 +426,7 @@
         <article data-year="2014">
           <div class="curtain"></div>
           <div class="year">2014</div>
-          <div class="title">We Must Remain The Wildhearted Outsiders<em> <small>by</small> Chase Lisbon</em></div>
+          <div class="title">We Must Remain The Wildhearted Outsiders<span> <i>by</i> Chase Lisbon</span></div>
           <div class="label">Monolake Media</div>
           <svg height="50" width="100vw">
             <line x1="0" y1="24" x2="100%" y2="26" style="stroke:rgb(255,255,255)!important;" />
@@ -439,7 +435,7 @@
         <article data-year="2011">
           <div class="curtain"></div>
           <div class="year">2011</div>
-          <div class="title">L'Ambianceur<em> <small>by</small> As Human Pattern</em></div>
+          <div class="title">L'Ambianceur<span> <i>by</i> As Human Pattern</span></div>
           <div class="label">/</div>
           <svg height="50" width="100vw">
             <line x1="0" y1="24" x2="100%" y2="26" style="stroke:rgb(255,255,255)!important;" />
@@ -456,7 +452,7 @@
         <article data-year="2020">
           <div class="curtain"></div>
           <div class="year">2020</div>
-          <div class="title">Dome feat. Saåad<em> <small>by</small> Sádon</em></div>
+          <div class="title">Dome feat. Saåad<span> <i>by</i> Sádon</span></div>
           <div class="info">[v/a "Memories of a Lost City"]</div>
           <div class="label">Tokyo Jupiter</div>
           <div class="format">compilation / digital</div>
@@ -467,7 +463,7 @@
         <article data-year="2015">
           <div class="curtain"></div>
           <div class="year">2015</div>
-          <div class="title">Once A Believer feat. Holy Strays (Saåad remix)<em> <small>by</small> Trésors</em></div>
+          <div class="title">Once A Believer feat. Holy Strays (Saåad remix)<span> <i>by</i> Trésors</span></div>
           <div class="info">[album "Adrien"]</div>
           <div class="label">BLWBCK</div>
           <div class="format">cassette / digital</div>
@@ -478,7 +474,7 @@
         <article data-year="2014">
           <div class="curtain"></div>
           <div class="year">2014</div>
-          <div class="title">La Traversée (Saåad remix)<em> <small>by</small> Oiseaux-Tempête</em></div>
+          <div class="title">La Traversée (Saåad remix)<span> <i>by</i> Oiseaux-Tempête</span></div>
           <div class="info">[album "Re-Works"]</div>
           <div class="label">Sub-Rosa</div>
           <div class="format">vinyl / digital</div>
@@ -489,7 +485,7 @@
         <article data-year="2013">
           <div class="curtain"></div>
           <div class="year">2013</div>
-          <div class="title">If You Call That Living feat. Saåad<em> <small>by</small> Sundrugs</em></div>
+          <div class="title">If You Call That Living feat. Saåad<span> <i>by</i> Sundrugs</span></div>
           <div class="info">[album "Hidden Scenes"]</div>
           <div class="label">BLWBCK</div>
           <div class="format">cassette / digital</div>
@@ -500,7 +496,7 @@
         <article data-year="2012">
           <div class="curtain"></div>
           <div class="year">2012</div>
-          <div class="title">Disillusioned Infinity feat. Romain Barbot<em> <small>by</small> Appalache</em></div>
+          <div class="title">Disillusioned Infinity feat. Romain Barbot<span> <i>by</i> Appalache</span></div>
           <div class="info">[album "Fue"]</div>
           <div class="label">BLWBCK</div>
           <div class="format">cassette / digital</div>
@@ -516,10 +512,9 @@
 <style lang="postcss">
 
   #works { @apply text-xs relative text-white; }
-
   .works-head { @apply h-[100px] bg-black flex items-center justify-between z-10;}
   .works-head h2 { @apply italic text-6xl font-meno font-light mr-8 inline z-10; }
-   #works small { @apply text-sm ml-2 text-gray-600 italic; }
+   #works i { @apply text-sm ml-2 text-gray-600 italic; }
 
   .disco-nav { @apply flex w-2/4 float-right text-right flex-row-reverse text-white font-meno text-xl; }
   .disco-nav span { @apply opacity-30 duration-1000 ;}
@@ -537,34 +532,35 @@
   .full-disco{ @apply mb-20; }
 
   .full-disco.layoutGrid{ @apply grid grid-cols-3 gap-10 h-1/3;}
-  .full-disco.layoutGrid article {@apply flex-col duration-500 transition-all justify-end;}
+  .full-disco.layoutGrid article {@apply flex-col duration-1000 transition-all justify-start;}
   .full-disco.layoutGrid:hover article:not(:hover) {opacity:0.5!important;}
-
+  .full-disco.layoutGrid article .title { @apply px-5 grid text-center leading-6}
+  .full-disco.layoutGrid article:hover .title { @apply px-5}
   .full-disco.layoutGrid article .year{@apply mt-4;}
   .full-disco.layoutGrid article .format{@apply mb-4;}
   .full-disco.layoutGrid article img {@apply relative; height:calc(33.33vw - 100px)!important;}
   .full-disco.layoutGrid article svg { bottom: -25px }
   .full-disco.layoutList{ @apply flex flex-col; }
-  .full-disco.layoutList article {@apply h-[50px];}
+  .full-disco.layoutList article {@apply h-auto;}
   .full-disco.layoutList article img { @apply hidden invisible}
 
   .full-disco .curtain { @apply w-full h-full absolute z-40 bg-black;}
-  .full-disco article { @apply flex  overflow-hidden justify-between items-center duration-500 transition-all}
+  .full-disco article { @apply flex  overflow-hidden justify-between items-center duration-1000 transition-all py-4;}
   .full-disco article:hover { @apply border-white duration-1000  transition-all; }
-  .full-disco article svg { @apply absolute w-full h-[50px] duration-500 transition-all z-0; }
-  .full-disco article svg line{ @apply stroke-1 duration-500 transition-all;}
-  .full-disco article:hover svg line{ filter:url(#pixelateMax);}
+  .full-disco article svg { @apply group-hover:opacity-100 opacity-50 absolute w-full h-[50px] duration-1000 transition-all z-0; }
+  .full-disco article svg rect{ @apply duration-1000 transition-all;}
+  .full-disco article:hover svg{ filter:url(#pixelateMin);}
 
-  .full-disco article:hover svg line{ @apply text-gray-700; }
   .full-disco article .year, .full-disco article .title, .full-disco article .info, .full-disco article .label, .full-disco article .format{ @apply z-[1] bg-black duration-500 transition-all text-gray-600 font-work cursor-crosshair; } 
   .full-disco article:hover .year, .full-disco article:hover .info, .full-disco article:hover .format { @apply text-white; } 
-  .full-disco article .year{ @apply pr-2; } 
-  .full-disco article .title{ @apply text-xl text-white p-4 font-light; } 
+  .full-disco article .year{ @apply pr-2 text-[1.5em]; } 
+  .full-disco article .title{ @apply text-[22px] text-white p-4 font-light; } 
   .full-disco article .info{ @apply p-2; } 
   .full-disco article .label{ @apply text-sm italic text-white p-2; }
   .full-disco article .format{ @apply pl-2; }
-  .full-disco article:hover .title {@apply px-8;} 
-  .full-disco article:hover .label {@apply px-4;} 
+  .full-disco article:hover .title {@apply px-20;} 
+  .full-disco article:hover a.title {filter:url(#pixelateMin);}
+  .full-disco article:hover .label {@apply px-10 delay-75;} 
 
   .full-ost { @apply flex flex-col mb-20; }
   .full-ost .curtain { @apply w-full h-full absolute z-40 bg-black;}

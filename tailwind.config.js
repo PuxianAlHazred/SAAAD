@@ -47,6 +47,8 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       gray: colors.gray,
+      primary: '#CCCCCC',
+      secondary: '#666666',
       transparent: 'transparent',
       current: 'currentColor',
     },
@@ -88,7 +90,7 @@ module.exports = {
       fontFamily: {
         'work': ["Work Sans", "Open Sans", "sans-serif"],
         'meno': ["Meno Banner"],
-        'hoefler': ["Hoefler"],
+        'hoefler': ["Hoefler Text"],
       }
     }
   },
