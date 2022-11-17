@@ -54,13 +54,13 @@ module.exports = {
     },
     extend: {
       width: {
-        'wSaaad': 'calc(100% - 200px)',
+        'wSaaad': 'calc(100vw - 200px)!important',
       },
       height: {
-        'hSaaad': 'calc(100vh - 100px)',
+        'hSaaad': 'calc(100vh - 100px)!important',
       },
       minHeight: {
-        'mhSaaad': 'calc(100vh - 50px)',
+        'mhSaaad': 'calc(100vh - 50px)!important',
       },
       lineHeight: {
       '20': '5.5rem',

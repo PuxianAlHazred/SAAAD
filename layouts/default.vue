@@ -1,13 +1,17 @@
 <template>
-  <main :class="{'isDesktop': this.$device.isDesktop, 'isMobile': this.$device.isMobile, 'isTablet': this.$device.isTablet,}">
-    <Ui-preloading v-if="this.$store.state.preloading"/>
-    <Ui-header />
-    <Nuxt v-if="this.$store.state.content" class="frame"/>
-  </main>
+
+      <main :class="{'isDesktop': this.$device.isDesktop, 'isMobile': this.$device.isMobile, 'isTablet': this.$device.isTablet,}">
+        <Ui-preloading v-if="this.$store.state.preloading"/>
+        <Ui-header />
+        <Nuxt v-if="this.$store.state.content" class="wSaaad my-0 ml-[150px] mr-[50px]"/>
+      </main>
+
 </template>
 <style lang="postcss">
+  html { 
+   scroll-behavior: smooth; 
+  }
   main { @apply bg-black; }
-  .frame { margin: 0 50px 0 150px; }
 </style>
 <script>
   export default {
@@ -22,6 +26,7 @@
       },
     },
     mounted() {
+
       this.$gsap.config({nullTargetWarn: false, trialWarn: false});
       this.enter();
    

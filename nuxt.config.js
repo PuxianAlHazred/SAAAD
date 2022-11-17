@@ -14,17 +14,13 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.png' },
-      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=IM+Fell+English&display=swap' },
     ],
     script: [
       { src: 'https://unpkg.com/three@0.136.0/build/three.min.js'}, 
-      { src: 'https://cdn.jsdelivr.net/npm/three@0.136/examples/js/loaders/RGBELoader.js'}, 
-      { src: 'https://cdn.jsdelivr.net/npm/three@0.136/examples/js/loaders/FontLoader.js'}, 
-      { src: 'https://cdn.jsdelivr.net/npm/three@0.136/examples/jsm/geometries/TextGeometry.js'}, 
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'},
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'},
       { src: 'https://unpkg.com/split-type'},
+      { src: '/js/sm.js'},
       
     ]
   },
@@ -40,7 +36,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    //'~/plugins/ga.js'
+  //  '~/plugins/sm.js'
   ],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

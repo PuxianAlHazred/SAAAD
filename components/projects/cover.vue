@@ -3,7 +3,7 @@
 </template>
 <style lang="postcss">
     .bumpEffect {
-        @apply saturate-100 ; width: 100vw!important; margin-left: -160px;
+        @apply saturate-100; width: 100vw!important; margin-left: -160px;
     }    
 </style>
 <script>
@@ -83,16 +83,30 @@ export default {
             //scene.add( pointLightHelper );
 
             // Textures
-            const texture2 = new THREE.TextureLoader().load('/img/Heat-Death.jpg')
-            const texture = new THREE.TextureLoader().load('/img/All-Lanes-Of-Lilac-Evening.jpg')
-            texture.crossOrigin = 'anonymous';
+            function getRandomInt(max) { return 'texture_'+Math.floor(Math.random() * max);}
+            const texture_0 = new THREE.TextureLoader().load('/img/Heat-Death.jpg')
+            const texture_1 = new THREE.TextureLoader().load('/img/Orbs-And-Channels-RE.jpg')
+            const texture_2 = new THREE.TextureLoader().load('/img/The-Charnel-Ground.jpg')
+
+            var texturesList = [
+                '/img/Heat-Death.jpg',
+                '/img/Orbs-And-Channels-RE.jpg',
+                '/img/The-Charnel-Ground.jpg',
+                '/img/мреть.jpg',
+                '/img/мреть(наутро ночь).jpg',
+                '/img/Sustained-Layers.jpg',
+                '/img/Last-Love.jpg',
+                '/img/Different-Streams.jpg',
+            ]; 
+            var randIndex = THREE.Math.randInt(0, texturesList.length - 1);
+            var randTexture = new THREE.TextureLoader().load(texturesList[randIndex]);
             // Material
             var oldMaterial = new THREE.MeshPhongMaterial({
                 color      :  new THREE.Color("rgb(255,255,255)"),
                 emissive   :  new THREE.Color("rgb(0,0,0)"),
-                map        :  texture2,
+                map        :  randTexture,
                 //normalMap  :  texture,
-                bumpMap    :  texture2,
+                bumpMap    :  randTexture,
                 normalScale:  new THREE.Vector2(0.0, 0.0),
                 bumpScale  :  0.045,
             });

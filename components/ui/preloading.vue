@@ -2,15 +2,15 @@
 
     <div v-if="preloading" class="preloader">
       <div class="loading">
-        <svg width="500" height="500" viewbox="0 0 500 500">
+        <svg width="300" height="200" viewbox="0 0 300 200">
           <g id="hold">
-            <text class="font-work textEnter text-lg" x="250" y="250" fill="white" text-anchor="middle">Clic here to enter !</text>
-            <text class="font-work textWarning" x="250" y="300" fill="#666" text-anchor="middle">Warning : This website use sounds !</text>
-            <rect class="noProgressBar" width="50" height="2" y="275" x="225" fill="#151515"/>
-            <rect class="onProgressBar" width="0" height="2" y="275" x="225" fill="white"/>
+            <text id="enter" class="font-work tracking-widest uppercase textEnter text-lg cursor-crosshair" x="150" y="85" fill="white" text-anchor="middle">Clic here to enter !</text>
+            <text class="font-work textWarning" x="150" y="125" fill="#666" text-anchor="middle">Warning : This website use sounds !</text>
+            <rect class="noProgressBar pixelateMin" width="50" height="2" y="100" x="125" fill="red"/>
+            <rect class="onProgressBar " width="0" height="2" y="100" x="125" fill="white"/>
           </g>
         </svg>
-        <div class="loading-text text-justify">
+        <div class="loading-text text-justify font-work cursor-wait">
           <span class="loading-text-words">P</span>
           <span class="loading-text-words">A</span>
           <span class="loading-text-words">C</span>
@@ -64,21 +64,20 @@
   }
   .loading-text {
     position: absolute;
-    top: 0;
+    top: 60px;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     text-align: center;
-    width: 500px;
-    height: 500px;
-    line-height: 500px;
+    width: 300px;
+    height: 200px;
+    line-height: 100px;
   }
   .loading-text span {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 2.5px;
     color: #fff;
-    font-family: "Meno", sans-serif;
   }
   .loading-text span:nth-child(1) {
     filter: blur(0px);
@@ -165,51 +164,21 @@
         //this.$gsap.to('.textWarning', { y: "20", opacity:0 , delay: 5 });
         this.$gsap.from('.textEnter', { y: "-20", opacity:0 , delay: 5 });
       },
-      longpress() {
-        const audio = document.querySelector("#sound1");
-          audio.volume = 0;
-          audio.loop = true;
-        function pauseSound(){ audio.pause(); }
-        var hold = document.querySelector(".loading");
-        var GSAP = this.$gsap;
-        var STORE = this.$store;
-        var animation = this.$gsap.timeline({
-          paused: true,
-          onComplete: function() {
-            hold.removeEventListener("mouseup", reverseAnimation);
-            animation.to('#progress', {stroke:"white", duration: 1});
-          }
-        });
-        animation.to( '#progress', { strokeDashoffset: "0", duration: 3, onComplete: () => { 
-          GSAP.to('.preloader', { opacity: 0, display: "none", duration: 1});
-              //GSAP.to('body', { delay: 1,   onComplete: () => { STORE.dispatch("actPreloading");  }});
-              animation.kill();
-              audio.play();
-              GSAP.to(audio, 1, {volume:0.5, onComplete:pauseSound} );
-          setTimeout(() => { 
-              STORE.dispatch("actPreloading"); 
-              STORE.dispatch("actContent"); 
-            }, "1000")
-        } });
-        hold.addEventListener("mousedown", function() {animation.play();});
-        hold.addEventListener("mouseup", reverseAnimation);
-        function reverseAnimation() { animation.reverse(); } 
-      },
       shortpress() {
         const audio = document.querySelector("#sound1");
           audio.volume = 0;
           audio.loop = true;
         function pauseSound(){ audio.pause(); }
-        var short = document.querySelector(".loading");
+        var short = document.querySelector("#enter");
         var GSAP = this.$gsap;
         var STORE = this.$store;
         var animation = this.$gsap.timeline({
           paused: true,
           onComplete: function() {
-            animation.to('#progress', {stroke:"white", duration: 1});
+            animation.to('#progress', {stroke:"white", duration: 0.5});
           }
         });
-        animation.to( '#progress', { strokeDashoffset: "0", duration: 3, onComplete: () => { 
+        animation.to( '#progress', { strokeDashoffset: "0", duration: 1, onComplete: () => { 
           GSAP.to('.preloader', { opacity: 0, display: "none", duration: 1});
               //GSAP.to('body', { delay: 1,   onComplete: () => { STORE.dispatch("actPreloading");  }});
               animation.kill();
@@ -225,7 +194,6 @@
     },
     mounted() {
       this.appear();
-      //this.longpress();
       this.shortpress();
     },
     computed: {
