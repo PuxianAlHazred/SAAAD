@@ -507,6 +507,26 @@
       </div>
     </div>
 
+    <div class="appear-works">
+      <header class="works-head sticky top-0">
+        <h2>Exhibitions &amp; Installations</h2>
+      </header>
+      <div class="full-disco">
+        <article data-year="2021">
+          <div class="curtain"></div>
+          <div class="year">2021</div>
+          <div class="title">L'Homme Gris Raconte</div>
+          <div class="label">Casino Luxembourg</div>
+          <div class="format">"Secret Hell" in-situ installation</div>
+          <svg height="50" width="100vw" class="pixelateMin">
+            <line x1="0" y1="25" x2="100%" y2="25"/>
+          </svg>
+        </article>
+      </div>
+    </div>
+
+
+
   </section>
 </template>
 <style lang="postcss">
