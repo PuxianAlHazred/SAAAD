@@ -1,7 +1,15 @@
 <template>
     <header class="main-header">
-        <Ui-logo/>
-        <nav  @click="actMenu()">MENU</nav>
+        <Ui-logo class="mix-blend-difference"/>
+        <button  @click="actMenu()">
+          <svg v-if="this.$store.state.menu === false" class="h-5 w-5 fill-current text-white hover:scale-150 transition" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <!-- Close -->
+          <svg v-if="this.$store.state.menu === true" class="w-5 h-5 scale-150 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
         <div id="muted" @click="actMuted()" class="cursor-pointer">
           <svg id="wave" :class="{ 'opacity-100': !this.$store.state.muted, 'opacity-50 stopAnimate': this.$store.state.muted }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
             <path class="Line_1" data-name="Line 1" d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91Z"/>
@@ -191,15 +199,18 @@
             </defs> 
           </svg>
         </div>
+        <ui-menu />
 
     </header>
 </template>
 <style lang="postcss" scooped>
-  .main-header { @apply  pb-20 pt-2 flex justify-between flex-col fixed items-center h-screen w-[150px] top-0 left-0 z-[1000] mix-blend-difference bg-transparent;}
-  .main-header nav { @apply -rotate-90 text-[15px] font-work text-white;}
+  .main-header { @apply  pb-20 pt-2 flex justify-between flex-col fixed items-center h-screen w-[150px] top-0 left-0 z-[1000] bg-transparent;}
+  .main-header button { @apply -rotate-90 text-[15px] font-work text-white z-[1001];}
 
-  .main-header #wave { @apply h-[25px] w-[25px] fill-current text-white; }
+  .main-header #muted { @apply z-[1001]; }
   .main-header #muted span { @apply transition-colors duration-1000 font-mono text-[10px] fixed bottom-14 left-0 w-[150px] text-center tracking-widest; }
+  .main-header #muted #wave { @apply h-[25px] w-[25px] fill-current text-white; }
+
   .main-header .stopAnimate .Line_1, .stopAnimate .Line_2,.stopAnimate .Line_3,.stopAnimate .Line_4,.stopAnimate .Line_5,.stopAnimate .Line_6,.stopAnimate .Line_7,.stopAnimate .Line_8,.stopAnimate .Line_9{ animation:none!important; transform: scaleY(0.3)!important;transform-origin: center!important;}
   .main-header #wave .Line_1 {
     -webkit-animation: pulse 1s infinite; animation: pulse 1s infinite;

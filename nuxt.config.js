@@ -47,7 +47,8 @@ export default {
   fontLoader: {
     url: {
       local: '/fonts/font.css',
-      google: 'https://fonts.googleapis.com/css?family=Work+Sans:wght@300|Open+Sans:wght@300',
+      google: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300',
+      google2: 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@300',
       custom: 'https://use.typekit.net/jpp6fch.css'
     }
   },

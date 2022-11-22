@@ -1,9 +1,7 @@
 <template>
   <main id="saaad-laboratory">
     <section id="works" >
-      <main-discography />
       <main-ost />
-      <main-appearances />
     </section>
     <Ui-footer />
   </main>
@@ -34,17 +32,17 @@
     data: () => ({
     }),
     transition: {
-      name: 'page_transition',
+        name: 'page_transition',
         mode: 'in-out',
         enter() {
-          console.log( `%c SAAAD %c pages/works.vue %c 📄 Enter 🟢"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#000000 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
+          console.log( `%c SAAAD %c pages/original-soundtracks.vue %c 📄 Enter 🟢"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#000000 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
         },
         beforeLeave() {
-          console.log( `%c SAAAAD %c pages/works.vue %c 📄 beforeLeave 🔴"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#000000 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
+          console.log( `%c SAAAAD %c pages/original-soundtracks.vue %c 📄 beforeLeave 🔴"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#000000 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
         }
     },
     mounted() {
-      console.log( `%c SAAAD %c pages/works.vue %c 📓 mounted() 🟢"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#000000 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
+      console.log( `%c SAAAD %c pages/original-soundtracks.vue %c 📓 mounted() 🟢"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#000000 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
 
       var gsap = this.$gsap;
       var ScrollTrigger = this.$ScrollTrigger;
@@ -139,8 +137,6 @@
           }
         });
 
-        var discoSpan = document.querySelector(".disco-nav");
-        discoSpan.addEventListener("click", () => { refreshHeight(); });
 
         return ScrollTrigger.create({
           animation: gsap.fromTo(content, {y:0}, {

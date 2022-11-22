@@ -1,10 +1,10 @@
 <template>
       <aside class="bg-secondary grid ease-linear items-center transform  top-0 fixed h-screen w-full transition-all duration-500 z-[1000]" 
     :class="{
-        'opacity-100 left-0': this.$store.state.menu,
-        '-left-full opacity-0': !this.$store.state.menu
-    }" @click="actMenu()" >
-      <span class="text-white">MENU</span>
+        'opacity-100 right-0': this.$store.state.booking,
+        '-right-full opacity-0': !this.$store.state.booking
+    }" @click="actBooking()" >
+      <span class="text-white">BOOKING</span>
     </aside>  
 </template>
 <style lang="postcss" scooped>
@@ -19,7 +19,7 @@
     },
     methods: {
       ...mapActions({ 
-        actMenu: 'actMenu',
+        actBooking: 'actBooking',
       }),
       afterEnter(el) {
         this.content = true

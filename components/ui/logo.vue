@@ -20,7 +20,7 @@
     justify-center 
     w-[155px] 
     h-[155px] 
-    z-50 
+    z-[1001] 
     text-[40px] 
     tracking-wider
     font-hoefler;

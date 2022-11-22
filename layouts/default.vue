@@ -1,16 +1,14 @@
 <template>
-
-      <main :class="{'isDesktop': this.$device.isDesktop, 'isMobile': this.$device.isMobile, 'isTablet': this.$device.isTablet,}">
-        <Ui-preloading v-if="this.$store.state.preloading"/>
-        <Ui-header />
-        <Nuxt v-if="this.$store.state.content" class="wSaaad my-0 ml-[150px] mr-[50px]"/>
-      </main>
-
+  <main :class="{'isDesktop': this.$device.isDesktop, 'isMobile': this.$device.isMobile, 'isTablet': this.$device.isTablet,}">
+    <Ui-preloading v-if="this.$store.state.preloading"/>
+    <Ui-header />
+    <ui-booking />
+    <projects-secret />
+    <Nuxt v-if="this.$store.state.content" class="w-wSaaad my-0 ml-[150px] mr-[50px]"/>
+  </main>
 </template>
 <style lang="postcss">
-  html { 
-   scroll-behavior: smooth; 
-  }
+  html { scroll-behavior: smooth; }
   main { @apply bg-black; }
 </style>
 <script>

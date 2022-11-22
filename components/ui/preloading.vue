@@ -6,7 +6,7 @@
           <g id="hold">
             <text id="enter" class="font-work tracking-widest uppercase textEnter text-lg cursor-crosshair" x="150" y="85" fill="white" text-anchor="middle">Clic here to enter !</text>
             <text class="font-work textWarning" x="150" y="125" fill="#666" text-anchor="middle">Warning : This website use sounds !</text>
-            <rect class="noProgressBar pixelateMin" width="50" height="2" y="100" x="125" fill="red"/>
+            <rect class="noProgressBar pixelateMin" width="50" height="2" y="100" x="125" fill="#666666"/>
             <rect class="onProgressBar " width="0" height="2" y="100" x="125" fill="white"/>
           </g>
         </svg>
@@ -60,7 +60,7 @@
     width: 100%;
     height: 100%;
     background: #000;
-    z-index: 9999;
+    z-index: 999;
   }
   .loading-text {
     position: absolute;

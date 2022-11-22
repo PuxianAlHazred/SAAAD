@@ -1,10 +1,10 @@
 <template>
-      <aside class="bg-secondary grid ease-linear items-center transform  top-0 fixed h-screen w-full transition-all duration-500 z-[1000]" 
+      <aside class="bg-secondary grid ease-linear items-center transform  left-0 fixed h-screen w-full transition-all duration-500 z-[1000]" 
     :class="{
-        'opacity-100 left-0': this.$store.state.menu,
-        '-left-full opacity-0': !this.$store.state.menu
-    }" @click="actMenu()" >
-      <span class="text-white">MENU</span>
+        'opacity-100 top-0': this.$store.state.secret,
+        '-top-full opacity-0': !this.$store.state.secret
+    }" @click="actSecret()" >
+      <span class="text-white">SECRET</span>
     </aside>  
 </template>
 <style lang="postcss" scooped>
@@ -19,7 +19,7 @@
     },
     methods: {
       ...mapActions({ 
-        actMenu: 'actMenu',
+        actSecret: 'actSecret',
       }),
       afterEnter(el) {
         this.content = true

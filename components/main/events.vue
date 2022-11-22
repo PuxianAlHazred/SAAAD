@@ -7,7 +7,7 @@
         <span @click="filtered = 'liveset'" ref="liveset" :class="['liveset', { 'active' : filtered === 'liveset' }]">LIVE<br> SET</span> 
         <span @click="filtered = 'exhibition'" ref="exhibition" :class="['exhibition', { 'active' : filtered === 'exhibition' }]">INSTALLATION<br>/ EXHIBITION  </span>
         <span @click="filtered = 'collaboration'" ref="collaboration" :class="['collaboration', { 'active' : filtered === 'collaboration' }]">COLLABORATION<br>/ OTHER</span>
-        <span class="booking">BOOKING</span>
+        <span class="booking" @click="actBooking()">BOOKING</span>
       </div>
     </header>
     <div class="full-events">
@@ -818,6 +818,7 @@
 
 </style>
 <script>
+  import {mapActions} from 'vuex'
   export default {
     data() {
       return {
@@ -827,6 +828,9 @@
       }
     },
     methods: {
+      ...mapActions({ 
+        actBooking: 'actBooking',
+      }),
       afterEnter(el) {
         this.content = true
       },

@@ -27,13 +27,12 @@
 }
 .page_transition-leave-active::before,
 .page_transition-enter-active::before {
-  background-color: #FFFFFF;
-
+  background-color: #666666;
 }
 .page_transition-leave-active::after,
 .page_transition-enter-active::after {
   top: 50%;
-  background-color: #FFFFFF;
+  background-color: #666666;
 }
 .page_transition-enter::before,
 .page_transition-enter::after {
