@@ -1,6 +1,10 @@
 /* ALL : SIMPLE OPACITY*/
-.fade-enter-active, .fade-leave-active { }
-.fade-enter, .fade-leave-active { }
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+ }
+.fade-enter, .fade-leave-active { 
+  opacity: 0;
+}
 
 /* Page : SPLIT*/
 .page_transition-leave-active,

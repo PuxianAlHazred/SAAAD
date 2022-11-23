@@ -10,7 +10,7 @@
               <path d="M6 18L18 6M6 6l12 12"></path>
             </svg>
         </button>
-        <div id="muted" @click="actMuted()" class="cursor-pointer">
+        <div id="muted" @click="actMuted()" :class="[{ 'muted' : this.$store.state.muted === true, 'notmuted' : this.$store.state.muted === false }]">
           <svg id="wave" :class="{ 'opacity-100': !this.$store.state.muted, 'opacity-50 stopAnimate': this.$store.state.muted }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
             <path class="Line_1" data-name="Line 1" d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91Z"/>
             <path class="Line_2" data-name="Line 2" d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91Z"/>
@@ -207,7 +207,7 @@
   .main-header { @apply  pb-20 pt-2 flex justify-between flex-col fixed items-center h-screen w-[150px] top-0 left-0 z-[1000] bg-transparent;}
   .main-header button { @apply -rotate-90 text-[15px] font-work text-white z-[1001];}
 
-  .main-header #muted { @apply z-[1001]; }
+  .main-header #muted { @apply z-[1001] cursor-pointer; }
   .main-header #muted span { @apply transition-colors duration-1000 font-mono text-[10px] fixed bottom-14 left-0 w-[150px] text-center tracking-widest; }
   .main-header #muted #wave { @apply h-[25px] w-[25px] fill-current text-white; }
 
