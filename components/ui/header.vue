@@ -2,25 +2,25 @@
     <header class="main-header">
         <Ui-logo class="mix-blend-difference"/>
         <button  @click="actMenu()">
-          <svg v-if="this.$store.state.menu === false" class="h-5 w-5 fill-current text-white hover:scale-150 transition" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-              <path d="M4 6h16M4 12h16M4 18h16"></path>
+          <svg v-if="this.$store.state.menu === false" class="h-[49px] w-[49px] fill-current text-white" viewBox="0 0 49 49">
+              <path d="m34 21v1h-19v-1zm-5 3v1h-9v-1zm5 3v1h-19v-1z"></path>
           </svg>
           <!-- Close -->
-          <svg v-if="this.$store.state.menu === true" class="w-5 h-5 scale-150 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-              <path d="M6 18L18 6M6 6l12 12"></path>
+          <svg v-if="this.$store.state.menu === true" class="h-[49px] w-[49px] fill-current scale-x-150 text-white" viewBox="0 0 49 49">
+              <path d="m34 21v1h-19v-1zm-5 3v1h-9v-1zm5 3v1h-19v-1z"></path>
             </svg>
         </button>
         <div id="muted" @click="actMuted()" :class="[{ 'muted' : this.$store.state.muted === true, 'notmuted' : this.$store.state.muted === false }]">
-          <svg id="wave" :class="{ 'opacity-100': !this.$store.state.muted, 'opacity-50 stopAnimate': this.$store.state.muted }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
-            <path class="Line_1" data-name="Line 1" d="M0.91,15L0.78,15A1,1,0,0,0,0,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H0.91Z"/>
-            <path class="Line_2" data-name="Line 2" d="M6.91,9L6.78,9A1,1,0,0,0,6,10V28a1,1,0,1,0,2,0s0,0,0,0V10A1,1,0,0,0,7,9H6.91Z"/>
-            <path class="Line_3" data-name="Line 3" d="M12.91,0L12.78,0A1,1,0,0,0,12,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H12.91Z"/>
-            <path class="Line_4" data-name="Line 4" d="M18.91,10l-0.12,0A1,1,0,0,0,18,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H18.91Z"/>
-            <path class="Line_5" data-name="Line 5" d="M24.91,15l-0.12,0A1,1,0,0,0,24,16v6a1,1,0,0,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H24.91Z"/>
-            <path class="Line_6" data-name="Line 6" d="M30.91,10l-0.12,0A1,1,0,0,0,30,11V27a1,1,0,1,0,2,0s0,0,0,0V11a1,1,0,0,0-1-1H30.91Z"/>
-            <path class="Line_7" data-name="Line 7" d="M36.91,0L36.78,0A1,1,0,0,0,36,1V37a1,1,0,1,0,2,0s0,0,0,0V1a1,1,0,0,0-1-1H36.91Z"/>
-            <path class="Line_8" data-name="Line 8" d="M42.91,9L42.78,9A1,1,0,0,0,42,10V28a1,1,0,1,0,2,0s0,0,0,0V10a1,1,0,0,0-1-1H42.91Z"/>
-            <path class="Line_9" data-name="Line 9" d="M48.91,15l-0.12,0A1,1,0,0,0,48,16v6a1,1,0,1,0,2,0s0,0,0,0V16a1,1,0,0,0-1-1H48.91Z"/>
+          <svg id="wave" :class="{ 'opacity-100': !this.$store.state.muted, 'opacity-50 stopAnimate': this.$store.state.muted }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49">
+            <path class="Line_9" d="m36 23h1v4h-1z"/>
+            <path class="Line_8" d="m33 20h1v10h-1z"/>
+            <path class="Line_7" d="m30 15h1v20h-1z"/>
+            <path class="Line_6" d="m27 20h1v10h-1z"/>
+            <path class="Line_5" d="m24 23h1v4h-1z"/>
+            <path class="Line_4" d="m21 20h1v10h-1z"/>
+            <path class="Line_3" d="m18 15h1v20h-1z"/>
+            <path class="Line_2" d="m15 20h1v10h-1z"/>
+            <path class="Line_1" d="m12 23h1v4h-1z"/>
           </svg>
           <span :class="{'text-primary': this.$store.state.muted, 'text-black': !this.$store.state.muted}">muted</span>
           <svg class="svg-filter">
@@ -196,6 +196,13 @@
                 <feBlend in="r" in2="b" mode="screen" result="blend" />
                 <feBlend in="blend" in2="g" mode="screen" result="blend" />
               </filter>
+              <filter id="noise">
+                <feOffset in="SourceGraphic" dx="-8" dy="-8" result="offset" />
+                <feGaussianBlur in="offset" stdDeviation="64" result="blur" />
+                <feTurbulence result="waves" type="turbulence" baseFrequency="0.735 0.771" numOctaves="1" seed="256"></feTurbulence>
+                <feDisplacementMap in="blur" in2="waves" scale="320" xChannelSelector="R" yChannelSelector="B" result="ripples"></feDisplacementMap>
+                <feComposite in="waves" in2="ripples" operator="arithmetic" k1="1" k2="0" k3="1" k4="0"></feComposite>
+              </filter>
             </defs> 
           </svg>
         </div>
@@ -209,7 +216,7 @@
 
   .main-header #muted { @apply z-[1001] cursor-pointer; }
   .main-header #muted span { @apply transition-colors duration-1000 font-mono text-[10px] fixed bottom-14 left-0 w-[150px] text-center tracking-widest; }
-  .main-header #muted #wave { @apply h-[25px] w-[25px] fill-current text-white; }
+  .main-header #muted #wave { @apply h-[49px] w-[49px] fill-current text-white; }
 
   .main-header .stopAnimate .Line_1, .stopAnimate .Line_2,.stopAnimate .Line_3,.stopAnimate .Line_4,.stopAnimate .Line_5,.stopAnimate .Line_6,.stopAnimate .Line_7,.stopAnimate .Line_8,.stopAnimate .Line_9{ animation:none!important; transform: scaleY(0.3)!important;transform-origin: center!important;}
   .main-header #wave .Line_1 {
@@ -260,7 +267,7 @@
   }
     .svg-filter{@apply invisible w-0 h-0}
 
-
+  .noise { border-radius: 50%; filter: url("#noise");}
   .pixelateMax { @apply w-auto;filter:url(#pixelateMax);}
   .pixelateMin { @apply w-auto;filter:url(#pixelateMin);}
   .pixelateOnScroll { @apply w-auto;filter:url(#pixelateOnScroll);}

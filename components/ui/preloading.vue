@@ -1,7 +1,7 @@
 <template>
 
     <div v-if="preloading" class="preloader">
-      <div class="loading">
+      <div class="loading" >
         <svg width="300" height="200" viewbox="0 0 300 200">
           <g id="hold">
             <text id="enter" class="font-work tracking-widest uppercase textEnter text-lg cursor-crosshair" x="150" y="85" fill="white" text-anchor="middle">Clic here to enter !</text>
