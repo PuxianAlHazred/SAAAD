@@ -155,13 +155,9 @@
         actContent: 'actContent' 
       }),
       appear() {
-        console.log('appear')
         this.$gsap.to('.onProgressBar', { width: "50", duration: 3 });
         this.$gsap.from('.textWarning', { y: "20", opacity:0 , delay: 3 });
-        //this.$gsap.to('#hold rect', { height: "0", opacity:0 , delay: 4 });
         this.$gsap.to('.loading-text', { opacity:0 , display: 'none',delay: 5 });
-        this.$gsap.from('.textIntro', { filter: "blur(100px)", opacity:0 , delay: 5.5 });
-        //this.$gsap.to('.textWarning', { y: "20", opacity:0 , delay: 5 });
         this.$gsap.from('.textEnter', { y: "-20", opacity:0 , delay: 5 });
       },
       shortpress() {
@@ -180,7 +176,6 @@
         });
         animation.to( '#progress', { strokeDashoffset: "0", duration: 1, onComplete: () => { 
           GSAP.to('.preloader', { opacity: 0, display: "none", duration: 1});
-              //GSAP.to('body', { delay: 1,   onComplete: () => { STORE.dispatch("actPreloading");  }});
               animation.kill();
               audio.play();
               GSAP.to(audio, 1, {volume:0.5, onComplete:pauseSound} );
@@ -193,6 +188,8 @@
       }
     },
     mounted() {
+
+      
       this.appear();
       this.shortpress();
     },
@@ -201,6 +198,6 @@
         return this.$store.getters['getPreloading']
       },
 
-    },
+    }
   }
 </script>

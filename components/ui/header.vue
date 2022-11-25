@@ -309,7 +309,7 @@
     mounted() {
       this.$gsap.from(".main-header", {width:'0px', duration:1, opacity: '0',ease:"power2.easeOut"});
       this.$gsap.from(".main-logo", {y: -10, duration:0.5, delay: 1 , opacity: '0', ease:"power2.easeOut"});
-      this.$gsap.from(".main-header nav", {x: -10, duration:0.5, delay: 1.25 , opacity: '0', ease:"power2.easeOut"});
+      this.$gsap.from(".main-header button", {x: -10, duration:0.5, delay: 1.25 , opacity: '0', ease:"power2.easeOut"});
       this.$gsap.from(".main-header #muted", { duration:0.5, delay: 1.5 , opacity: '0', ease:"power2.easeOut"});
 
     },

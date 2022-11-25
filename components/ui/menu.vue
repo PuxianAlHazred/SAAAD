@@ -4,6 +4,7 @@
       <nuxt-link to="/works">works</nuxt-link>
       <nuxt-link to="/albums">albums</nuxt-link>
       <nuxt-link to="/">contact</nuxt-link>
+      
     </aside>  
 </template>
 <style lang="postcss" scooped>

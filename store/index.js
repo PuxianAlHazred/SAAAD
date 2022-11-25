@@ -4,7 +4,7 @@ export const state = () => ({
     menu: false,
     booking: false,
     secret: false,
-    muted: false,
+    muted: true,
     background: true,
 })
 export const mutations = {
