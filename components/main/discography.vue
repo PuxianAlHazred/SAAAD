@@ -1,7 +1,7 @@
 <template>
   <div class="disco-works">
     <header class="works-head sticky top-0">
-      <h2>Discography</h2>
+      <h2><NLink to="/albums">Discography</NLink></h2>
       <div class="disco-nav">
         <span class="grid ml-2 items-center" v-on:click="layoutDisco = 'grid'">
           <svg class="h-6 w-6" x="0px" y="0px" viewBox="0 0 209 209" style="enable-background:new 0 0 209 209;">

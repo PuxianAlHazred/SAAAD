@@ -2,7 +2,7 @@
   <div>
     <div class="ost-works">
       <header class="works-head">
-        <h2>Original Soundtracks</h2>
+        <h2><NLink to="/original-soundtracks">Original Soundtracks</NLink></h2>
       </header>
       <div class="full-ost">
         <article data-year="2022">
@@ -63,7 +63,7 @@
     </div>
     <div class="st-works">
       <header class="works-head">
-        <h2>Soundtracks</h2>
+        <h2><NLink to="/original-soundtracks">Soundtracks</NLink></h2>
       </header>
       <div class="full-ost">
         <article data-year="2021">

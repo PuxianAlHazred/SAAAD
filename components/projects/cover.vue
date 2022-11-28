@@ -17,10 +17,10 @@
     },
     methods: {
         initEffect() {
-            let SCENE, CAMERA, RENDERER, FOGCOLOR, POINTLIGHT1, AMBIENTLIGHT1;
+            console.log( `%c SAAAD %c projects/cover.vue %c 📓 Component mounted 🟢"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#666666 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
+            let SCENE, CAMERA, RENDERER, POINTLIGHT1, AMBIENTLIGHT1, FOGCOLOR;
             // Three.js add
-            let MANAGER = new THREE.LoadingManager();
-            let LISTENER = new THREE.AudioListener();
+            let MANAGEUR = new THREE.LoadingManager();
             let mouse = { x: 0, y: 0 };
             var mouseMesh;
             main();
@@ -37,14 +37,13 @@
                 SCENE = new THREE.Scene();
                 initLights();
                 FOGCOLOR = new THREE.Color(0x000000);
-                //SCENE.fog = new THREE.Fog( FOGCOLOR, 1, 20 );
+                SCENE.fog = new THREE.Fog( FOGCOLOR, 0.035, 2000 );
             }   
             function initCamera() {
                 // Camera
                 CAMERA = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
                 CAMERA.position.set(0, 0, 15);
                 CAMERA.lookAt( SCENE.position );
-                CAMERA.add( LISTENER );
                 SCENE.add(CAMERA);
             }
 
@@ -61,7 +60,7 @@
                     '/img/Different-Streams.jpg',
                 ]; 
                 var randIndex = THREE.Math.randInt(0, texturesList.length - 1);
-                var randTexture = new THREE.TextureLoader().load(texturesList[randIndex]);
+                var randTexture = new THREE.TextureLoader(MANAGEUR).load(texturesList[randIndex]);
                 // Material
                 var oldMaterial = new THREE.MeshPhongMaterial({
                     color      :  new THREE.Color("rgb(255,255,255)"),
@@ -139,24 +138,25 @@
                 RENDERER.render(SCENE, CAMERA);
             }
             function main() {
-                var progressBar = document.querySelector('.progressbar-cover');
 
                 init(); 
-                MANAGER.onStart = function () {
-                    
-                console.log('COVER | Loading started');
+                MANAGEUR.onStart = function () {
+                    console.log( `%c SAAAD %c projects/cover.vue %c ⏳ Loading Started"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#888888; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
                 };
-                MANAGER.onProgress = function ( item, loaded, total ) {
-                progressBar.style.width = (loaded / total * 100) + '%';
-                console.log((loaded / total * 100) + '% | ' + item);
+                MANAGEUR.onProgress = function ( item, loaded, total ) {
+                    console.groupCollapsed("Loading items");
+                    console.log( `%c SAAAD %c projects/cover.vue %c Loading ⏳`+(loaded / total * 100)+`% - `+item, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#888888; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
+                    console.groupEnd();
+
                 };
-                MANAGER.onLoad = function () {
-                console.log('COVER | Loading finish');
-                animate();
-                //GSAP.to(S1BOX3.position, {z:'-50', delay: 0, duration: 10});
+                MANAGEUR.onLoad = function () {
+                    console.log( `%c SAAAD %c projects/cover.vue %c ⏳ Loading Finish"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#888888; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
+                    animate();
+                    //GSAP.to(S1BOX3.position, {z:'-50', delay: 0, duration: 10});
                 };
-                MANAGER.onError = function (e) {
-                    console.log('COVER | Loading error : ', e);
+                MANAGEUR.onError = function (e) {
+                    console.log( `%c SAAAD %c Loading %c Error"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#888888; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
+                    console.log(e)
                 };
             }
         }

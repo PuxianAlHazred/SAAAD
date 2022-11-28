@@ -1,14 +1,13 @@
 <template>
     <header class="main-header">
-        <Ui-logo class="mix-blend-difference"/>
-        <button  @click="actMenu()">
+        <Ui-logo class="mix-blend-difference" @click="actSecret()"/>
+        <button @click="actMenu()">
           <svg v-if="this.$store.state.menu === false" class="h-[49px] w-[49px] fill-current text-white" viewBox="0 0 49 49">
               <path d="m34 21v1h-19v-1zm-5 3v1h-9v-1zm5 3v1h-19v-1z"></path>
           </svg>
-          <!-- Close -->
           <svg v-if="this.$store.state.menu === true" class="h-[49px] w-[49px] fill-current scale-x-150 text-white" viewBox="0 0 49 49">
               <path d="m34 21v1h-19v-1zm-5 3v1h-9v-1zm5 3v1h-19v-1z"></path>
-            </svg>
+          </svg>
         </button>
         <div id="muted" @click="actMuted()" :class="[{ 'muted' : this.$store.state.muted === true, 'notmuted' : this.$store.state.muted === false }]">
           <svg id="wave" :class="{ 'opacity-100': !this.$store.state.muted, 'opacity-50 stopAnimate': this.$store.state.muted }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49">
@@ -206,15 +205,16 @@
             </defs> 
           </svg>
         </div>
-        <ui-menu />
+        <ui-menu  />
+        <div id="gui_container" v-show="this.$store.state.secret"></div>
 
     </header>
 </template>
 <style lang="postcss" scooped>
   .main-header { @apply  pb-20 pt-2 flex justify-between flex-col fixed items-center h-screen w-[150px] top-0 left-0 z-[1000] bg-transparent;}
-  .main-header button { @apply -rotate-90 text-[15px] font-work text-white z-[1001];}
+  .main-header button { @apply mix-blend-difference -rotate-90 text-[15px] font-work text-white z-[1000];}
 
-  .main-header #muted { @apply z-[1001] cursor-pointer; }
+  .main-header #muted { @apply mix-blend-difference z-[1001] cursor-pointer; }
   .main-header #muted span { @apply transition-colors duration-1000 font-mono text-[10px] fixed bottom-14 left-0 w-[150px] text-center tracking-widest; }
   .main-header #muted #wave { @apply h-[49px] w-[49px] fill-current text-white; }
 

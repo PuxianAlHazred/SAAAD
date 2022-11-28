@@ -1,7 +1,7 @@
 <template>
   <section id="events" >
     <header class="events-head">
-      <h2>Events</h2>
+      <h2><NLink to="/events">Events</NLink></h2>
       <div class="events-nav">
         <span @click="filtered = 'all'" ref="all" :class="['all', { 'active' : filtered === 'all' }]">VIEW ALL<br>EVENTS</span> 
         <span @click="filtered = 'liveset'" ref="liveset" :class="['liveset', { 'active' : filtered === 'liveset' }]">LIVE<br> SET</span> 
@@ -10,7 +10,7 @@
         <span class="booking" @click="actBooking()">BOOKING</span>
       </div>
     </header>
-    <div class="full-events">
+    <div class="full-events" :class="{'opacity-50 mr-[255px] delay-0 duration-75': this.$store.state.booking, 'opacity-100 mr-[0px] delay-1000': !this.$store.state.booking}">
       <!--2022-->
       <article data-debut="2022-11-26" data-fin="2022-11-26" data-collaboration="false" data-exhibition="false" data-liveset="true">
         <div class="curtain"></div>
@@ -768,6 +768,7 @@
         <div class="info">+ Tim Hecker</div>
       </article>
     </div>
+    <ui-booking />
   </section>
 </template>
 <style lang="postcss">

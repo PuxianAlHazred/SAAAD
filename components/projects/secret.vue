@@ -1,27 +1,24 @@
 <template>
-      <aside class="grid ease-linear items-center transform  top-0 left-0 fixed w-full transition-all duration-500 z-[999]" 
-    :class="{
-        'opacity-100 h-[170px]': this.$store.state.secret,
-        'h-[0px] opacity-0': !this.$store.state.secret
-    }">
+    <div v-show="this.$store.state.secret" class="top-0 left-0 fixed">
       <div class="ambianceEffect">
           <div class='progressbar-ambiance'></div>
-          <div id="gui_container"></div>
       </div>
-    </aside>  
+    </div>  
 </template>
 <style lang="postcss" scooped>
-    .ambianceEffect {
-        @apply saturate-100; width: 100vw!important; 
-    }   
     .ambianceEffect canvas{
-        @apply ml-[7.5px] rounded-full; 
+        @apply rounded-full; 
     }   
     #gui_container{
         position: fixed;
-        top:0px;
-        right: 0px;
-        z-index:1002;
+        bottom:0px;
+        left: 0px;
+        z-index:1001;
+        width: 150px !important;
+
+    }
+    #gui {
+        width: 150px !important;
     }
 </style>
 <script>
@@ -43,9 +40,12 @@
         this.content = false
       },
       initEffect() {
+            console.log( `%c SAAAD %c projects/secret.vue %c 📓 Component mounted 🟢"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#666666 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
+
             let SCENE, CAMERA, RENDERER, FOGCOLOR, POINTLIGHT1, AMBIENTLIGHT1;
             // Three.js add
             let MANAGER = new THREE.LoadingManager();
+
             let LISTENER = new THREE.AudioListener();
             let AUDIOLOADER = new THREE.AudioLoader(MANAGER);
             const SOUND1 = new THREE.PositionalAudio(LISTENER), SOUND2 = new THREE.PositionalAudio(LISTENER), SOUND3 = new THREE.PositionalAudio(LISTENER), SOUND4 = new THREE.PositionalAudio(LISTENER), SOUND5 = new THREE.PositionalAudio(LISTENER), SOUND6 = new THREE.PositionalAudio(LISTENER), SOUND7 = new THREE.PositionalAudio(LISTENER), SOUND8 = new THREE.PositionalAudio(LISTENER);
@@ -53,6 +53,7 @@
             let grpTrnRight = new THREE.Group(), grpTrnLeft = new THREE.Group(), grpTrnTop = new THREE.Group(), grpTrnBottom = new THREE.Group(), grpTrnAll = new THREE.Group();
             const height = "150px";
             main();
+            
             function init() {
                 initScene();
                 initCamera();
@@ -60,7 +61,9 @@
                 createScene1();
                 initDatGui();
                 initEventListeners();
+                
                 document.querySelector('.ambianceEffect').appendChild(RENDERER.domElement);
+
             }
             function initScene() {
                 // Scene
@@ -70,7 +73,7 @@
             }   
             function initCamera() {
                 // Camera
-                CAMERA = new THREE.PerspectiveCamera(45, 170 / 170, 0.1, 1000);
+                CAMERA = new THREE.PerspectiveCamera(45, 155 / 155, 0.1, 1000);
                 CAMERA.position.set(0, 0, 5);
                 CAMERA.lookAt( SCENE.position );
                 CAMERA.add( LISTENER );
@@ -229,16 +232,17 @@
                 RENDERER.shadowMapSort = true;
                 RENDERER.shadowMapSoft = true;
                 RENDERER.shadowMap.type = THREE.PCFSoftShadowMap;
-                RENDERER.setClearColor(0x000000, 1);
+                RENDERER.setClearColor(0x000000, 0);
+                
             }
             function initEventListeners() {
                 window.addEventListener('resize', onWindowResize);
                 onWindowResize();
             }
             function onWindowResize() {
-                CAMERA.aspect = 170 / 170;
+                CAMERA.aspect = 155 / 155;
                 CAMERA.updateProjectionMatrix();
-                RENDERER.setSize(170, 170);
+                RENDERER.setSize(155, 155);
             }    
             function update(deltaTime){
                 const ROTATE_TIME = 60; // Time in seconds for a full rotation
@@ -267,64 +271,48 @@
                 RENDERER.render(SCENE, CAMERA);
             }
             function main() {
-                var progressBar = document.querySelector('.progressbar-ambiance');
                 var mutedBtn = document.querySelector("#muted");
-
-                init(); 
                 MANAGER.onStart = function () {
-                    
-                console.log('COVER | Loading started');
+                    console.log( `%c SAAAD %c projects/secret.vue %c ⏳ Loading Started"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#888888; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
                 };
+                console.groupCollapsed("Loading items");
+
                 MANAGER.onProgress = function ( item, loaded, total ) {
-                progressBar.style.width = (loaded / total * 100) + '%';
-                console.log((loaded / total * 100) + '% | ' + item);
+                    console.log( `%c SAAAD %c projects/secret.vue %c Loading ⏳`+(loaded / total * 100)+`% - `+item, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#888888; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
                 };
+
                 MANAGER.onLoad = function () {
-                console.log('COVER | Loading finish');
-                animate();
+                    console.groupEnd();
 
-                mutedBtn.addEventListener('click', setMuted);
-
-                function setMuted() {
-                    if(mutedBtn.classList.contains('muted')){
-                        console.log('true')
-                        SOUND1.setVolume( 0 );
-                        SOUND2.setVolume( 0 );
-                        SOUND3.setVolume( 0 );
-                        SOUND4.setVolume( 0 );
-                        SOUND5.setVolume( 0 );
-                        SOUND6.setVolume( 0 );
-                        SOUND7.setVolume( 0 );
-                        SOUND8.setVolume( 0 );
-                    } 
-                    if(mutedBtn.classList.contains('notmuted')) {
-                        console.log('false')
-                        SOUND1.setVolume( 1 );
-                        SOUND2.setVolume( 1 );
-                        SOUND3.setVolume( 1 );
-                        SOUND4.setVolume( 1 );
-                        SOUND5.setVolume( 1 );
-                        SOUND6.setVolume( 1 );
-                        SOUND7.setVolume( 1 );
-                        SOUND8.setVolume( 1 );
-                    }
-                }  
-
-                //GSAP.to(S1BOX3.position, {z:'-50', delay: 0, duration: 10});
+                    console.log( `%c SAAAD %c projects/secret.vue %c ⏳ Loading Finish"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#888888; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
+                    //console.groupEnd();
+                    animate();
+                    mutedBtn.addEventListener('click', setMuted);
+                    function setMuted() {
+                        if(mutedBtn.classList.contains('muted')){
+                            console.log('true')
+                            LISTENER.setMasterVolume( 0 );
+                        } 
+                        if(mutedBtn.classList.contains('notmuted')) {
+                            console.log('false')
+                            LISTENER.setMasterVolume( 1 );
+                        }
+                    }  
+                    //GSAP.to(S1BOX3.position, {z:'-50', delay: 0, duration: 10});
                 };
                 MANAGER.onError = function (e) {
-                    console.log('COVER | Loading error : ', e);
+                    console.log( `%c SAAAD %c Loading %c Error"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#888888; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
+                    console.log(e)
                 };
+                init(); 
+
+
+                
+
             }
         }
     },
     mounted() {
-      const body = document.body;
-      body.addEventListener('click', e => { });
-      body.click();
-      body.dispatchEvent(new Event('click'));
-      body.dispatchEvent(new Event('click'));
-      body.dispatchEvent(new Event('click'));
       this.initEffect();
     },
     computed: {

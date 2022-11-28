@@ -1,7 +1,7 @@
 <template>
     <div class="appear-works">
         <header class="works-head sticky top-0">
-            <h2>Appearances & Remixes</h2>
+            <h2><NLink to="/appearances-&-remixes">Appearances & Remixes</NLink></h2>
         </header>
         <div class="full-appear">
             <article data-year="2020">
