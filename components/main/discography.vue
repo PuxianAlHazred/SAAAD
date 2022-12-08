@@ -20,7 +20,7 @@
       <!--2021-->
       <article class="group" data-year="2021">
         <div class="curtain"></div>
-        <img src="/img/мреть(наутро ночь).jpg"/>
+        <img src="/img/cover/мреть(наутро ночь).jpg"/>
         <div class="year">2021</div>
         <div class="title">мреть (наутро ночь)<span> <i>as</i> Saáadon</span></div>
         <div class="info">[album]</div>
@@ -32,7 +32,7 @@
       </article>
       <article data-year="2021">
         <div class="curtain"></div>
-        <img src="/img/Secret-Hell.jpg"/>
+        <img src="/img/cover/Secret-Hell.jpg"/>
         <div class="year">2021</div>
         <div class="title">Secret Hell</div>
         <div class="info">[v/a "L'Homme Gris"]</div>
@@ -45,7 +45,7 @@
       <!--2020-->
       <article data-year="2020">
         <div class="curtain"></div>
-        <img src="/img/Prepared-Oasis.jpg"/>
+        <img src="/img/cover/Prepared-Oasis.jpg"/>
         <div class="year">2020</div>
         <div class="title">Prepared Oasis</div>
         <div class="info">[single]</div>
@@ -57,7 +57,7 @@
       </article>
       <article data-year="2020">
         <div class="curtain"></div>
-        <img src="/img/Elijah.jpg"/>
+        <img src="/img/cover/Elijah.jpg"/>
         <div class="year">2020</div>
         <div class="title">Elijah O.S.T</div>
         <div class="info">[album / ost]</div>
@@ -69,7 +69,7 @@
       </article>
       <article data-year="2020">
         <div class="curtain"></div>
-        <img src="/img/All-Lanes-Of-Lilac-Evening.jpg"/>
+        <img src="/img/cover/All-Lanes-Of-Lilac-Evening.jpg"/>
         <div class="year">2020</div>
         <div class="title">All Lanes Of Lilac Evening<span> <i>/w</i> Siavash Amini</span></div>
         <div class="info">[album]</div>
@@ -82,7 +82,7 @@
       <!--2019-->
       <article data-year="2019">
         <div class="curtain"></div>
-        <img src="/img/мреть.jpg"/>
+        <img src="/img/cover/мреть.jpg"/>
         <div class="year">2019</div>
         <div class="title">мреть<span> <i>as</i> Saáadon</span></div>
         <div class="info">[EP]</div>
@@ -95,7 +95,7 @@
       <!--2018-->
       <article data-year="2018">
         <div class="curtain"></div>
-        <img src="/img/Orbs-And-Channels-RE.jpg"/>
+        <img src="/img/cover/Orbs-And-Channels-RE.jpg"/>
         <div class="year">2018</div>
         <div class="title">Orbs & Channels</div>
         <div class="info">[remastered album]</div>
@@ -107,7 +107,7 @@
       </article>
       <article data-year="2018">
         <div class="curtain"></div>
-        <img src="/img/Presence-Absente.jpg"/>
+        <img src="/img/cover/Presence-Absente.jpg"/>
         <div class="year">2018</div>
         <div class="title">Présence Absente</div>
         <div class="info">[album]</div>
@@ -120,7 +120,7 @@
       <!--2016-->
       <article data-year="2016">
         <div class="curtain"></div>
-        <img src="/img/Verdaillon.jpg"/>
+        <img src="/img/cover/Verdaillon.jpg"/>
         <div class="year">2016</div>
         <div class="title">Verdaillon</div>
         <div class="info">[album]</div>
@@ -133,7 +133,7 @@
       <!--2015-->
       <article data-year="2015">
         <div class="curtain"></div>
-        <img src="/img/Delayed-Summer.jpg"/>
+        <img src="/img/cover/Delayed-Summer.jpg"/>
         <div class="year">2015</div>
         <div class="title">Delayed Summer</div>
         <div class="info">[remastered album]</div>
@@ -145,7 +145,7 @@
       </article>
       <article data-year="2015">
         <div class="curtain"></div>
-        <img src="/img/Different-Streams.jpg"/>
+        <img src="/img/cover/Different-Streams.jpg"/>
         <div class="year">2015</div>
         <div class="title">Different Streams <span><i>w/</i> EUS & Postdrome</span></div>
         <div class="info">[album]</div>
@@ -159,7 +159,7 @@
       <article data-year="2014">
 
         <div class="curtain"></div>
-        <img src="/img/Deep-Float.jpg"/>
+        <img src="/img/cover/Deep-Float.jpg"/>
         <div class="year">2015</div>
         <nuxt-link to="deep-float" class="title">Deep / Float</nuxt-link>
         <div class="info">[album]</div>
@@ -173,7 +173,7 @@
       <!--2013-->
       <article data-year="2013">
         <div class="curtain"></div>
-        <img src="/img/The-Charnel-Ground.jpg"/>
+        <img src="/img/cover/The-Charnel-Ground.jpg"/>
         <div class="year">2013</div>
         <div class="title">The Charnel Ground</div>
         <div class="info">[split album w/ Insiden]</div>
@@ -185,7 +185,7 @@
       </article> 
       <article data-year="2013">
         <div class="curtain"></div>
-        <img src="/img/Solid-Clouds.jpg"/>
+        <img src="/img/cover/Solid-Clouds.jpg"/>
         <div class="year">2013</div>
         <div class="title">Στερεά Σύννεφα</div>
         <div class="info">[album / remixes]</div>
@@ -197,7 +197,7 @@
       </article> 
       <article data-year="2013">
         <div class="curtain"></div>
-        <img src="/img/Orbs-Channels.jpg"/>
+        <img src="/img/cover/Orbs-Channels.jpg"/>
         <div class="year">2013</div>
         <div class="title">Orbs & Channels</div>
         <div class="info">[album]</div>
@@ -210,7 +210,7 @@
       <!--2012-->
       <article data-year="2012">
         <div class="curtain"></div>
-        <img src="/img/Confluences.jpg"/>
+        <img src="/img/cover/Confluences.jpg"/>
         <div class="year">2012</div>
         <div class="title">Confluences</div>
         <div class="info">[album]</div>
@@ -222,7 +222,7 @@
       </article>
       <article data-year="2012">
         <div class="curtain"></div>
-        <img src="/img/Sustained-Layers.jpg"/>
+        <img src="/img/cover/Sustained-Layers.jpg"/>
         <div class="year">2012</div>
         <div class="title">Sustained Layers <span><i>w/</i> EUS & Postdrome</span></div>
         <div class="info">[album]</div>
@@ -234,7 +234,7 @@
       </article>
       <article data-year="2012">
         <div class="curtain"></div>
-        <img src="/img/Heat-Death.jpg"/>
+        <img src="/img/cover/Heat-Death.jpg"/>
         <div class="year">2012</div>
         <div class="title">For Small Creatures Such As We...</div>
         <div class="info">[5-ways split]</div>
@@ -247,7 +247,7 @@
       <!--2011-->
       <article data-year="2011">
         <div class="curtain"></div>
-        <img src="/img/Delayed-Summer.jpg"/>
+        <img src="/img/cover/Delayed-Summer.jpg"/>
         <div class="year">2011</div>
         <div class="title">Delayed Summer</div>
         <div class="info">[album]</div>
@@ -259,7 +259,7 @@
       </article>
       <article data-year="2011">
         <div class="curtain"></div>
-        <img src="/img/Forget-Our-Debts.jpg"/>
+        <img src="/img/cover/Forget-Our-Debts.jpg"/>
         <div class="year">2011</div>
         <div class="title">Forget Our Debts</div>
         <div class="info">[v/a Sequence 2]</div>
@@ -271,7 +271,7 @@
       </article>
       <article data-year="2011">
         <div class="curtain"></div>
-        <img src="/img/Arty-Empty.jpg"/>
+        <img src="/img/cover/Arty-Empty.jpg"/>
         <div class="year">2011</div>
         <div class="title">Pink Sabbath / Raincoats</div>
         <div class="info">[EP x 2]</div>
@@ -283,7 +283,7 @@
       </article> 
       <article data-year="2011">
         <div class="curtain"></div>
-        <img src="/img/Snowbound.jpg"/>
+        <img src="/img/cover/Snowbound.jpg"/>
         <div class="year">2011</div>
         <div class="title">Snowbound / I Miss You</div>
         <div class="info">[single x 2]</div>
@@ -295,7 +295,7 @@
       </article> 
       <article data-year="2011">
         <div class="curtain"></div>
-        <img src="/img/Recovery-Wish.jpg"/>
+        <img src="/img/cover/Recovery-Wish.jpg"/>
         <div class="year">2011</div>
         <div class="title">A Recovery Wish</div>
         <div class="info">[single]</div>
@@ -307,7 +307,7 @@
       </article> 
       <article data-year="2011">
         <div class="curtain"></div>
-        <img src="/img/Raincoats.jpg"/>
+        <img src="/img/cover/Raincoats.jpg"/>
         <div class="year">2011</div>
         <div class="title">Raincoats</div>
         <div class="info">[EP]</div>
@@ -319,7 +319,7 @@
       </article>
       <article data-year="2011">
         <div class="curtain"></div>
-        <img src="/img/Pink-Sabbath.jpg"/>
+        <img src="/img/cover/Pink-Sabbath.jpg"/>
         <div class="year">2011</div>
         <div class="title">Pink Sabbath</div>
         <div class="info">[EP]</div>
@@ -332,7 +332,7 @@
       <!--2010-->
       <article data-year="2010">
         <div class="curtain"></div>
-        <img src="/img/it-was.jpg"/>
+        <img src="/img/cover/it-was.jpg"/>
         <div class="year">2010</div>
         <div class="title">It Was</div>
         <div class="info">[album]</div>

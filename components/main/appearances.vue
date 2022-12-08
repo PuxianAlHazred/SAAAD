@@ -90,24 +90,24 @@
 
 </style>
 <script>
-export default {
-    data() {
-        return {
-            content: false,
-        }
-    },
-    methods: {
-        afterEnter(el) {
-            this.content = true
+    export default {
+        data() {
+            return {
+                content: false,
+            }
         },
-        beforeLeave(el) {
-            this.content = false
+        methods: {
+            afterEnter(el) {
+                this.content = true
+            },
+            beforeLeave(el) {
+                this.content = false
+            },
         },
-    },
-    mounted() {
-    },
+        mounted() {
+        },
 
-}
+    }
 </script>
     
   

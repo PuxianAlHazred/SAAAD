@@ -59,11 +59,11 @@ export default {
   // GSAP config: https://www.npmjs.com/package/nuxt-gsap-module
   gsap: {
     extraPlugins: {
-      cssRule: false,
-      draggable: false,
-      easel: false,
-      motionPath: false,
-      pixi: false,
+      cssRule: true,
+      draggable: true,
+      easel: true,
+      motionPath: true,
+      pixi: true,
       text: true,
       scrollTo: true,
       scrollTrigger: true

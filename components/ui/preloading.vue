@@ -1,10 +1,10 @@
 <template>
-  <div v-if="preloading" class="preloader">
-    <div class="loading" >
+  <div v-if="preloading" class="preloader ">
+    <div class="loading overlay">
       <svg width="300" height="200" viewbox="0 0 300 200">
         <g id="hold">
           <text id="enter" class="font-work tracking-widest uppercase textEnter text-lg cursor-crosshair" x="150" y="85" fill="white" text-anchor="middle">Clic here to enter !</text>
-          <text class="font-work textWarning" x="150" y="125" fill="#666" text-anchor="middle">Warning : This website use sounds !</text>
+          <text class="font-work textWarning" x="150" y="125" fill="#666" text-anchor="middle">🎧 Turn up your sounds !</text>
           <rect class="noProgressBar pixelateMin" width="50" height="2" y="100" x="125" fill="#666666"/>
           <rect class="onProgressBar " width="0" height="2" y="100" x="125" fill="white"/>
         </g>
@@ -26,7 +26,15 @@
   </div>
 </template>
 <style lang="postcss">
-  .preloader{
+
+.overlay {
+  --gradientBg: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: var(--gradientBg);
+  overflow: hidden;
+  background: #151515;
+}
+
+  .preloader {
     position:fixed;
     left:0;
     top:0;
@@ -57,7 +65,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000;
+ 
     z-index: 999;
   }
   .loading-text {
@@ -176,7 +184,9 @@
         });
         animation.to( '#progress', { strokeDashoffset: "0", duration: 1, onStart: () => { audio.play();  GSAP.to(audio, 4, {volume:0.5, onComplete:pauseSound} );},onComplete: () => { 
           console.log( `%c SAAAD %c ui/preloading.vue %c 📓 Component destroyed 🔴"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#666666 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
-          GSAP.to('.preloader', { opacity: 0, display: "none", duration: 1});
+          //GSAP.to('.preloader', { opacity: 0, display: "none", duration: 1});
+          GSAP.to('.overlay', {  duration: 1, '--gradientBg': 'polygon(0 0%, 0 0, 0 100%, 0% 100%)'})
+
           animation.kill();
           setTimeout(() => { 
               STORE.dispatch("actPreloading"); 

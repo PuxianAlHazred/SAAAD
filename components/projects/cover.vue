@@ -5,11 +5,13 @@
   </template>
   <style lang="postcss" scooped>
     .bumpEffect {
-        @apply saturate-100; width: 100vw!important; margin-left: -160px;
+        @apply saturate-100;
     }   
   </style>
   <script>
   export default {
+    name: 'cover',
+    props: ['cover'],
     data() {
       return {
         content: false,
@@ -19,6 +21,8 @@
         initEffect() {
             console.log( `%c SAAAD %c projects/cover.vue %c 📓 Component mounted 🟢"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#666666 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
             let SCENE, CAMERA, RENDERER, POINTLIGHT1, AMBIENTLIGHT1, FOGCOLOR;
+            let COVER = this.cover;
+            let bump = document.querySelector('.bumpEffect');
             // Three.js add
             let MANAGEUR = new THREE.LoadingManager();
             let mouse = { x: 0, y: 0 };
@@ -30,7 +34,7 @@
                 initRenderer();
                 createPlane();
                 initEventListeners();
-                document.querySelector('.bumpEffect').appendChild(RENDERER.domElement);
+                bump.appendChild(RENDERER.domElement);
             }
             function initScene() {
                 // Scene
@@ -41,7 +45,7 @@
             }   
             function initCamera() {
                 // Camera
-                CAMERA = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+                CAMERA = new THREE.PerspectiveCamera(45, bump.offsetWidth / bump.offsetWidth, 0.1, 1000);
                 CAMERA.position.set(0, 0, 15);
                 CAMERA.lookAt( SCENE.position );
                 SCENE.add(CAMERA);
@@ -49,18 +53,11 @@
 
             function createPlane() {
                 // Textures
-                var texturesList = [
-                    '/img/Heat-Death.jpg',
-                    '/img/Orbs-And-Channels-RE.jpg',
-                    '/img/The-Charnel-Ground.jpg',
-                    '/img/мреть.jpg',
-                    '/img/мреть(наутро ночь).jpg',
-                    '/img/Sustained-Layers.jpg',
-                    '/img/Last-Love.jpg',
-                    '/img/Different-Streams.jpg',
-                ]; 
+                
+                var texturesList = [COVER]; 
                 var randIndex = THREE.Math.randInt(0, texturesList.length - 1);
                 var randTexture = new THREE.TextureLoader(MANAGEUR).load(texturesList[randIndex]);
+                /**/
                 // Material
                 var oldMaterial = new THREE.MeshPhongMaterial({
                     color      :  new THREE.Color("rgb(255,255,255)"),
@@ -105,15 +102,15 @@
                 onWindowResize();
             }
             function onWindowResize() {
-                CAMERA.aspect = window.innerWidth / window.innerHeight;
+                CAMERA.aspect = bump.offsetWidth / bump.offsetWidth;
                 CAMERA.updateProjectionMatrix();
-                RENDERER.setSize(window.innerWidth, window.innerHeight);
+                RENDERER.setSize(bump.offsetWidth, bump.offsetWidth);
             }    
             function onMouseMove(event) {
                 // Update the mouse variable
                 event.preventDefault();
-                mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-                mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+                mouse.x = (event.clientX / bump.offsetWidth) * 2 - 1;
+                mouse.y = -(event.clientY / bump.offsetHeight) * 2 + 1;
                 // Make the sphere follow the mouse
                 var vector = new THREE.Vector3(mouse.x, mouse.y, 0.5);
                 vector.unproject(CAMERA);

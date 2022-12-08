@@ -13,6 +13,8 @@
 #works { @apply text-xs relative text-white; }
 .works-head { @apply h-[100px] bg-black flex items-center justify-between z-10;}
 .works-head h2 { @apply italic text-6xl font-meno font-light mr-8 inline z-10; }
+.works-head h3 { @apply italic text-5xl font-meno font-light mr-8 inline z-10; }
+
  #works i { @apply text-sm ml-2 text-primary italic; }
 
 @keyframes event-curtain {
