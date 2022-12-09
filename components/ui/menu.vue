@@ -2,9 +2,8 @@
   <aside id="aside-menu"  @click="actMenu()">
     <transition name="component_transition" mode="in-out" tag="div" v-on:before-enter="afterEnter"  v-on:before-leave="beforeLeave">
       <div v-show="this.$store.state.menu" key="content">
-        <nuxt-link to="/last-news">last news</nuxt-link>
+        <nuxt-link to="/works">releases</nuxt-link>
         <nuxt-link to="/events">events</nuxt-link>
-        <nuxt-link to="/works">works</nuxt-link>
         <nuxt-link to="/">contact</nuxt-link>
       </div>
     </transition>

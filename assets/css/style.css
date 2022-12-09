@@ -1,11 +1,34 @@
-.Noise {
-  animation: 5s fadeIn;
+/* https://bennettfeely.com/clippy/*/
+  .overlay-circle { @apply transition-all duration-1000;
+    clip-path: circle(100% at 50% 50%); 
+  }
+  .overlay-circle_close { @apply transition-all duration-1000;
+    clip-path: circle(0% at 50% 50%);
+  }
+  .overlay-rect { @apply transition-all duration-1000;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .overlay-rect_to-l { @apply transition-all duration-1000;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  .overlay-rect_to-r { @apply transition-all duration-1000;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);  
+  }
+  .overlay-rect_to-t { @apply transition-all duration-1000;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .overlay-rect_to-b { @apply transition-all duration-1000;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+
+.texture-noise {
+  animation: 0.5s fadeIn;
   height: 100%;
   width: 100%;
   will-change: transform;
   filter:saturate(0);
 }
-.Noise::before {
+.texture-noise::before {
   animation: grain 8s steps(10) infinite;
   background-image: url("~/assets/img/noise.jpg");
   content: "";

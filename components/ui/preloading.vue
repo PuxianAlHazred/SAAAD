@@ -1,151 +1,103 @@
 <template>
-  <div v-if="preloading" class="preloader ">
-    <div class="loading overlay">
-      <svg width="300" height="200" viewbox="0 0 300 200">
-        <g id="hold">
-          <text id="enter" class="font-work tracking-widest uppercase textEnter text-lg cursor-crosshair" x="150" y="85" fill="white" text-anchor="middle">Clic here to enter !</text>
-          <text class="font-work textWarning" x="150" y="125" fill="#666" text-anchor="middle">🎧 Turn up your sounds !</text>
-          <rect class="noProgressBar pixelateMin" width="50" height="2" y="100" x="125" fill="#666666"/>
-          <rect class="onProgressBar " width="0" height="2" y="100" x="125" fill="white"/>
-        </g>
-      </svg>
-      <div class="loading-text text-justify font-work cursor-wait">
-        <span class="loading-text-words text-lg ">P</span>
-        <span class="loading-text-words text-lg ">A</span>
-        <span class="loading-text-words text-lg ">C</span>
-        <span class="loading-text-words text-lg ">I</span>
-        <span class="loading-text-words text-lg ">É</span>
-        <span class="loading-text-words text-lg ">N</span>
-        <span class="loading-text-words text-lg ">C</span>
-        <span class="loading-text-words text-lg ">I</span>
-        <span class="loading-text-words text-lg ">A</span>
-      </div>
+  <div v-if="preloading" class="preloader">
+    <div class="loading  texture-noise">
 
+      <svg id="hold" width="300" height="200" viewbox="0 0 300 200">
+        <text class="text_Sound" x="150" y="85" text-anchor="middle">Turn up your sounds</text>
+        <rect class="progress_no" width="100" height="2" y="100" x="100"/>
+        <rect class="progress_on" width="0" height="2" y="100" x="100"/>
+        <text class="text_Enter" x="150" y="125" text-anchor="middle">Clic here to enter</text>
+      </svg>
+      <div class="loading-text">
+        <span class="loading-text-words">P</span>
+        <span class="loading-text-words">A</span>
+        <span class="loading-text-words">C</span>
+        <span class="loading-text-words">I</span>
+        <span class="loading-text-words">É</span>
+        <span class="loading-text-words">N</span>
+        <span class="loading-text-words">C</span>
+        <span class="loading-text-words">I</span>
+        <span class="loading-text-words">A</span>
+      </div>
     </div>
-    <audio class="invisible hidden" id="sound1" volume="0" :src="require(`~/assets/sounds/intro.ogg`).default" /> 
+    <audio id="sound-intro" volume="0" :src="require(`~/assets/sounds/intro.ogg`).default" /> 
   </div>
 </template>
 <style lang="postcss">
+  .preloader { @apply fixed left-0 top-0 h-screen w-screen z-auto; }
+  
+  .preloader #sound-intro {@apply invisible hidden;}
 
-.overlay {
-  --gradientBg: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
-  clip-path: var(--gradientBg);
-  overflow: hidden;
-  background: #151515;
-}
+  .loading { @apply flex flex-col-reverse justify-center items-center fixed top-0 left-0 w-full h-full z-auto bg-black transition-all duration-1000; clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);}
+  .loading #hold { @apply z-[1000]; }
+  .loading #hold .text_Enter{ @apply font-meno tracking-widest text-lg cursor-crosshair fill-current text-white  transition-all duration-1000; clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);}
+  .loading #hold .text_Sound{ @apply font-work fill-current text-secondary  transition-all duration-1000; clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);}
+  .loading #hold .progress_no{ @apply font-work fill-current text-secondary; }
+  .loading #hold .progress_on{ @apply font-work fill-current text-white; }
 
-  .preloader {
-    position:fixed;
-    left:0;
-    top:0;
-    height:100vh;
-    width:100vw;
-    z-index:101;
-  }
-  #progress { 
-    @apply stroke-2 stroke-current text-white;
-    stroke-dasharray: 500;
-    stroke-dashoffset: 500;
-  }
-  .stroke-loading{
-    animation: stroke 3s ease-out forwards;
-  }
-  @keyframes stroke {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-  .loading {
-    display:flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
- 
-    z-index: 999;
-  }
-  .loading-text {
-    position: absolute;
-    top: 60px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-    width: 300px;
-    height: 200px;
-    line-height: 100px;
-  }
-  .loading-text span {
-    display: inline-block;
-    margin: 0 2.5px;
-    color: #fff;
-  }
-  .loading-text span:nth-child(1) {
-    filter: blur(0px);
-    -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
-            animation: blur-text 1.5s 0s infinite linear alternate;
-  }
-  .loading-text span:nth-child(2) {
-    filter: blur(0px);
-    -webkit-animation: blur-text 1.5s 0.2s infinite linear alternate;
-            animation: blur-text 1.5s 0.2s infinite linear alternate;
-  }
-  .loading-text span:nth-child(3) {
-    filter: blur(0px);
-    -webkit-animation: blur-text 1.5s 0.4s infinite linear alternate;
-            animation: blur-text 1.5s 0.4s infinite linear alternate;
-  }
-  .loading-text span:nth-child(4) {
-    filter: blur(0px);
-    -webkit-animation: blur-text 1.5s 0.6s infinite linear alternate;
-            animation: blur-text 1.5s 0.6s infinite linear alternate;
-  }
-  .loading-text span:nth-child(5) {
-    filter: blur(0px);
-    -webkit-animation: blur-text 1.5s 0.8s infinite linear alternate;
-            animation: blur-text 1.5s 0.8s infinite linear alternate;
-  }
-  .loading-text span:nth-child(6) {
-    filter: blur(0px);
-    -webkit-animation: blur-text 1.5s 1s infinite linear alternate;
-            animation: blur-text 1.5s 1s infinite linear alternate;
-  }
-  .loading-text span:nth-child(7) {
-    filter: blur(0px);
-    -webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
-            animation: blur-text 1.5s 1.2s infinite linear alternate;
-  }
-  .loading-text span:nth-child(8) {
-    filter: blur(0px);
-    -webkit-animation: blur-text 1.5s 1.3s infinite linear alternate;
-            animation: blur-text 1.5s 1.3s infinite linear alternate;
-  }
-  .loading-text span:nth-child(9) {
-    filter: blur(0px);
-    -webkit-animation: blur-text 1.5s 1.5s infinite linear alternate;
-            animation: blur-text 1.5s 1.5s infinite linear alternate;
-  }
-  @-webkit-keyframes blur-text {
-    0% {
+  .loading-text { @apply font-work cursor-wait absolute flex justify-center items-center m-auto text-center w-80 h-80 leading-none; }
+  .loading-text span { @apply inline-block mx-1 text-white text-lg; }
+    .loading-text span:nth-child(1) {
       filter: blur(0px);
+      -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
+              animation: blur-text 1.5s 0s infinite linear alternate;
     }
-    100% {
-      filter: blur(4px);
-    }
-  }
-  @keyframes blur-text {
-    0% {
+    .loading-text span:nth-child(2) {
       filter: blur(0px);
+      -webkit-animation: blur-text 1.5s 0.2s infinite linear alternate;
+              animation: blur-text 1.5s 0.2s infinite linear alternate;
     }
-    100% {
-      filter: blur(4px);
+    .loading-text span:nth-child(3) {
+      filter: blur(0px);
+      -webkit-animation: blur-text 1.5s 0.4s infinite linear alternate;
+              animation: blur-text 1.5s 0.4s infinite linear alternate;
     }
-  }
+    .loading-text span:nth-child(4) {
+      filter: blur(0px);
+      -webkit-animation: blur-text 1.5s 0.6s infinite linear alternate;
+              animation: blur-text 1.5s 0.6s infinite linear alternate;
+    }
+    .loading-text span:nth-child(5) {
+      filter: blur(0px);
+      -webkit-animation: blur-text 1.5s 0.8s infinite linear alternate;
+              animation: blur-text 1.5s 0.8s infinite linear alternate;
+    }
+    .loading-text span:nth-child(6) {
+      filter: blur(0px);
+      -webkit-animation: blur-text 1.5s 1s infinite linear alternate;
+              animation: blur-text 1.5s 1s infinite linear alternate;
+    }
+    .loading-text span:nth-child(7) {
+      filter: blur(0px);
+      -webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
+              animation: blur-text 1.5s 1.2s infinite linear alternate;
+    }
+    .loading-text span:nth-child(8) {
+      filter: blur(0px);
+      -webkit-animation: blur-text 1.5s 1.3s infinite linear alternate;
+              animation: blur-text 1.5s 1.3s infinite linear alternate;
+    }
+    .loading-text span:nth-child(9) {
+      filter: blur(0px);
+      -webkit-animation: blur-text 1.5s 1.5s infinite linear alternate;
+              animation: blur-text 1.5s 1.5s infinite linear alternate;
+    }
+    @-webkit-keyframes blur-text {
+      0% {
+        filter: blur(0px);
+      }
+      100% {
+        filter: blur(4px);
+      }
+    }
+    @keyframes blur-text {
+      0% {
+        filter: blur(0px);
+      }
+      100% {
+        filter: blur(4px);
+      }
+    }
 </style>
 <script>
   import {mapActions} from 'vuex'
@@ -161,38 +113,37 @@
         actContent: 'actContent' 
       }),
       appear() {
-        this.$gsap.to('.onProgressBar', { width: "50", duration: 3 });
-        this.$gsap.from('.textWarning', { y: "20", opacity:0 , delay: 3 });
-        this.$gsap.to('.loading-text', { opacity:0 , display: 'none',delay: 5 });
-        this.$gsap.from('.textEnter', { y: "-20", opacity:0 , delay: 5 });
+        this.$gsap.to('.loading', { duration: 1, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'})
+        this.$gsap.to('.loading-text', { y:-20})
+        this.$gsap.to('.progress_on', { delay: 1, width: "100", duration: 3 });
+        this.$gsap.to('.loading-text', { delay: 3.5, opacity: 0, duration: 0.5, display:"none"})
+        this.$gsap.to('.text_Sound', { delay: 3.5, duration: 1, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'})
+        this.$gsap.to('.text_Enter', { delay: 3.5, duration: 1, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'})
       },
       shortpress() {
-        const audio = document.querySelector("#sound1");
-          audio.volume = 0;
-          audio.loop = true;
-        function pauseSound(){ audio.pause(); }
-        var short = document.querySelector("#enter");
+        const sound_intro = document.querySelector("#sound-intro");
+              sound_intro.volume = 0;
+              sound_intro.loop = true;
+        function pauseSound(){ sound_intro.pause(); }
+        function playSound(){ sound_intro.play(); }
+
+        var short = document.querySelector(".text_Enter");
         var GSAP = this.$gsap;
         var STORE = this.$store;
 
-
-
-        var animation = this.$gsap.timeline({
-          paused: true,
-          onComplete: function() {
-          }
-        });
-        animation.to( '#progress', { strokeDashoffset: "0", duration: 1, onStart: () => { audio.play();  GSAP.to(audio, 4, {volume:0.5, onComplete:pauseSound} );},onComplete: () => { 
+        var animation = this.$gsap.timeline({ paused: true, onComplete: function() { /* Code here */ } });
+        animation.to( '.progress_on', { strokeDashoffset: "0", duration: 1, onStart: () => { sound_intro.play();  GSAP.to(sound_intro, 4, {volume:0.5, onComplete:pauseSound} );},onComplete: () => { 
           console.log( `%c SAAAD %c ui/preloading.vue %c 📓 Component destroyed 🔴"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#666666 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
-          //GSAP.to('.preloader', { opacity: 0, display: "none", duration: 1});
-          GSAP.to('.overlay', {  duration: 1, '--gradientBg': 'polygon(0 0%, 0 0, 0 100%, 0% 100%)'})
-
-          animation.kill();
+          this.$gsap.to('.loading', { delay: 0.5, duration: 0.5, clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)'})
+          this.$gsap.to('.text_Sound', { duration: 0.5, clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)'})
+          this.$gsap.to('.text_Enter', { duration: 0.5, clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)'})
           setTimeout(() => { 
+              animation.kill();
               STORE.dispatch("actPreloading"); 
               STORE.dispatch("actContent"); 
-            }, "1000")
+            }, "1500")
         } });
+
         short.addEventListener("mousedown", function() { animation.play(); });
       }
     },

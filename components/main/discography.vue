@@ -1,7 +1,7 @@
 <template>
   <div class="disco-works">
     <header class="works-head sticky top-0">
-      <h2><NLink to="/albums">Discography</NLink></h2>
+      <h2><NLink to="/releases">Discography</NLink></h2>
       <div class="disco-nav">
         <span class="grid ml-2 items-center" v-on:click="layoutDisco = 'grid'">
           <svg class="h-6 w-6" x="0px" y="0px" viewBox="0 0 209 209" style="enable-background:new 0 0 209 209;">
@@ -19,7 +19,6 @@
     <div :class="['full-disco', { 'layoutList' : layoutDisco === 'list', 'layoutGrid' : layoutDisco === 'grid' }]">
       <!--2021-->
       <article class="group" data-year="2021">
-        <div class="curtain"></div>
         <img src="/img/cover/мреть(наутро ночь).jpg"/>
         <div class="year">2021</div>
         <div class="title">мреть (наутро ночь)<span> <i>as</i> Saáadon</span></div>
@@ -31,7 +30,6 @@
         </svg>
       </article>
       <article data-year="2021">
-        <div class="curtain"></div>
         <img src="/img/cover/Secret-Hell.jpg"/>
         <div class="year">2021</div>
         <div class="title">Secret Hell</div>
@@ -44,7 +42,6 @@
       </article>
       <!--2020-->
       <article data-year="2020">
-        <div class="curtain"></div>
         <img src="/img/cover/Prepared-Oasis.jpg"/>
         <div class="year">2020</div>
         <div class="title">Prepared Oasis</div>
@@ -56,7 +53,6 @@
         </svg>
       </article>
       <article data-year="2020">
-        <div class="curtain"></div>
         <img src="/img/cover/Elijah.jpg"/>
         <div class="year">2020</div>
         <div class="title">Elijah O.S.T</div>
@@ -68,8 +64,7 @@
         </svg>
       </article>
       <article data-year="2020">
-        <div class="curtain"></div>
-        <img src="/img/cover/All-Lanes-Of-Lilac-Evening.jpg"/>
+         <img src="/img/cover/All-Lanes-Of-Lilac-Evening.jpg"/>
         <div class="year">2020</div>
         <div class="title">All Lanes Of Lilac Evening<span> <i>/w</i> Siavash Amini</span></div>
         <div class="info">[album]</div>
@@ -81,8 +76,7 @@
       </article>
       <!--2019-->
       <article data-year="2019">
-        <div class="curtain"></div>
-        <img src="/img/cover/мреть.jpg"/>
+         <img src="/img/cover/мреть.jpg"/>
         <div class="year">2019</div>
         <div class="title">мреть<span> <i>as</i> Saáadon</span></div>
         <div class="info">[EP]</div>
@@ -94,8 +88,7 @@
       </article>
       <!--2018-->
       <article data-year="2018">
-        <div class="curtain"></div>
-        <img src="/img/cover/Orbs-And-Channels-RE.jpg"/>
+         <img src="/img/cover/Orbs-And-Channels-RE.jpg"/>
         <div class="year">2018</div>
         <div class="title">Orbs & Channels</div>
         <div class="info">[remastered album]</div>
@@ -106,8 +99,7 @@
         </svg>
       </article>
       <article data-year="2018">
-        <div class="curtain"></div>
-        <img src="/img/cover/Presence-Absente.jpg"/>
+         <img src="/img/cover/Presence-Absente.jpg"/>
         <div class="year">2018</div>
         <div class="title">Présence Absente</div>
         <div class="info">[album]</div>
@@ -119,8 +111,7 @@
       </article>
       <!--2016-->
       <article data-year="2016">
-        <div class="curtain"></div>
-        <img src="/img/cover/Verdaillon.jpg"/>
+         <img src="/img/cover/Verdaillon.jpg"/>
         <div class="year">2016</div>
         <div class="title">Verdaillon</div>
         <div class="info">[album]</div>
@@ -132,8 +123,7 @@
       </article>
       <!--2015-->
       <article data-year="2015">
-        <div class="curtain"></div>
-        <img src="/img/cover/Delayed-Summer.jpg"/>
+         <img src="/img/cover/Delayed-Summer.jpg"/>
         <div class="year">2015</div>
         <div class="title">Delayed Summer</div>
         <div class="info">[remastered album]</div>
@@ -144,8 +134,7 @@
         </svg>
       </article>
       <article data-year="2015">
-        <div class="curtain"></div>
-        <img src="/img/cover/Different-Streams.jpg"/>
+         <img src="/img/cover/Different-Streams.jpg"/>
         <div class="year">2015</div>
         <div class="title">Different Streams <span><i>w/</i> EUS & Postdrome</span></div>
         <div class="info">[album]</div>
@@ -158,8 +147,7 @@
       <!--2014-->
       <article data-year="2014">
 
-        <div class="curtain"></div>
-        <img src="/img/cover/Deep-Float.jpg"/>
+         <img src="/img/cover/Deep-Float.jpg"/>
         <div class="year">2015</div>
         <nuxt-link to="deep-float" class="title">Deep / Float</nuxt-link>
         <div class="info">[album]</div>
@@ -172,8 +160,7 @@
       </article>        
       <!--2013-->
       <article data-year="2013">
-        <div class="curtain"></div>
-        <img src="/img/cover/The-Charnel-Ground.jpg"/>
+         <img src="/img/cover/The-Charnel-Ground.jpg"/>
         <div class="year">2013</div>
         <div class="title">The Charnel Ground</div>
         <div class="info">[split album w/ Insiden]</div>
@@ -184,8 +171,7 @@
         </svg>
       </article> 
       <article data-year="2013">
-        <div class="curtain"></div>
-        <img src="/img/cover/Solid-Clouds.jpg"/>
+         <img src="/img/cover/Solid-Clouds.jpg"/>
         <div class="year">2013</div>
         <div class="title">Στερεά Σύννεφα</div>
         <div class="info">[album / remixes]</div>
@@ -196,8 +182,7 @@
         </svg>
       </article> 
       <article data-year="2013">
-        <div class="curtain"></div>
-        <img src="/img/cover/Orbs-Channels.jpg"/>
+         <img src="/img/cover/Orbs-Channels.jpg"/>
         <div class="year">2013</div>
         <div class="title">Orbs & Channels</div>
         <div class="info">[album]</div>
@@ -209,8 +194,7 @@
       </article>  
       <!--2012-->
       <article data-year="2012">
-        <div class="curtain"></div>
-        <img src="/img/cover/Confluences.jpg"/>
+         <img src="/img/cover/Confluences.jpg"/>
         <div class="year">2012</div>
         <div class="title">Confluences</div>
         <div class="info">[album]</div>
@@ -221,8 +205,7 @@
         </svg>
       </article>
       <article data-year="2012">
-        <div class="curtain"></div>
-        <img src="/img/cover/Sustained-Layers.jpg"/>
+         <img src="/img/cover/Sustained-Layers.jpg"/>
         <div class="year">2012</div>
         <div class="title">Sustained Layers <span><i>w/</i> EUS & Postdrome</span></div>
         <div class="info">[album]</div>
@@ -233,8 +216,7 @@
         </svg>
       </article>
       <article data-year="2012">
-        <div class="curtain"></div>
-        <img src="/img/cover/Heat-Death.jpg"/>
+         <img src="/img/cover/Heat-Death.jpg"/>
         <div class="year">2012</div>
         <div class="title">For Small Creatures Such As We...</div>
         <div class="info">[5-ways split]</div>
@@ -246,8 +228,7 @@
       </article> 
       <!--2011-->
       <article data-year="2011">
-        <div class="curtain"></div>
-        <img src="/img/cover/Delayed-Summer.jpg"/>
+         <img src="/img/cover/Delayed-Summer.jpg"/>
         <div class="year">2011</div>
         <div class="title">Delayed Summer</div>
         <div class="info">[album]</div>
@@ -258,8 +239,7 @@
         </svg>
       </article>
       <article data-year="2011">
-        <div class="curtain"></div>
-        <img src="/img/cover/Forget-Our-Debts.jpg"/>
+         <img src="/img/cover/Forget-Our-Debts.jpg"/>
         <div class="year">2011</div>
         <div class="title">Forget Our Debts</div>
         <div class="info">[v/a Sequence 2]</div>
@@ -270,8 +250,7 @@
         </svg>
       </article>
       <article data-year="2011">
-        <div class="curtain"></div>
-        <img src="/img/cover/Arty-Empty.jpg"/>
+         <img src="/img/cover/Arty-Empty.jpg"/>
         <div class="year">2011</div>
         <div class="title">Pink Sabbath / Raincoats</div>
         <div class="info">[EP x 2]</div>
@@ -282,8 +261,7 @@
         </svg>
       </article> 
       <article data-year="2011">
-        <div class="curtain"></div>
-        <img src="/img/cover/Snowbound.jpg"/>
+         <img src="/img/cover/Snowbound.jpg"/>
         <div class="year">2011</div>
         <div class="title">Snowbound / I Miss You</div>
         <div class="info">[single x 2]</div>
@@ -294,8 +272,7 @@
         </svg>
       </article> 
       <article data-year="2011">
-        <div class="curtain"></div>
-        <img src="/img/cover/Recovery-Wish.jpg"/>
+         <img src="/img/cover/Recovery-Wish.jpg"/>
         <div class="year">2011</div>
         <div class="title">A Recovery Wish</div>
         <div class="info">[single]</div>
@@ -306,8 +283,7 @@
         </svg>
       </article> 
       <article data-year="2011">
-        <div class="curtain"></div>
-        <img src="/img/cover/Raincoats.jpg"/>
+         <img src="/img/cover/Raincoats.jpg"/>
         <div class="year">2011</div>
         <div class="title">Raincoats</div>
         <div class="info">[EP]</div>
@@ -318,8 +294,7 @@
         </svg>
       </article>
       <article data-year="2011">
-        <div class="curtain"></div>
-        <img src="/img/cover/Pink-Sabbath.jpg"/>
+         <img src="/img/cover/Pink-Sabbath.jpg"/>
         <div class="year">2011</div>
         <div class="title">Pink Sabbath</div>
         <div class="info">[EP]</div>
@@ -331,8 +306,7 @@
       </article>      
       <!--2010-->
       <article data-year="2010">
-        <div class="curtain"></div>
-        <img src="/img/cover/it-was.jpg"/>
+         <img src="/img/cover/it-was.jpg"/>
         <div class="year">2010</div>
         <div class="title">It Was</div>
         <div class="info">[album]</div>
@@ -363,9 +337,9 @@
   .full-disco.layoutList article {@apply h-auto;}
   .full-disco.layoutList article img { @apply hidden invisible}
   .full-disco .curtain { @apply w-full h-full absolute z-40 bg-black;}
-  .full-disco article { @apply flex  overflow-hidden justify-between items-center duration-1000 transition-all py-4;}
+  .full-disco article { @apply flex  overflow-hidden justify-between items-center duration-500 transition-all py-4; clip-path:polygon(100% 0, 100% 0, 100% 100%, 100% 100%);}
   .full-disco article:hover { @apply border-white duration-1000  transition-all; }
-  .full-disco article svg { @apply group-hover:opacity-100 opacity-50 absolute w-full h-[50px] duration-1000 transition-all z-0; }
+  .full-disco article svg { @apply group-hover:opacity-100 opacity-50 absolute w-full h-[50px] duration-500 transition-all z-0; }
   .full-disco article svg rect{ @apply duration-1000 transition-all;}
   .full-disco article .year, .full-disco article .title, .full-disco article .info, .full-disco article .label, .full-disco article .format{ @apply z-[1] bg-black duration-500 transition-all text-secondary font-work cursor-crosshair; } 
   .full-disco article:hover .year, .full-disco article:hover .info, .full-disco article:hover .format { @apply text-white; } 
@@ -393,8 +367,39 @@
       beforeLeave(el) {
         this.content = false
       },
+      scroller() {
+        var gsap = this.$gsap;
+        this.$gsap.utils.toArray("article").forEach((e,i) => {
+          var curtainEvent = this.$gsap.to(e, { delay: '0.1', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'});   
+          this.$gsap.timeline({
+            scrollTrigger: {
+                trigger: e,
+                start: "center bottom",
+                end: "center top+=99",
+                invalidateOnRefresh: true,
+                anticipatePin: 1,
+                scrub: true,
+                
+                toggleActions: "play reverse play reverse",
+                onEnterBack: e => {
+                  curtainEvent.play();
+                },
+                onLeaveBack: e => {
+                  curtainEvent.reverse();
+                },
+                onEnter: e => {
+                  curtainEvent.play();
+                },
+                onLeave: e => {
+                  curtainEvent.reverse();
+                },
+            }
+          });
+        });
+      }
     },
     mounted() {
+      this.scroller();
     },
     computed: {
       isSoundEnabled() {
