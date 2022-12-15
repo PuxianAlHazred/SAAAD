@@ -1,5 +1,6 @@
 <template>
   <main :class="{'isDesktop': this.$device.isDesktop, 'isMobile': this.$device.isMobile, 'isTablet': this.$device.isTablet,}">
+    <Projects-mouseCursor />
     <Ui-preloading v-if="this.$store.state.preloading"/>
     <Ui-header v-if="this.$store.state.content" />
     <Nuxt v-if="this.$store.state.content" class="w-wSaaad my-0 ml-[150px] mr-[50px]"/>
@@ -39,6 +40,31 @@
           }
         };
         document.addEventListener('keydown', keyHandler, false);
+        document.querySelectorAll("a").forEach((link) => {
+            link.addEventListener('mouseenter', () => this.$gsap.to(".follower", {scale:2}));
+            link.addEventListener('mouseleave', () => this.$gsap.to(".follower", {scale:1}));
+            link.addEventListener('click', () => this.$gsap.to(".follower", {scale:0}) );
+        });
+        document.querySelectorAll("button").forEach((link) => {
+            link.addEventListener('mouseenter', () => this.$gsap.to(".follower", {scale:2}));
+            link.addEventListener('mouseleave', () => this.$gsap.to(".follower", {scale:1}));
+            link.addEventListener('click', () => this.$gsap.to(".follower", {scale:0}) );
+        });
+        document.querySelectorAll(".disco-nav span").forEach((link) => {
+            link.addEventListener('mouseenter', () => this.$gsap.to(".follower", {scale:2}));
+            link.addEventListener('mouseleave', () => this.$gsap.to(".follower", {scale:1}));
+            link.addEventListener('click', () => this.$gsap.to(".follower", {scale:0}) );
+        });
+        document.querySelectorAll("#muted").forEach((link) => {
+            link.addEventListener('mouseenter', () => this.$gsap.to(".follower", {scale:2}));
+            link.addEventListener('mouseleave', () => this.$gsap.to(".follower", {scale:1}));
+            link.addEventListener('click', () => this.$gsap.to(".follower", {scale:0}) );
+        });
+        document.querySelectorAll(".main-logo").forEach((link) => {
+            link.addEventListener('mouseenter', () => this.$gsap.to(".follower", {scale:10}));
+            link.addEventListener('mouseleave', () => this.$gsap.to(".follower", {scale:1}));
+            link.addEventListener('click', () => this.$gsap.to(".follower", {scale:10}) );
+        });
       }
     },
     mounted() {

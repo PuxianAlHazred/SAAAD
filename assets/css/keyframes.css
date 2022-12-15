@@ -184,3 +184,15 @@
     transform: translate3d(-10%, 10%, 0);
   }
 }
+
+/* HEADER > MUTED ANIMATION */
+@-webkit-keyframes pulse {
+  0% { transform: scaleY(1); transform-origin: 50% 50%; }
+  50% { transform: scaleY(0.7); transform-origin: 50% 50%; }
+  100% { transform: scaleY(1); transform-origin: 50% 50%; }
+}
+@keyframes pulse {
+  0% { transform: scaleY(1); transform-origin: 50% 50%; }
+  50% { transform: scaleY(0.7); transform-origin: 50% 50%; }
+  100% { transform: scaleY(1); transform-origin: 50% 50%; }
+}

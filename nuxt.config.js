@@ -17,7 +17,7 @@ export default {
     ],
     script: [
       { src: 'https://unpkg.com/three@0.136.0/build/three.min.js'}, 
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js'}, 
+      { src: 'https://unpkg.com/dat.gui@0.7.7/build/dat.gui.min.js'}, 
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'},
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'},
       { src: 'https://unpkg.com/split-type'},

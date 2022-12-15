@@ -6,8 +6,7 @@
       </header>
       <div class="full-ost">
         <article data-year="2022">
-          <div class="curtain"></div>
-          <div class="year">2022</div>
+           <div class="year">2022</div>
           <nuxt-link to="original-soundtracks/topos" class="title">Topos<span> <i>by</i> Max Bondendorf</span></nuxt-link>
           <div class="label">/</div>
         <svg height="50" width="100%">
@@ -15,8 +14,7 @@
         </svg>
         </article>
         <article data-year="2021">
-          <div class="curtain"></div>
-          <div class="year">2021</div>
+           <div class="year">2021</div>
           <div class="title">A-HORA<span> <i>by</i> Klara Ravat</span></div>
           <div class="label">Klankvorm</div>
         <svg height="50" width="100%">
@@ -24,8 +22,7 @@
         </svg>
         </article>
         <article data-year="2019">
-          <div class="curtain"></div>
-          <div class="year">2019</div>
+           <div class="year">2019</div>
           <div class="title">Sphinx<span> <i>by</i> Tito Gonzalez Garcia</span></div>
           <div class="label">Tamara Films</div>
         <svg height="50" width="100%">
@@ -33,8 +30,7 @@
         </svg>
         </article>
         <article data-year="2019">
-          <div class="curtain"></div>
-          <div class="year">2019</div>
+           <div class="year">2019</div>
           <div class="title">Les Oracles<span> <i>by</i> Tito Gonzalez Garcia</span></div>
           <div class="label">Tamara Films</div>
         <svg height="50" width="100%">
@@ -42,8 +38,7 @@
         </svg>
         </article>
         <article data-year="2016">
-          <div class="curtain"></div>
-          <div class="year">2016</div>
+           <div class="year">2016</div>
           <div class="title">Elijah<span> <i>by</i> Fanny Béguély</span></div>
           <div class="label">ESAV</div>
         <svg height="50" width="100%">
@@ -51,8 +46,7 @@
         </svg>
         </article>
         <article data-year="2015">
-          <div class="curtain"></div>
-          <div class="year">2015</div>
+           <div class="year">2015</div>
           <div class="title">Tattoo<span> <i>by</i> Frédéric Jolivet</span></div>
           <div class="label">Monsieur Linéa</div>
         <svg height="50" width="100%">
@@ -67,8 +61,7 @@
       </header>
       <div class="full-ost">
         <article data-year="2021">
-          <div class="curtain"></div>
-          <div class="year">2021</div>
+           <div class="year">2021</div>
           <div class="title">Brigidy Bram: The Kendal Hanna Story<span> <i>by</i> Laura Gamse & Toby Lunn</span></div>
           <div class="label">Daydream Reels</div>
         <svg height="50" width="100%">
@@ -76,8 +69,7 @@
         </svg>
         </article>
         <article data-year="2014">
-          <div class="curtain"></div>
-          <div class="year">2014</div>
+           <div class="year">2014</div>
           <div class="title">We Must Remain The Wildhearted Outsiders<span> <i>by</i> Chase Lisbon</span></div>
           <div class="label">Monolake Media</div>
         <svg height="50" width="100%">
@@ -85,8 +77,7 @@
         </svg>
         </article>
         <article data-year="2011">
-          <div class="curtain"></div>
-          <div class="year">2011</div>
+           <div class="year">2011</div>
           <div class="title">L'Ambianceur<span> <i>by</i> As Human Pattern</span></div>
           <div class="label">/</div>
         <svg height="50" width="100%">
@@ -152,8 +143,41 @@
       beforeLeave(el) {
         this.content = false
       },
+      scroller() {
+        var gsap = this.$gsap;
+        var scrolltrigger = this.$ScrollTrigger;
+        gsap.utils.toArray(".full-ost article").forEach((e,i) => {
+          //this.$gsap.to(e, { delay: '0.1', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'}); 
+          const section = document.querySelector('.full-ost');
+          scrolltrigger.create({
+              trigger: e,
+              start: "top bottom+=50",
+              end: "bottom start-=50",
+              onEnter: () => gsap.to(e, {clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'}),
+              onEnterBack: () => gsap.to(e, {clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'}),
+              onLeave: () => gsap.to(e, {clipPath: 'polygon(100% 0, 100% 0, 100% 100%, 100% 100%)'}),
+              onLeaveBack: () => gsap.to(e, {clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)'}),
+          });
+          
+        });
+        gsap.utils.toArray(".full-st article").forEach((e,i) => {
+          //this.$gsap.to(e, { delay: '0.1', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'}); 
+          const section = document.querySelector('.full-st');
+          scrolltrigger.create({
+              trigger: e,
+              start: "top bottom+=50",
+              end: "bottom start-=50",
+              onEnter: () => gsap.to(e, {clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'}),
+              onEnterBack: () => gsap.to(e, {clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'}),
+              onLeave: () => gsap.to(e, {clipPath: 'polygon(100% 0, 100% 0, 100% 100%, 100% 100%)'}),
+              onLeaveBack: () => gsap.to(e, {clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)'}),
+          });
+          
+        });
+      }
     },
     mounted() {
+      this.scroller();
     },
     computed: {
       isSoundEnabled() {

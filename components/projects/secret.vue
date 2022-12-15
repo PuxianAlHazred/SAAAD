@@ -2,6 +2,7 @@
     <div v-show="this.$store.state.secret" class="top-0 left-0 fixed">
       <div class="ambianceEffect">
           <div class='progressbar-ambiance'></div>
+
       </div>
     </div>  
 </template>
@@ -41,17 +42,24 @@
       },
       initEffect() {
             console.log( `%c SAAAD %c projects/secret.vue %c 📓 Component mounted 🟢"`, 'background:#FFF000 ; padding: 1px; border-radius: 3px 0 0 3px;  color: #000000', 'background:#666666 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #ffffff', 'background:transparent')
-
-            let SCENE, CAMERA, RENDERER, FOGCOLOR, POINTLIGHT1, AMBIENTLIGHT1;
+            let SCENE, CAMERA, RENDERER, INTERSECTED, INTERS, INTERS2;
             // Three.js add
+            const GSAP = this.$gsap;
             let MANAGER = new THREE.LoadingManager();
-
+            let RAYCASTER = new THREE.Raycaster();
+            let POINTER = new THREE.Vector2();
             let LISTENER = new THREE.AudioListener();
             let AUDIOLOADER = new THREE.AudioLoader(MANAGER);
             const SOUND1 = new THREE.PositionalAudio(LISTENER), SOUND2 = new THREE.PositionalAudio(LISTENER), SOUND3 = new THREE.PositionalAudio(LISTENER), SOUND4 = new THREE.PositionalAudio(LISTENER), SOUND5 = new THREE.PositionalAudio(LISTENER), SOUND6 = new THREE.PositionalAudio(LISTENER), SOUND7 = new THREE.PositionalAudio(LISTENER), SOUND8 = new THREE.PositionalAudio(LISTENER);
             let S1BOX1 = new THREE.Group(), S1BOX2 = new THREE.Group(), S1BOX3 = new THREE.Group(), S1BOX4 = new THREE.Group(), S1BOX5 = new THREE.Group(), S1BOX6 = new THREE.Group(), S1BOX7 = new THREE.Group(), S1BOX8 = new THREE.Group();
+        
             let grpTrnRight = new THREE.Group(), grpTrnLeft = new THREE.Group(), grpTrnTop = new THREE.Group(), grpTrnBottom = new THREE.Group(), grpTrnAll = new THREE.Group();
-            const height = "150px";
+            const canvasH = 155;
+            const canvasW = 155;
+
+
+
+
             main();
             
             function init() {
@@ -68,27 +76,29 @@
             function initScene() {
                 // Scene
                 SCENE = new THREE.Scene();
-                FOGCOLOR = new THREE.Color(0x000000);
+                //FOGCOLOR = new THREE.Color(0x000000);
                 //SCENE.fog = new THREE.Fog( FOGCOLOR, 1, 20 );
             }   
             function initCamera() {
                 // Camera
-                CAMERA = new THREE.PerspectiveCamera(45, 155 / 155, 0.1, 1000);
+                CAMERA = new THREE.PerspectiveCamera(45, canvasW / canvasH, 0.1, 1000);
                 CAMERA.position.set(0, 0, 5);
                 CAMERA.lookAt( SCENE.position );
                 CAMERA.add( LISTENER );
                 SCENE.add(CAMERA);
             }
             function createScene1() {
-                var pxlMaterial1, pxlMaterial2, pxlMaterial3, pxlMaterial4, pxlMaterial5, pxlMaterial6, pxlMaterial7, pxlMaterial8 = new THREE.MeshBasicMaterial( {color: 0xFFFFFF, side: THREE.DoubleSide} );
+
+                let pxlMaterial1, pxlMaterial2, pxlMaterial3, pxlMaterial4, pxlMaterial5, pxlMaterial6, pxlMaterial7, pxlMaterial8, pxlMaterial0 = new THREE.MeshBasicMaterial( {color: 0x666666, side: THREE.DoubleSide} );
                 const pxl = new THREE.SphereGeometry( 0.1, 10, 10 );
                 
                 //
                 const pxl1 = new THREE.Mesh( pxl, pxlMaterial1 );
+                pxl1.name = "1";
                     pxl1.position.set(1.5, 0, 0);
                 
                     AUDIOLOADER.load( 'https://cdn.jsdelivr.net/gh/Murmur-app/murmur-app.github.io@develop/app/assets/audio/Beach.mp3', function( buffer ) {
-                        SOUND1.setBuffer( buffer ); SOUND1.setLoop( true );  SOUND1.setVolume(0); SOUND1.setRefDistance( 0.5  ); SOUND1.play();
+                        SOUND1.setBuffer( buffer ); SOUND1.setLoop( true );  SOUND1.setVolume( 0 ); SOUND1.setRefDistance( 0.5 ); SOUND1.play();
                     });
                     pxl1.add(SOUND1);
                     S1BOX1.add(pxl1);
@@ -96,6 +106,7 @@
                 SCENE.add(S1BOX1);
             
                 const pxl2 = new THREE.Mesh( pxl, pxlMaterial2 );
+                pxl2.name = "2";
                     pxl2.position.set(1, 1, 0);
                 
                     AUDIOLOADER.load( 'https://cdn.jsdelivr.net/gh/Murmur-app/murmur-app.github.io@develop/app/assets/audio/Birds.mp3', function( buffer ) {
@@ -107,6 +118,7 @@
                 SCENE.add(S1BOX2);
 
                 const pxl3 = new THREE.Mesh( pxl, pxlMaterial3 );
+                pxl3.name = "3";
                     pxl3.position.set(0, 1.5, 0);
                 
                     AUDIOLOADER.load( 'https://cdn.jsdelivr.net/gh/Murmur-app/murmur-app.github.io@develop/app/assets/audio/Forest_waterfall.mp3', function( buffer ) {
@@ -118,6 +130,7 @@
                 SCENE.add(S1BOX3);
 
                 const pxl4 = new THREE.Mesh( pxl, pxlMaterial4 );
+                pxl4.name = "4";
                 pxl4.position.set(-1.5, 0, 0);
                 
                     AUDIOLOADER.load( 'https://cdn.jsdelivr.net/gh/Murmur-app/murmur-app.github.io@develop/app/assets/audio/Fire.mp3', function( buffer ) {
@@ -129,9 +142,9 @@
                 SCENE.add(S1BOX4);
 
                 const pxl5 = new THREE.Mesh( pxl, pxlMaterial5 );
+                pxl5.name = "5";
                 pxl5.position.set(-1, -1, 0);
-                
-                    AUDIOLOADER.load( 'https://cdn.jsdelivr.net/gh/Murmur-app/murmur-app.github.io@develop/app/assets/audio/Humans.mp3', function( buffer ) {
+                    AUDIOLOADER.load( '/sounds/thema_mezzo.mp3', function( buffer ) {
                         SOUND5.setBuffer( buffer ); SOUND5.setLoop( true );  SOUND5.setVolume(0);SOUND5.setRefDistance( 0.5  ); SOUND5.play();
                     });
                     pxl5.add(SOUND5);
@@ -140,6 +153,7 @@
                 SCENE.add(S1BOX5);
 
                 const pxl6 = new THREE.Mesh( pxl, pxlMaterial6 );
+                pxl6.name = "6";
                 pxl6.position.set(0, -1.5, 0);
          
                     AUDIOLOADER.load( 'https://cdn.jsdelivr.net/gh/Murmur-app/murmur-app.github.io@develop/app/assets/audio/Rain.mp3', function( buffer ) {
@@ -151,6 +165,7 @@
                 SCENE.add(S1BOX6);
 
                 const pxl7 = new THREE.Mesh( pxl, pxlMaterial7 );
+                pxl7.name = "7";
                 pxl7.position.set(-1, 1, 0);
                 
                     AUDIOLOADER.load( 'https://cdn.jsdelivr.net/gh/Murmur-app/murmur-app.github.io@develop/app/assets/audio/Stream.mp3', function( buffer ) {
@@ -162,13 +177,14 @@
                 SCENE.add(S1BOX7);
 
                 const pxl8 = new THREE.Mesh( pxl, pxlMaterial8 );
+                pxl8.name = "8";
                 pxl8.position.set(1, -1, 0);
 
-                        AUDIOLOADER.load( 'https://cdn.jsdelivr.net/gh/Murmur-app/murmur-app.github.io@develop/app/assets/audio/Thunder.mp3', function( buffer ) {
-                            SOUND8.setBuffer( buffer ); SOUND8.setLoop( true );  SOUND8.setVolume(0);SOUND8.setRefDistance( 0.5 ); SOUND8.play();                        
-                        });
-                        pxl8.add(SOUND8);
-                        S1BOX8.add(pxl8);
+                    AUDIOLOADER.load( 'https://cdn.jsdelivr.net/gh/Murmur-app/murmur-app.github.io@develop/app/assets/audio/Thunder.mp3', function( buffer ) {
+                        SOUND8.setBuffer( buffer ); SOUND8.setLoop( true );  SOUND8.setVolume(0);SOUND8.setRefDistance( 0.5 ); SOUND8.play();                        
+                    });
+                    pxl8.add(SOUND8);
+                    S1BOX8.add(pxl8);
                 
                 SCENE.add(S1BOX8);
             }
@@ -184,15 +200,15 @@
                 this.sound7 = SOUND7.getVolume();
                 this.sound8 = SOUND8.getVolume();
               };
-                const controlPxl1 = new function() {this.positionZ = 0;}();
-                const controlPxl2 = new function() {this.positionZ = 0;}();
-                const controlPxl3 = new function() {this.positionZ = 0;}();
-                const controlPxl4 = new function() {this.positionZ = 0;}();
+            const controlPxl1 = new function() {this.positionZ = 0;}();
+            const controlPxl2 = new function() {this.positionZ = 0;}();
+            const controlPxl3 = new function() {this.positionZ = 0;}();
+            const controlPxl4 = new function() {this.positionZ = 0;}();
 
-                const controlPxl5 = new function() {this.positionZ = 0;}();
-                const controlPxl6 = new function() {this.positionZ = 0;}();
-                const controlPxl7 = new function() {this.positionZ = 0;}();
-                const controlPxl8 = new function() {this.positionZ = 0;}();
+            const controlPxl5 = new function() {this.positionZ = 0;}();
+            const controlPxl6 = new function() {this.positionZ = 0;}();
+            const controlPxl7 = new function() {this.positionZ = 0;}();
+            const controlPxl8 = new function() {this.positionZ = 0;}();
 
                 const gui = new dat.GUI({ autoPlace: false });
                 const soundControls = new SoundControls();
@@ -229,35 +245,71 @@
                 // Renderer engine together with the background
                 RENDERER = new THREE.WebGLRenderer({antialias: true, alpha: true});
                 RENDERER.shadowMap.enabled = true;
+                RENDERER.setPixelRatio( window.devicePixelRatio );
                 RENDERER.shadowMapSort = true;
                 RENDERER.shadowMapSoft = true;
                 RENDERER.shadowMap.type = THREE.PCFSoftShadowMap;
                 RENDERER.setClearColor(0x000000, 0);
                 
             }
+			function onPointerMove( event ) {
+                event.preventDefault();
+                var targetColor = new THREE.Color(0x000000);
+                var normalColor = new THREE.Color(0xFFFFFF);
+                POINTER.x = ( event.clientX / canvasW ) * 2 - 1;
+                POINTER.y = - ( event.clientY / canvasH ) * 2 + 1;
+                RAYCASTER.setFromCamera( POINTER, CAMERA );
+                
+                const intersects = RAYCASTER.intersectObjects( SCENE.children);
+				
+                if ( intersects.length > 0 ) {
+                    
+                    if ( INTERSECTED != intersects[ 0 ].object ) {
+                        if ( INTERSECTED ) GSAP.to(INTERSECTED.material.color, {r: normalColor.r, g: normalColor.g, b: normalColor.b, delay: 0, duration: 1});
+                        INTERSECTED = intersects[ 0 ].object;
+                        GSAP.to(INTERSECTED.material.color, {r: targetColor.r, g: targetColor.g, b: targetColor.b, delay: 0, duration: 1});
+                        console.log("Hover : ", INTERSECTED.name)
+                    }
+                } else {
+                    if ( INTERSECTED ) GSAP.to(INTERSECTED.material.color, {r: normalColor.r, g: normalColor.g, b: normalColor.b, delay: 0, duration: 1});
+                    INTERSECTED = null;
+                }
+            }
+            function onClick(event) {
+                event.preventDefault();
+
+                RAYCASTER.setFromCamera(POINTER, CAMERA);
+
+                const inter = RAYCASTER.intersectObjects(SCENE.children);
+          
+                if (inter.length > 0) {
+
+                    if ( INTERS != inter[ 0 ].object ) {
+                        //if ( INTERS ) GSAP.to(INTERS.position, {z:'0', delay: 0, duration: 1, onUpdate: () => { INTERS.children[ 0 ].setVolume( INTERS.position.z ); }});
+                        INTERS = inter[ 0 ].object;
+                        GSAP.to(INTERS.position, {z:'1', delay: 0, duration: 1, onUpdate: () => { INTERS.children[ 0 ].setVolume( INTERS.position.z ); }});
+                        console.log("Click : ", INTERS.name,  INTERS)                       
+                    } else {
+                        if ( INTERS ) GSAP.to(INTERS.position, {z:'0', delay: 0, duration: 1, onUpdate: () => { INTERS.children[ 0 ].setVolume( INTERS.position.z ); }, onComplete: () => { INTERS = null;}});
+                    }
+                }                   
+            }
             function initEventListeners() {
+                window.addEventListener('pointermove', onPointerMove );
+                window.addEventListener('click', onClick, false);
                 window.addEventListener('resize', onWindowResize);
                 onWindowResize();
             }
             function onWindowResize() {
                 CAMERA.aspect = 155 / 155;
                 CAMERA.updateProjectionMatrix();
+                CAMERA.updateMatrixWorld();
                 RENDERER.setSize(155, 155);
             }    
             function update(deltaTime){
                 const ROTATE_TIME = 60; // Time in seconds for a full rotation
                 const rotate = (deltaTime / ROTATE_TIME) * Math.PI * 2;
 
-
-                S1BOX1.rotation.z -= rotate;
-                S1BOX2.rotation.z -= rotate;
-                S1BOX3.rotation.z -= rotate;
-                S1BOX4.rotation.z -= rotate;
-                
-                S1BOX5.rotation.z -= rotate;
-                S1BOX6.rotation.z -= rotate;
-                S1BOX7.rotation.z -= rotate;
-                S1BOX8.rotation.z -= rotate;
             }
             function animate() {
                 requestAnimationFrame(animate);
@@ -265,6 +317,7 @@
             }
             function render() {
                 update(0.01); 
+
                 // For rendering
                 RENDERER.autoClear = false;
                 RENDERER.clear();

@@ -5,8 +5,7 @@
         </header>
         <div class="full-appear">
             <article data-year="2020">
-            <div class="curtain"></div>
-            <div class="year">2020</div>
+                 <div class="year">2020</div>
             <div class="title">Dome feat. Saåad<span> <i>by</i> Sádon</span></div>
             <div class="info">[v/a "Memories of a Lost City"]</div>
             <div class="label">Tokyo Jupiter</div>
@@ -16,8 +15,7 @@
         </svg>
             </article>
             <article data-year="2015">
-            <div class="curtain"></div>
-            <div class="year">2015</div>
+                 <div class="year">2015</div>
             <div class="title">Once A Believer feat. Holy Strays (Saåad remix)<span> <i>by</i> Trésors</span></div>
             <div class="info">[album "Adrien"]</div>
             <div class="label">BLWBCK</div>
@@ -27,8 +25,7 @@
         </svg>
             </article>
             <article data-year="2014">
-            <div class="curtain"></div>
-            <div class="year">2014</div>
+                 <div class="year">2014</div>
             <div class="title">La Traversée (Saåad remix)<span> <i>by</i> Oiseaux-Tempête</span></div>
             <div class="info">[album "Re-Works"]</div>
             <div class="label">Sub-Rosa</div>
@@ -38,8 +35,7 @@
         </svg>
             </article>
             <article data-year="2013">
-            <div class="curtain"></div>
-            <div class="year">2013</div>
+                 <div class="year">2013</div>
             <div class="title">If You Call That Living feat. Saåad<span> <i>by</i> Sundrugs</span></div>
             <div class="info">[album "Hidden Scenes"]</div>
             <div class="label">BLWBCK</div>
@@ -49,8 +45,7 @@
         </svg>
             </article>
             <article data-year="2012">
-            <div class="curtain"></div>
-            <div class="year">2012</div>
+                 <div class="year">2012</div>
             <div class="title">Disillusioned Infinity feat. Romain Barbot<span> <i>by</i> Appalache</span></div>
             <div class="info">[album "Fue"]</div>
             <div class="label">BLWBCK</div>
@@ -103,8 +98,27 @@
             beforeLeave(el) {
                 this.content = false
             },
+            scroller() {
+                var gsap = this.$gsap;
+                var scrolltrigger = this.$ScrollTrigger;
+                gsap.utils.toArray(".full-appear article").forEach((e,i) => {
+                //this.$gsap.to(e, { delay: '0.1', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'}); 
+                const section = document.querySelector('.full-appear');
+                scrolltrigger.create({
+                    trigger: e,
+                    start: "top bottom+=50",
+                    end: "bottom start-=50",
+                    onEnter: () => gsap.to(e, {clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'}),
+                    onEnterBack: () => gsap.to(e, {clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'}),
+                    onLeave: () => gsap.to(e, {clipPath: 'polygon(100% 0, 100% 0, 100% 100%, 100% 100%)'}),
+                    onLeaveBack: () => gsap.to(e, {clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)'}),
+                });
+                
+                });
+            }
         },
         mounted() {
+            this.scroller();
         },
 
     }

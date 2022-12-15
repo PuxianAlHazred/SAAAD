@@ -13,8 +13,7 @@
     <div class="full-events" :class="{'opacity-50 mr-[255px] delay-0 duration-75': this.$store.state.booking, 'opacity-100 mr-[0px] delay-1000': !this.$store.state.booking}">
       <!--2022-->
       <article data-debut="2022-11-26" data-fin="2022-11-26" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2022 NOV. 26</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -27,8 +26,7 @@
         <div class="info">+ Common Eider, King Eider + Ascending Divers + Den Sorte Død + Curse All Kings</div>
       </article>
       <article data-debut="2022-10-29" data-fin="2022-10-29" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2022 OCT. 29</span>
           <div class="assets">
             <div class="liveset hidden"></div>
@@ -42,8 +40,7 @@
       </article>
       <!--2021-->
       <article data-debut="2021-12-04" data-fin="2021-12-04" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2021 DEC. 04</span>
           <div class="assets">
             <div class="liveset hidden"></div>
@@ -56,8 +53,7 @@
         <div class="info"></div>
       </article>
       <article data-debut="2021-10-22" data-fin="2021-10-22" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2021 OCT. 22</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -70,8 +66,7 @@
         <div class="info">+ UBV76</div>
       </article>
       <article data-debut="2021-10-14" data-fin="2021-10-14" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2021 OCT. 14</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -84,8 +79,7 @@
         <div class="info">+ Ascending Divers</div>
       </article>
       <article data-debut="2021-08-07" data-fin="2021-08-07" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2021 AUG. 07</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -98,8 +92,7 @@
         <div class="info">+ Hands In The Dark (Mix)</div>
       </article>
       <article data-debut="2021-07-09" data-fin="2021-07-09" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2021 JUL. 09</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -112,8 +105,7 @@
         <div class="info">+ Hands In The Dark (Mix)</div>
       </article>
       <article data-debut="2021-04-17" data-fin="2021-04-17" data-collaboration="true" data-exhibition="true" data-liveset="false">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2021 APR. 17</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -126,8 +118,7 @@
         <div class="info">«Secret Hell» in situ listening experience, part of «L’Homme Gris» exhibition curated by Benjamin Bianciotto. Collaborative installation with Élodie Lesourd + Stephen O' Malley + Aaron Turner + Saåad + Marnie Weber + Julien Langendorff & Lori Sean Berg + Sindre Foss Skancke + NVK + Cigvë + Neuromancienne + Édouard S. Lamothe</div>
       </article>
       <article data-debut="2021-02-15" data-fin="2021-03-26" data-collaboration="true" data-exhibition="true" data-liveset="false">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2021 FEB. 15<br> &gt; MAR. 26</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -141,8 +132,7 @@
       </article>
       <!--2020-->
       <article data-debut="2020-12-15" data-fin="2020-12-15" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2020 DEC. 15</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -155,8 +145,7 @@
         <div class="info">Sphinx Original Soundtrack (Live) + Stéphane Fuget, Les Épopées & Tito González García</div>
      </article>
      <article data-debut="2020-12-02" data-fin="2021-01-23" data-collaboration="true" data-exhibition="true" data-liveset="false">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2020 DEC. 02<br>&gt; 2021 JAN. 23</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -169,8 +158,7 @@
         <div class="info">Notes For Embona audio & video installation in collaboration with Christian Sanna</div>
       </article>
       <article data-debut="2020-09-11" data-fin="2020-09-12" data-collaboration="false" data-exhibition="true" data-liveset="false">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2020 SEP. 11<br>&gt; SEP. 12</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -184,8 +172,7 @@
       </article>
       <!-- 2018 -->
       <article data-debut="2018-11-15" data-fin="2018-11-15" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2018 NOV. 15</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -198,8 +185,7 @@
         <div class="info">+ Thomas Poli</div>
       </article>
       <article data-debut="2018-11-01" data-fin="2018-11-01" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2018 NOV. 01</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -212,8 +198,7 @@
         <div class="info">+ Anne Müller</div>
       </article>    
       <article data-debut="2018-10-31" data-fin="2018-10-31" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2018 OCT. 31</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -226,8 +211,7 @@
         <div class="info">+ Partout Partout + Descendeur</div>
       </article>  
       <article data-debut="2018-09-21" data-fin="2018-09-21" data-collaboration="true" data-exhibition="true" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2018 SEP. 21</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -240,8 +224,7 @@
         <div class="info">«Diminished Finlucier» a live performance with Élodie Lesourd, Romain Barbot & Benjamin Bianciotto</div>
       </article>  
       <article data-debut="2018-09-13" data-fin="2018-09-13" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2018 SEP. 13</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -254,8 +237,7 @@
         <div class="info">+ LAAKE</div>
       </article> 
        <article data-debut="2018-08-25" data-fin="2018-08-25" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2018 AUG. 25</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -268,8 +250,7 @@
         <div class="info">+ Johan Papaconstantino + Saint DX + Miel de Montagne + René Danger + Pardonnez-Nous + Le Camion Bazar</div>
       </article> 
        <article data-debut="2018-05-23" data-fin="2018-05-23" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2018 MAY 23</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -283,8 +264,7 @@
       </article> 
       <!-- 2017 -->
        <article data-debut="2017-07-07" data-fin="2017-07-07" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2017 JUL. 07</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -297,8 +277,7 @@
         <div class="info"></div>
       </article> 
       <article data-debut="2017-05-19" data-fin="2017-05-19" data-collaboration="true" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2017 MAY 19</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -312,8 +291,7 @@
        + Joost Rekveld & Andrey Smirnov + Tijs Ham & Birk Nygaard</div>
       </article>  
       <article data-debut="2017-02-21" data-fin="2017-02-21" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2017 FEB. 21</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -327,8 +305,7 @@
       </article>  
       <!-- 2016 -->
       <article data-debut="2016-05-21" data-fin="2016-05-21" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2016 MAY. 21</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -341,8 +318,7 @@
         <div class="info">+ Naïm Armor</div>
       </article>
       <article data-debut="2016-03-23" data-fin="2016-03-23" data-collaboration="true" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2016 MAR. 23</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -355,8 +331,7 @@
         <div class="info">«Tattoo» (live soundtrack)</div>
       </article>   
       <article data-debut="2016-03-22" data-fin="2016-03-22" data-collaboration="true" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2016 MAR. 22</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -369,8 +344,7 @@
         <div class="info">«Tattoo» (live soundtrack)</div>
       </article> 
       <article data-debut="2016-02-28" data-fin="2016-02-28" data-collaboration="true" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2016 FEB. 28</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -384,8 +358,7 @@
         + Pye Corner Audio</div>
       </article> 
        <article data-debut="2016-02-12" data-fin="2016-02-12" data-collaboration="true" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2016 FEB. 12</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -398,8 +371,7 @@
         <div class="info">«Tattoo» (live soundtrack)</div>
       </article> 
       <article data-debut="2016-01-28" data-fin="2016-01-28" data-collaboration="true" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2016 JAN. 28</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -414,8 +386,7 @@
       </article>  
       <!-- 2015 -->  
       <article data-debut="2015-09-20" data-fin="2015-09-20" data-collaboration="true" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2015 SEP. 20</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -428,8 +399,7 @@
         <div class="info">live collaboration with Oiseaux-Tempête<br/> + Orme</div>
       </article>   
       <article data-debut="2015-09-10" data-fin="2015-09-10" data-collaboration="true" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2015 SEP. 10</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -442,8 +412,7 @@
         <div class="info">«Tattoo» (live soundtrack)</div>
       </article>  
       <article data-debut="2015-06-29" data-fin="2015-06-29" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2015 JUN. 29</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -456,8 +425,7 @@
         <div class="info">«Verdaillon» (live)<br/>+ Tasseomancy</div>
       </article>  
       <article data-debut="2015-05-14" data-fin="2015-05-14" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2015 MAY 14</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -471,8 +439,7 @@
       </article>  
       <!-- 2014 -->  
       <article data-debut="2014-11-15" data-fin="2014-11-15" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2014 NOV. 15</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -485,8 +452,7 @@
         <div class="info">+ Creation VI + Renat Da Capo</div>
       </article> 
       <article data-debut="2014-11-14" data-fin="2014-11-14" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2014 NOV. 14</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -499,8 +465,7 @@
         <div class="info">+ ТРОПѦ</div>
       </article>  
       <article data-debut="2014-10-11" data-fin="2014-10-11" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2014 OCT. 11</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -513,8 +478,7 @@
         <div class="info">«Verdaillon» (live)</div>
       </article> 
       <article data-debut="2014-04-23" data-fin="2014-08-04" data-collaboration="true" data-exhibition="true" data-liveset="false">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2014 APR. 14<br> &gt; AUG. 04</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -527,8 +491,7 @@
         <div class="info">collective sound installation + Ryuichi Sakamoto + Don Zientara & Ian MacKaye + Jarboe + Lawrence English + Forest Swords + Jez Riley French + The Books + Lucianne Walkowicz + Alvin Lucier + CFCF + Annea Lockwood + Eddie Ruscha + Toni Dimitrov + The London Sound Survey + Francisco Lopèz + Salomè Voegelin + David Mollin  + Richard Chartier + Peals + Alberto Gaitán + Brian McBride + Kate Carr + Christine Sun Kim + Specta Ciera + Beauty Pill + Scarfolk Council + Markus Guentner + John Henry Blatter + Nathan Tersteeg Wool</div>
       </article>  
       <article data-debut="2014-07-29" data-fin="2014-07-29" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2014 JUL. 29</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -541,8 +504,7 @@
         <div class="info">+ Chelsea Wolfe</div>
       </article>
       <article data-debut="2014-07-12" data-fin="2014-07-12" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2014 JUL. 12</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -555,8 +517,7 @@
         <div class="info"></div>
       </article>
       <article data-debut="2014-06-14" data-fin="2014-06-14" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2014 JUN. 14</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -569,8 +530,7 @@
         <div class="info">+ Hakobune + Beachers</div>
       </article> 
       <article data-debut="2014-06-04" data-fin="2014-06-04" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2014 JUN. 04</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -583,8 +543,7 @@
         <div class="info">+ Tomaga + Agathe Max</div>
       </article> 
       <article data-debut="2014-04-14" data-fin="2014-04-14" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2014 JUN. 14</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -597,8 +556,7 @@
         <div class="info">+ Death & Vanilla + Mayerling</div>
       </article> 
       <article data-debut="2014-02-08" data-fin="2014-02-08" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2014 FEB. 08</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -612,8 +570,7 @@
       </article>     
       <!-- 2013 -->
       <article data-debut="2013-10-23" data-fin="2013-10-23" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2013 OCT. 23</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -626,8 +583,7 @@
         <div class="info">+ Robedoor + Holy Strays + Cankun</div>
       </article> 
       <article data-debut="2013-08-30" data-fin="2013-08-30" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2013 AUG. 30</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -640,8 +596,7 @@
         <div class="info">+ Somatica + Fl/or</div>
       </article> 
       <article data-debut="2013-06-29" data-fin="2013-06-29" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2013 JUN. 29</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -654,8 +609,7 @@
         <div class="info">+ Insiden + Yann Gourdon + Tamagawa + Cascade + Antez</div>
       </article> 
       <article data-debut="2013-01-27" data-fin="2013-01-27" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2013 JAN. 27</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -669,8 +623,7 @@
       </article>   
       <!-- 2012 -->
       <article data-debut="2012-10-29" data-fin="2012-10-29" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2012 OCT. 29</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -683,8 +636,7 @@
         <div class="info">+ Barn Owl + Sunshine Parker</div>
       </article> 
       <article data-debut="2012-07-22" data-fin="2012-07-22" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2012 JUL. 22</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -697,8 +649,7 @@
         <div class="info">«Confluences» (live)</div>
       </article>  
       <article data-debut="2012-06-28" data-fin="2012-06-28" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2012 JUN. 28</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -711,8 +662,7 @@
         <div class="info">+ James Blackshaw + Morphosis + Matthew Friedberger + Kassem Mosse</div>
       </article>  
       <article data-debut="2012-05-31" data-fin="2012-05-31" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2012 MAY 31</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -725,8 +675,7 @@
         <div class="info"></div>
       </article>
       <article data-debut="2012-05-30" data-fin="2012-05-30" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2012 MAY 30</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -739,8 +688,7 @@
         <div class="info">+ Wolves In The Throne Room</div>
       </article>
       <article data-debut="2012-03-23" data-fin="2012-03-23" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2012 MAR. 23</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -754,8 +702,7 @@
       </article>
       <!-- 2011 -->
       <article data-debut="2011-10-05" data-fin="2011-10-05" data-collaboration="false" data-exhibition="false" data-liveset="true">
-        <div class="curtain"></div>
-        <div class="date">
+         <div class="date">
           <span>2011 OCT. 05</span>
           <div class="assets">
             <div class="liveset  hidden"></div>
@@ -813,9 +760,8 @@
   .full-events article .info{ @apply text-[12px] w-3/12 flex items-start text-right flex-row-reverse; }
 
   .assets { @apply flex items-center }
-  .assets .liveset:before { @apply text-[13px] mr-2 rounded-full; content: "–";}
-  .assets .exhibition:before {@apply text-[13px] mr-2  rounded-full; content: "Ø";}
-  .assets .collaboration:before {@apply text-[10px] rounded-full; content: "∫∫∫";}
+  .assets .exhibition:before {@apply text-[13px] mr-2  p-2 rounded-full border-2 border-white; content: "Ø";}
+  .assets .collaboration:before {@apply text-[10px] p-2 rounded-full border-2 border-white; content: "∫∫∫";}
 
 </style>
 <script>
@@ -848,8 +794,6 @@
           //Get date
           var date = e.getAttribute('data-fin'), now = new Date(), month = now.getMonth(), day = now.getDate(), year = now.getFullYear(), veryNow = (year+'-'+(month+1)+'-'+day);
           if (date > veryNow) { e.classList.add('become') } else if(date < veryNow) {e.classList.add('past')} else if(date === veryNow) {e.classList.add('animate-pulse')} else {  }
-          //Curtain effect
-          this.$gsap.to(".curtain", {width: '0%' , height: '100%' , duration: 0.3, ease:"power2.inOut", delay: '0.'+i});   
         });
       },
       filter() {
@@ -858,7 +802,7 @@
 
         this.$refs.all.addEventListener('click', function() {
           highlightedItems.forEach((e,i) => { 
-            GSAP.to(e, {duration: 0.3, ease:"linear", delay: '0.1'+i,
+            GSAP.to(e, {duration: 0.3, ease:"linear", delay: '0.'+i+'00',
             onStart:function(){e.classList.add('activated'); },
             onComplete:function(){ setTimeout(() => {e.classList.remove('veryHidden');}, '0.'+i); e.classList.remove('desactivated');}}); 
           });
@@ -867,13 +811,13 @@
         this.$refs.liveset.addEventListener('click', function() {
           highlightedItems.forEach((e,i) => { 
             if(e.getAttribute('data-liveset') === "true") { 
-              GSAP.to(e, {duration: 0.3, ease:"linear", delay: '0.'+i,
+              GSAP.to(e, {duration: 0.3, ease:"linear", delay: '0.'+i+'00',
               onStart:function(){e.classList.remove('veryHidden'); e.classList.add('activated'); },
               onComplete:function(){e.classList.remove('desactivated');}}); 
             } else { 
-              GSAP.to(e, {duration: 0.3, ease:"linear", delay: '0.'+i, 
+              GSAP.to(e, {duration: 0.3, ease:"linear", delay: '0.'+i+'00', 
               onStart:function(){e.classList.add('desactivated'); },
-              onComplete:function(){ setTimeout(() => {e.classList.add('veryHidden');}, '0.'+i); e.classList.remove('activated');}}); 
+              onComplete:function(){ setTimeout(() => {e.classList.add('veryHidden');}, '0.'+i+'00'); e.classList.remove('activated');}}); 
             } 
           });
         }, false);

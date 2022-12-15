@@ -21,6 +21,7 @@
     "@nuxtjs/device": "^2.1.0",
     "@nuxtjs/tailwindcss": "^4.2.1",
     "nuxt-gsap-module": "^1.6.0",
-    "postcss": "^8.4.5"
+    "postcss": "^8.4.5",
+    "raw-loader": "^4.0.2"
   }
 }

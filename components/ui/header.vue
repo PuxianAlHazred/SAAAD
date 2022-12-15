@@ -1,6 +1,6 @@
 <template>
     <header class="main-header">
-        <Ui-logo class="mix-blend-difference" @click="actSecret()"/>
+        <Ui-logo class="mix-blend-difference"/>
         <button @click="actMenu()">
           <svg v-if="this.$store.state.menu === false" class="h-[49px] w-[49px] fill-current text-white" viewBox="0 0 49 49">
               <path d="m34 21v1h-19v-1zm-5 3v1h-9v-1zm5 3v1h-19v-1z"></path>
@@ -205,14 +205,14 @@
             </defs> 
           </svg>
         </div>
-        <ui-menu  />
+        <ui-menu />
         <div id="gui_container" v-show="this.$store.state.secret"></div>
 
     </header>
 </template>
 <style lang="postcss" scooped>
-  .main-header { @apply  pb-20 pt-2 flex justify-between flex-col fixed items-center h-screen w-[150px] top-0 left-0 z-[1000] bg-transparent;}
-  .main-header button { @apply mix-blend-difference -rotate-90 text-[15px] font-work text-white z-[1000];}
+  .main-header { @apply  pb-20 pt-[0px] flex justify-between flex-col fixed items-center h-screen w-[150px] top-0 left-0 z-[1001] bg-transparent;}
+  .main-header button { @apply mix-blend-difference -rotate-90 text-[15px] font-work text-white z-[1001];}
 
   .main-header #muted { @apply mix-blend-difference z-[1001] cursor-pointer; }
   .main-header #muted span { @apply transition-colors duration-1000 font-mono text-[10px] fixed bottom-14 left-0 w-[150px] text-center tracking-widest; }
@@ -255,18 +255,8 @@
     -webkit-animation: pulse 1s infinite; animation: pulse 1s infinite;
     -webkit-animation-delay: 1.35s; animation-delay: 1.35s;
   }
-  @-webkit-keyframes pulse {
-    0% { transform: scaleY(1); transform-origin: 50% 50%; }
-    50% { transform: scaleY(0.7); transform-origin: 50% 50%; }
-    100% { transform: scaleY(1); transform-origin: 50% 50%; }
-  }
-  @keyframes pulse {
-    0% { transform: scaleY(1); transform-origin: 50% 50%; }
-    50% { transform: scaleY(0.7); transform-origin: 50% 50%; }
-    100% { transform: scaleY(1); transform-origin: 50% 50%; }
-  }
-    .svg-filter{@apply invisible w-0 h-0}
 
+  .svg-filter{@apply invisible w-0 h-0}
   .noise { border-radius: 50%; filter: url("#noise");}
   .pixelateMax { @apply w-auto;filter:url(#pixelateMax);}
   .pixelateMin { @apply w-auto;filter:url(#pixelateMin);}
@@ -275,13 +265,7 @@
   .distortion-1 { @apply w-auto;filter:url(#distortion-1);}
   .directGlitch { -webkit-filter: url("#glitch"); filter: url("#glitch");}
   .glitchy:hover { -webkit-filter: url("#glitch"); filter: url("#glitch");}
-  .clipPath { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
-  .animeClipPath {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
-    transform: translate(0%, -100%);
-    transition: all .5s ease-out;
-    filter:blur(10px);
-  }
+
 </style>
 <script>
   import {mapActions} from 'vuex'
@@ -311,7 +295,7 @@
       this.$gsap.from(".main-logo", {y: -10, duration:0.5, delay: 1 , opacity: '0', ease:"power2.easeOut"});
       this.$gsap.from(".main-header button", {x: -10, duration:0.5, delay: 1.25 , opacity: '0', ease:"power2.easeOut"});
       this.$gsap.from(".main-header #muted", { duration:0.5, delay: 1.5 , opacity: '0', ease:"power2.easeOut"});
-
+      this.$store.dispatch("actSecret");   
     },
     computed: {
       isSoundEnabled() {

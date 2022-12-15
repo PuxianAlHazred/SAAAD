@@ -1,26 +1,29 @@
 /* https://bennettfeely.com/clippy/*/
-  .overlay-circle { @apply transition-all duration-1000;
-    clip-path: circle(100% at 50% 50%); 
-  }
-  .overlay-circle_close { @apply transition-all duration-1000;
-    clip-path: circle(0% at 50% 50%);
-  }
-  .overlay-rect { @apply transition-all duration-1000;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  }
-  .overlay-rect_to-l { @apply transition-all duration-1000;
-    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-  }
-  .overlay-rect_to-r { @apply transition-all duration-1000;
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);  
-  }
-  .overlay-rect_to-t { @apply transition-all duration-1000;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-  .overlay-rect_to-b { @apply transition-all duration-1000;
-    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-  }
-
+.overlay-circle { @apply transition-all duration-500;
+  clip-path: circle(100% at 50% 50%); 
+}
+.overlay-circle_close { @apply transition-all duration-500;
+  clip-path: circle(0% at 50% 50%);
+}
+.overlay-rect { @apply transition-all duration-500;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.overlay-rect_to-l { @apply transition-all duration-500;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  transform: translate(-100%, 0%);
+}
+.overlay-rect_to-r { @apply transition-all duration-500;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);  
+  transform: translate(100%, 0%);
+}
+.overlay-rect_to-t { @apply transition-all duration-500;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transform: translate(0%, -100%);
+}
+.overlay-rect_to-b { @apply transition-all duration-500;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  transform: translate(0%, 100%);
+}
 .texture-noise {
   animation: 0.5s fadeIn;
   height: 100%;

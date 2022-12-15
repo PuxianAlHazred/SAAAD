@@ -141,7 +141,7 @@
               animation.kill();
               STORE.dispatch("actPreloading"); 
               STORE.dispatch("actContent"); 
-            }, "1500")
+            }, "2000")
         } });
 
         short.addEventListener("mousedown", function() { animation.play(); });
